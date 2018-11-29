@@ -8,6 +8,7 @@ body{
   display: flex;
   justify-content: center; /*centers items on the line (the x-axis by default)*/
   align-items: center; /*centers items on the cross-axis (y by default)*/
+  flex-direction: column;
   margin:0px;
   overflow-x: hidden;
 }
@@ -220,9 +221,9 @@ button:focus {outline:0;}
 }
 
 .project-question{
-  font-size: 24px;
+  font-size: 18px;
   position: absolute;
-  margin-top:40%;
+  margin-top:50%;
   z-index:2;
   width: 50%;
   background-color: rgba(255,255,255,1);
@@ -315,6 +316,7 @@ button:focus {outline:0;}
 
 
 .main-hello{
+  margin-top:35vh;
   width:80%;
 }
 
