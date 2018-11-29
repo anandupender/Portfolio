@@ -1,17 +1,20 @@
 body{
   height: auto;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 h1{
   font-size: 36px;
 }
+h2{
+  font-family: 'Share Tech Mono', monospace;
+}
 h4{
   margin:7px;
 }
-p{
+p, li{
   font-size: 16px;
   line-height:24px;
-  font-family: 'Share Tech Mono', monospace;
+  /* font-family: 'Share Tech Mono', monospace; */
 }
 #footer{
   position: absolute;
@@ -71,4 +74,20 @@ p{
   flex-direction: row;
   justify-content: space-around;
   width:100%;
+}
+
+@media screen and (max-width: 600px) {
+  .project-hero-image-container{
+    height:auto;
+  }
+  .project-image-container{
+    height:auto;
+  }
+  .project-section{
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  .project-info-container{
+    padding-left:20px;
+  }
 }

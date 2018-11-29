@@ -3,11 +3,13 @@ body{
   overflow: hidden;
   position: absolute;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   display: flex;
   justify-content: center; /*centers items on the line (the x-axis by default)*/
   align-items: center; /*centers items on the cross-axis (y by default)*/
   margin:0px;
+  overflow-x: hidden;
 }
 
 a, button{
@@ -17,9 +19,9 @@ a, button{
   cursor: pointer !important;
 }
 
-/* a:hover{
+a:hover{
   color:red;
-} */
+}
 
 .button, button{
   background-color: red;
@@ -121,9 +123,18 @@ button:focus {outline:0;}
   flex:1;
   font-size: 14px;
   display: inline-block;
-  margin:20px;
+  margin:10px;
   margin-bottom:30px;
   transition: color 0.25s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .bottom-button{
+    font-size: 12px !important;
+  }
+  .bottom-button-large{
+    font-size: 12px !important;
+  }
 }
 
 .logo-image {
@@ -208,8 +219,12 @@ button:focus {outline:0;}
 
 .project-button{
   margin-left:90%;
-  margin-top:52%;
+  margin-top:60%;
   position: absolute;
+}
+
+.project-button:hover{
+  color:white !important;
 }
 
 .project-dots{
@@ -231,6 +246,39 @@ button:focus {outline:0;}
   -webkit-background-size: 10px 10px;
   background-size: 10px 10px;
   z-index:5;
+}
+
+@media screen and (max-width: 600px) {
+  .project-card{
+    margin-right:12%; /* fix centering */
+    width:60%;
+    margin-bottom:100px;
+  }
+  .project-image-container{
+    height: 150%;
+    margin-left:-5%;
+  }
+  .project-image{
+    max-width:120%;
+  }
+  .project-question{
+    font-size: 14px;
+    margin-left: 0;
+    margin-left:-10%;
+    margin-top:100%;
+  }
+  .project-title{
+    font-size: 48px;
+  }
+  .project-button{
+    margin-left:90%;
+    margin-top:100%;
+    position: absolute;
+    padding:10px 20px;
+  }
+  .project-dots{
+    margin-left:90%;
+  }
 }
 
 
@@ -445,9 +493,12 @@ button:hover .left:after, button:hover .top:after, button:hover .bottom:after, b
     right: 0;
     top: 0;
   }
-  .topNav.responsive a {
+  .topNav.responsive a{
     float: none;
     display: block;
     text-align: left;
+  }
+  .name{
+    display: none;
   }
 }

@@ -1,6 +1,6 @@
 body{
   height: auto;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 h2{
