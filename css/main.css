@@ -74,6 +74,40 @@ button:focus {outline:0;}
   right: 60px;
 }
 
+.color-change{
+    -webkit-animation: color-change 8s infinite;
+    -moz-animation: color-change 8s infinite;
+    -o-animation: color-change 8s infinite;
+    -ms-animation: color-change 8s infinite;
+    animation: color-change 8s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    50% { color: black; }
+    100% { color: red; }
+}
+@-moz-keyframes color-change {
+  0% { color: red; }
+  50% { color: black; }
+  100% { color: red; }
+}
+@-ms-keyframes color-change {
+  0% { color: red; }
+  50% { color: black; }
+  100% { color: red; }
+}
+@-o-keyframes color-change {
+  0% { color: red; }
+  50% { color: black; }
+  100% { color: red; }
+}
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: black; }
+  100% { color: red; }
+}
+
 .background-title{
   font-size:40vh;
   color:#F8F8F8;
@@ -237,8 +271,6 @@ button:focus {outline:0;}
   height: 25%;
   border: none;
   background: -webkit-radial-gradient(rgba(0,0,0,.1) 20%, rgba(0,0,0,0) 0%), -webkit-radial-gradient(rgb(255,255,255) 20%, rgba(0,0,0,0) 16%), rgba(255, 255, 255,0);
-  /* background: -moz-radial-gradient(rgb(0,0,0) 15%, rgba(0,0,0,0) 0%), -moz-radial-gradient(rgb(255,255,255) 15%, rgba(0,0,0,0) 16%), rgba(255, 255, 255,0);
-  background: radial-gradient(rgb(0,0,0) 15%, rgba(0,0,0,0) 0%), radial-gradient(rgb(255,255,255) 15%, rgba(0,0,0,0) 16%), rgba(255, 255, 255,0); */
   -webkit-background-origin: padding-box;
   background-origin: padding-box;
   -webkit-background-clip: border-box;
@@ -303,36 +335,18 @@ button:focus {outline:0;}
 #manifesto-container{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 120px;
   z-index:3;
   margin:5%;
 }
 
-.manifesto{
-  margin-top: 100px;
-  width:33%;
-  font-size: 22px;
-}
-
-@media screen and (max-width: 600px) {
-  #manifesto-container{
-    flex-direction: column;
-  }
-}
-
-.about-image-container{
-  flex:1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10%;
-  z-index:-1;
-  position:relative !important;
-  margin-bottom:75px;
-}
-
-.about-image{
-  max-width:30%;
+#profile-container{
+  position: relative;
+	width:25vw;
+	height: 25vw;
+	border-radius: 50%;
+  margin-right:30px;
 }
 
 #profile-image{
@@ -342,32 +356,60 @@ button:focus {outline:0;}
   border-radius: 50%;
 }
 
-#profile-container{
-	position: absolute; /* or absolute */
-	top: 350px;
-	left: 50%;
-	width:25vw;
-	height: 25vw;
-	transform: translate(-50%, -50%);
-	border-radius: 50%;
+#profile-image:hover{
+  /* -webkit-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg); */
+  /* -webkit-filter: blur(5px);
+  filter: blur(5px); */
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
-.overlay {
+.manifesto{
+  flex:1;
+  margin-top: 100px;
+  font-size: 22px;
+}
+
+/* .overlay {
 	position: absolute;
-	border-radius: 50%;
-	width: 302px;
-	height: 302px;
+  width:25vw;
+	height:25vw;
+  border-radius: 50%;
 	opacity: 0;
 	transition: .5s ease;
 	background-color: white;
-}
+} */
 
 #overlay-text{
-	font-size: 28px;
+  margin-right: 5vw;
+	font-size: 18px;
+  width:25vw;
+  height:25vw;
+  border-radius: 50%;
 	text-align: center;
-	margin-top: 50%;
-	transform: translate(0, -50%);
 	opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #profile-container{
+    margin-top:60px;
+  }
+  #manifesto-container{
+    flex-direction: column;
+  }
+  .manifesto{
+    margin-top: 40px;
+  }
+  #profile-container{
+  	width:40vw;
+  	height: 40vw;
+  }
+
+  #profile-image{
+  	width:40vw;
+  	height:40vw;
+  }
 }
 
 /* These are special CSS Buttons for the Experiments

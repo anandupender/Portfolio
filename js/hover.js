@@ -5,15 +5,14 @@ function onHover(){
 	var overlayText = document.getElementById('overlay-text');
 	overlayText.style.opacity = 1;
 
-	var image = document.getElementById('profile-image');
-	image.style.opacity = 0;
-
-	var container = document.getElementById('profile-container');
-	container.style.backgroundColor = "white";
-
   var text = document.getElementsByClassName("manifesto");
   text[0].style.color="white";
-  text[1].style.color="white";
+
+	var name = document.getElementsByClassName("name");
+	name[0].style.color="white";
+
+	var remove = document.getElementById('remove');
+	remove.style.display = "none";
 }
 
 function offHover(){
@@ -26,7 +25,12 @@ function offHover(){
 	var image = document.getElementById('profile-image');
 	image.style.opacity = 1;
 
+	var name = document.getElementsByClassName("name");
+	name[0].style.color="red";
+
   var text = document.getElementsByClassName("manifesto");
   text[0].style.color="black";
-  text[1].style.color="black";
+
+	var remove = document.getElementById('remove');
+	remove.style.display = "inline";
 }
