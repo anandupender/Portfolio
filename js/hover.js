@@ -11,7 +11,7 @@ function onHover(){
 	var name = document.getElementsByClassName("name");
 	name[0].style.color="white";
 
-	var remove = document.getElementById('remove');
+	var remove = document.getElementById('footer');
 	remove.style.display = "none";
 }
 
@@ -31,6 +31,6 @@ function offHover(){
   var text = document.getElementsByClassName("manifesto");
   text[0].style.color="black";
 
-	var remove = document.getElementById('remove');
-	remove.style.display = "inline";
+	var remove = document.getElementById('footer');
+	remove.style.display = "flex";
 }
