@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Anand Upender</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla|Share+Tech+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/matter.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <div class ="topNav" id="nav">
+      <div id="logo">
+        <a href="index.html">
+          <div class="menu-buttons name animated fadeInDown">Anand Upender</div>
+        </a>
+        <span id="logo-subtitle">futures designer + prototyper</span>
+      </div>
+      <div id="menu">
+        <a href="work.html">
+          <h1 class="menu-buttons" id="work">Work</h1>
+        </a>
+        <a href="experiments.html">
+          <h1 class="menu-buttons" id="experiments">Experiments</h1>
+        </a>
+        <a href="about.html">
+          <h1 class="menu-buttons" id="about">About</h1>
+        </a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="main-hello">
+      <h1 class="animated fadeInDown delay-1s">Hi! I'm Anand.</h1>
+      <h1 class="animated fadeInDown delay-1s">I design, code, and lead teams at Stanford.</h1>
+      <h4 class="animated fadeInDown delay-1s" style="font-family: 'Share Tech Mono', monospace; font-weight:400">Currently seeking full-time roles, previously at Facebook and IDEO CoLab.</h4>
+      <!-- <button target="_blank" onclick="loadLogoWorld()" class="home-buttons"><div>What are my tools? &#x2192;</div></a> -->
+      <a href="work.html"><div class="home-buttons animated fadeIn delay-2s">Check out my work &#x2192;</div></a>
+    </div>
+
+    <div id="footer">
+      <div class="bottom-button animated fadeInUp delay-1s">No &#x1F6AC; onboard</div>
+      <a class="bottom-button" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">anandx@stanford.edu</div></a>
+      <div class="bottom-button bottom-button-large animated fadeInUp delay-1s">Made with &#x23F3; in California</div>
+      <a class="bottom-button" target="_blank" href="https://www.github.com/anandupender"><div class="animated fadeInUp delay-1s">Github</div></a>
+      <a class="bottom-button" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="animated fadeInUp delay-1s">Linkedin</div></a>
+    </div>
+
+    <script>
+      function responsiveMenu() {
+          var x = document.getElementById("nav");
+          if (x.className === "topNav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topNav";
+          }
+      }
+    </script>
+
+    <!-- MATTER.JS -->
+    <canvas width="800" height="600" style="position:fixed;z-index:-1;" id="world"></canvas>
+
+    <div id="logo-bank" style="display: none;">
+      <img class="logo-image" src="images/arduino.png">
+      <img class="logo-image" src="images/css.png">
+      <img class="logo-image" src="images/html.png">
+      <img class="logo-image" src="images/node.png">
+      <img class="logo-image" src="images/sketch.png">
+    </div>
+
+    <script>
+      function loadLogoWorld() {
+
+        var canvas = document.getElementById('world');
+
+          //Get window variables
+          var wWidth = window.innerWidth;
+          var wHeight = window.innerHeight;
+
+          //Set constants
+          var LOGO_SCALE = 0.05
+          var START_POS_X = 250
+          var DROP_INTERVAL_X = 50
+          if (wWidth < 1000) {
+              LOGO_SCALE = 0.05
+              START_POS_X = 80
+              DROP_INTERVAL_X = 10
+          }
+
+        //Setup Matter JS
+
+        var engine = Matter.Engine.create();
+        	var world = engine.world;
+        	var render = Matter.Render.create({
+        		canvas: canvas,
+        		engine: engine,
+        		options: {
+        			width: wWidth,
+        			height: wHeight,
+        			background: 'transparent',
+        			wireframes: false,
+        			showAngleIndicator: false,
+                    density: 0.001,
+                    friction: 0.1,
+                    frictionAir: 0.01,
+                    restitution: 0.9
+        		}
+        	})
+
+          // ONE BY ONE
+          var curLogoIndex = 0;
+          var interval = setInterval(function() {
+              if (curLogoIndex >= document.getElementById('logo-bank').children.length) {
+                  clearInterval(interval)
+                  return;
+              }
+              var logo = document.getElementById('logo-bank').children[curLogoIndex];
+              console.log(logo);
+              var startPosX = START_POS_X+curLogoIndex*DROP_INTERVAL_X
+              if (startPosX > wWidth)
+                  startPosX = wWidth - curLogoIndex*DROP_INTERVAL_X
+              var startPosY = -100
+              var matter = Matter.Bodies.rectangle(startPosX, startPosY, logo.width*LOGO_SCALE, logo.height*LOGO_SCALE, {
+                  render: {
+                      sprite: {
+                          texture: logo.src,
+                          xScale: LOGO_SCALE,
+                          yScale: LOGO_SCALE,
+                          visible: true
+                      },
+                      opacity: .6
+                  }
+              });
+              Matter.World.add(world, matter);
+              curLogoIndex++;
+          }, 500)
+
+        //Add a floor
+        var floor = Matter.Bodies.rectangle(wWidth/2 , wHeight-100, wWidth, 10, {
+          isStatic: true,
+              render: {
+                  visible: false
+              }
+        });
+
+          var leftWall = Matter.Bodies.rectangle(0, wHeight/2, 10, wHeight, {
+          isStatic: true,
+              render: {
+                  visible: false
+              }
+        });
+          var rightWall = Matter.Bodies.rectangle(wWidth, wHeight/2, 10, wHeight, {
+              isStatic: true,
+              render: {
+                  visible: false
+              }
+          });
+        Matter.World.add(world, [floor, leftWall, rightWall]);
+
+        //Make interactive
+        var mouseConstraint = Matter.MouseConstraint.create(engine, { //Create Constraint
+          element: canvas,
+          constraint: {
+            render: {
+                  visible: false
+              },
+              stiffness:0.8
+            }
+        });
+        Matter.World.add(world, mouseConstraint);
+
+        //Start the engine
+        Matter.Engine.run(engine);
+        Matter.Render.run(render);
+
+      };
+    </script>
+
+  </body>
+</html>

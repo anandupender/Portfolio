@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Anand Upender</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla|Share+Tech+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/experiments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class ="topNav" id="nav">
+      <div id="logo">
+        <a href="index.html">
+          <div class="menu-buttons name animated fadeInDown">Anand Upender</div>
+        </a>
+        <span id="logo-subtitle">futures designer + prototyper</span>
+      </div>
+      <div id="menu">
+        <a href="work.html">
+          <h1 class="menu-buttons" id="work">Work</h1>
+        </a>
+        <a href="experiments.html">
+          <h1 class="menu-buttons" id="experiments">Experiments</h1>
+        </a>
+        <a href="about.html">
+          <h1 class="menu-buttons" id="about">About</h1>
+        </a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="all-experiments">
+      <!-- <div class="category">
+        Digital
+      </div> -->
+      <div class="experiment-container">
+        <h2 class="experiment-question">This is a question</h2>
+        <div class="experiment-image-container">
+          <img class="experiment-image" src="images/test.jpg"/>
+        </div>
+      </div>
+      <div class="experiment-container">
+        <h2>This is a question</h2>
+        <!-- <div class="experiment-image"><img src="images/test.jpg"/></div> -->
+      </div>
+      <div class="experiment-container">
+        <h2>This is a question</h2>
+        <!-- <div class="experiment-image"><img src="images/test.jpg"/></div> -->
+      </div>
+      <div class="experiment-container">
+        <h2>This is a question</h2>
+        <!-- <div class="experiment-image"><img src="images/test.jpg"/></div> -->
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="bottom-button animated fadeInUp delay-1s">No &#x1F6AC; onboard</div>
+      <a class="bottom-button" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">anandx@stanford.edu</div></a>
+      <div class="bottom-button bottom-button-large animated fadeInUp delay-1s">Made with &#x23F3; in California</div>
+      <a class="bottom-button" target="_blank" href="https://www.github.com/anandupender"><div class="animated fadeInUp delay-1s">Github</div></a>
+      <a class="bottom-button" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="animated fadeInUp delay-1s">Linkedin</div></a>
+    </div>
+
+    <div class="background-title"> Experiments </div>
+    <script>
+      document.getElementById("experiments").style.setProperty("text-decoration", "line-through");
+    </script>
+
+    <script>
+      function responsiveMenu() {
+          var x = document.getElementById("nav");
+          if (x.className === "topNav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topNav";
+          }
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,453 @@
+body{
+  font-family: 'Karla', sans-serif;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /*centers items on the line (the x-axis by default)*/
+  align-items: center; /*centers items on the cross-axis (y by default)*/
+  margin:0px;
+}
+
+a, button{
+  text-decoration: none;
+  color:black;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* a:hover{
+  color:red;
+} */
+
+.button, button{
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  z-index:9999999;
+}
+
+.button:hover{
+  box-shadow: 2px 2px black;
+}
+
+.home-buttons{
+  margin-top:40px !important;
+  color:red;
+  padding:0px;
+}
+
+button:focus {outline:0;}
+
+#nav{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100px;
+  vertical-align: middle;
+  z-index:5;
+}
+
+#logo{
+  position: fixed;
+  top: 30px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+#logo-subtitle{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#menu{
+  position: absolute;
+  top: 30px;
+  right: 60px;
+}
+
+.background-title{
+  font-size:40vh;
+  color:#F8F8F8;
+  position: absolute;
+  left:-30px;
+  bottom:1%;
+  z-index:-1;
+}
+
+@media screen and (max-width: 600px) {
+  .background-title{
+    font-size:20vh;
+    left:-10px;
+    bottom:10%;
+  }
+}
+
+.menu-buttons{
+  display: inline-block;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.name{
+  color:red;
+  top:0px;
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+
+#footer{
+  font-family: 'Share Tech Mono', monospace;
+  width: 100%; position: fixed; bottom: 0px; left: 0px; display: block;
+  display: flex;
+  align-items:center;
+}
+
+.bottom-button-large{
+  font-size: 16px !important;
+}
+
+.bottom-button{
+  text-align: center;
+  flex:1;
+  font-size: 14px;
+  display: inline-block;
+  margin:20px;
+  margin-bottom:30px;
+  transition: color 0.25s ease;
+}
+
+.logo-image {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.scroll-button{
+  position: fixed;
+  bottom:50px;
+  left:50px;
+  padding: 8px 24px;
+  border:1px black solid;
+  background-color: white;
+  color:black;
+  box-shadow: none;
+}
+
+#all-project-cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom:120px;
+}
+
+.project-card{
+  margin-right:10%; /* fix centering */
+  width:50%;
+  height:60%;
+  position: relative;
+  margin-bottom:120px;
+}
+
+.project-title{
+  font-size: 56px;
+  margin-left:10%;
+  z-index:3;
+  font-weight: 700;
+}
+
+.project-rectangle{
+  margin-left:10%;
+  margin-top:56px;
+  height:5px;
+  width:200px;
+  background-color:red;
+  z-index:5;
+}
+
+.project-question{
+  font-size: 24px;
+  position: absolute;
+  margin-top:40%;
+  z-index:2;
+  width: 50%;
+  background-color: rgba(255,255,255,1);
+  background-blend-mode: lighten;
+  padding:10px;
+  /* box-shadow: -4px 4px; */
+  border: 2px black solid;
+}
+
+.project-image-container{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3%;
+  height: 90%;
+  z-index:1;
+  position:relative !important;
+}
+
+.offset{
+  margin-left: 25%;
+}
+
+.project-image{
+  max-width:100%;
+}
+
+.project-button{
+  margin-left:90%;
+  margin-top:52%;
+  position: absolute;
+}
+
+.project-dots{
+  margin-left:70%;
+  margin-top:5%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 40%;
+  height: 25%;
+  border: none;
+  background: -webkit-radial-gradient(rgba(0,0,0,.1) 20%, rgba(0,0,0,0) 0%), -webkit-radial-gradient(rgb(255,255,255) 20%, rgba(0,0,0,0) 16%), rgba(255, 255, 255,0);
+  /* background: -moz-radial-gradient(rgb(0,0,0) 15%, rgba(0,0,0,0) 0%), -moz-radial-gradient(rgb(255,255,255) 15%, rgba(0,0,0,0) 16%), rgba(255, 255, 255,0);
+  background: radial-gradient(rgb(0,0,0) 15%, rgba(0,0,0,0) 0%), radial-gradient(rgb(255,255,255) 15%, rgba(0,0,0,0) 16%), rgba(255, 255, 255,0); */
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 10px 10px;
+  background-size: 10px 10px;
+  z-index:5;
+}
+
+
+.main-hello{
+  width:80%;
+}
+
+/* The ABOUT ME Page */
+
+#background{
+	background-color: white;
+	opacity: 1;
+	position:fixed;
+	left: -10000;
+  top:0;
+	height:100%;
+	width:100%;
+	transition: .5s ease;
+  z-index:0;
+}
+
+#manifesto-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  z-index:3;
+  margin:5%;
+}
+
+.manifesto{
+  margin-top: 100px;
+  width:33%;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  #manifesto-container{
+    flex-direction: column;
+  }
+}
+
+.about-image-container{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  z-index:-1;
+  position:relative !important;
+  margin-bottom:75px;
+}
+
+.about-image{
+  max-width:30%;
+}
+
+#profile-image{
+	position: absolute;
+	width:25vw;
+	height:25vw;
+  border-radius: 50%;
+}
+
+#profile-container{
+	position: absolute; /* or absolute */
+	top: 350px;
+	left: 50%;
+	width:25vw;
+	height: 25vw;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.overlay {
+	position: absolute;
+	border-radius: 50%;
+	width: 302px;
+	height: 302px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: white;
+}
+
+#overlay-text{
+	font-size: 28px;
+	text-align: center;
+	margin-top: 50%;
+	transform: translate(0, -50%);
+	opacity: 0;
+}
+
+/* These are special CSS Buttons for the Experiments
+
+.arrow-buttons-container{
+  width: 100%;
+  position: fixed;
+  height:100px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-buttons{
+  border: none;
+  display: inline-block;
+  background-color: Transparent;
+  border-radius: 50%;
+  text-align: center;
+  margin-left:40px;
+  margin-right:40px;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+button:hover .left, button:hover .top, button:hover .bottom, button:hover .right{
+  border: 0.5em solid red;
+}
+
+button:hover .left:after, button:hover .top:after, button:hover .bottom:after, button:hover .right:after {
+  border-top: 0.5em solid red;
+  border-right: 0.5em solid red;
+}
+
+.left {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #333;
+  border-radius: 50%;
+  margin-left:0px;;
+}
+
+.left:after {
+  content: '';
+	display: inline-block;
+  margin-top: 1.05em;
+  margin-left: 0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.right {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #333;
+  border-radius: 50%;
+  margin-left: 1.5em;
+}
+
+.right:after {
+  content: '';
+	display: inline-block;
+  margin-top: 1.05em;
+  margin-left: -0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+*/
+
+
+  /* STYLING for Hanburger Menu Changing */
+
+/* Style the links inside the navigation bar */
+.icon {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 28px;
+    margin:15px;
+}
+
+/* Change the color of links on hover */
+.icon:hover {
+    color: red;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topNav .icon {
+    display: none;
+    z-index:2;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topNav a {display: none;}
+  .topNav span {display: none;}
+  .topNav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topNav.responsive {position: relative;}
+  .topNav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

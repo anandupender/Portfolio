@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Anand Upender</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla|Share+Tech+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body style="height: auto; overflow: scroll;">
+
+    <script>
+      var currProjectNum = 0;
+      var data = ["Malt", "Project 2", "Project 3", "Project 4"];
+      function moveLeft(){
+        if(currProjectNum == 0){
+          currProjectNum = data.length - 1;
+        }else{
+          currProjectNum--;
+        }
+        document.getElementById("project-title").innerHTML = data[currProjectNum];
+      }
+      function moveRight(){
+        if(currProjectNum == data.length - 1){
+          currProjectNum = 0;
+        }else{
+          currProjectNum++;
+        }
+        document.getElementById("project-title").innerHTML = data[currProjectNum];
+      }
+    </script>
+
+    <div class ="topNav" id="nav">
+      <div id="logo">
+        <a href="index.html">
+          <div class="menu-buttons name animated fadeInDown">Anand Upender</div>
+        </a>
+        <span id="logo-subtitle">futures designer + prototyper</span>
+      </div>
+      <div id="menu">
+        <a href="work.html">
+          <h1 class="menu-buttons" id="work">Work</h1>
+        </a>
+        <a href="experiments.html">
+          <h1 class="menu-buttons" id="experiments">Experiments</h1>
+        </a>
+        <a href="about.html">
+          <h1 class="menu-buttons" id="about">About</h1>
+        </a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- <div class="arrow-buttons-container">
+      <button class="arrow-buttons" onclick="moveLeft()">
+        <span class="left"></span>
+      </button>
+      <button class="arrow-buttons" onclick="moveRight()">
+        <span class="right"></span>
+      </button>
+    </div> -->
+
+    <div class="button scroll-button"> scroll... <br/> &#x2193;</div>
+
+
+    <div id="all-project-cards">
+      <div class="project-card" id="project1">
+        <div data-depth="0.2" class="project-title">Malt</div>
+        <div data-depth="0.25" class="project-rectangle"></div>
+        <div data-depth="0.4" class="project-dots"></div>
+        <div data-depth="0.6" class="project-question">How might we bring the joy of milkshakes, anywhere?</div>
+        <div data-depth="0.3" class="project-image-container offset">
+          <img class="project-image" src="images/test.jpg"/>
+        </div>
+        <a data-depth="0.1" class="button project-button animated wobble delay-5s" href="malt.html"> Launch Project </a>
+      </div>
+
+      <div class="project-card" id="project2">
+        <div data-depth="0.1" class="project-title">Me.Ai</div>
+        <div data-depth="0.35" class="project-rectangle"></div>
+        <div data-depth="0.6" class="project-dots"></div>
+        <div data-depth="0.2" class="project-question">How might we make better product recommendations?</div>
+        <div data-depth="0.1" class="project-image-container offset">
+          <img class="project-image" src="images/meai.png"/>
+        </div>
+        <a data-depth="0.6" class="button project-button animated wobble delay-5s" href="project.html"> Launch Project </a>
+      </div>
+
+      <div class="project-card" id="project3">
+        <div data-depth="0.6" class="project-title">F&P</div>
+        <div data-depth="0.4" class="project-rectangle"></div>
+        <div data-depth="0.35" class="project-dots"></div>
+        <div data-depth="0.4" class="project-question">How might we enable true perspectives of local citizens be heard in times of global crisis?</div>
+        <div data-depth="0.1" class="project-image-container offset">
+          <img class="project-image" src="images/fandp.png"/>
+        </div>
+        <a data-depth="0.1" class="button project-button animated wobble delay-5s" href="project.html"> Launch Project </a>
+      </div>
+
+    </div>
+
+
+    <script>
+      var projects = document.getElementsByClassName('project-card');
+      for (var i = 0; i < projects.length; i++){
+        var parallaxInstance = new Parallax(projects[i]);
+        console.log(projects[i]);
+      }
+    </script>
+
+    <div id="footer" style="position:absolute;">
+      <div class="bottom-button animated fadeInUp delay-1s">No &#x1F6AC; onboard</div>
+      <a class="bottom-button" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">anandx@stanford.edu</div></a>
+      <div class="bottom-button bottom-button-large animated fadeInUp delay-1s">Made with &#x23F3; in California</div>
+      <a class="bottom-button" target="_blank" href="https://www.github.com/anandupender"><div class="animated fadeInUp delay-1s">Github</div></a>
+      <a class="bottom-button" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="animated fadeInUp delay-1s">Linkedin</div></a>
+    </div>
+
+    <div class="background-title"> Work </div>
+    <script>
+      document.getElementById("work").style.setProperty("text-decoration", "line-through");
+    </script>
+
+    <script>
+      function responsiveMenu() {
+          var x = document.getElementById("nav");
+          if (x.className === "topNav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topNav";
+          }
+      }
+    </script>
+
+  </body>
+</html>
