@@ -587,6 +587,7 @@ button:hover .left:after, button:hover .top:after, button:hover .bottom:after, b
   .topNav span {display: none;}
   .topNav .name{
     display: inline-block;
+    margin-left: -10px;
   }
   .topNav a.icon {
     float: right;
