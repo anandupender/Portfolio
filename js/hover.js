@@ -13,6 +13,9 @@ function onHover(){
 
 	var remove = document.getElementById('footer');
 	remove.style.display = "none";
+
+	var header = document.getElementById('nav');
+	header.style.zIndex = 0;
 }
 
 function offHover(){
@@ -33,4 +36,7 @@ function offHover(){
 
 	var remove = document.getElementById('footer');
 	remove.style.display = "flex";
+
+	var header = document.getElementById('nav');
+	header.style.zIndex = 6;
 }

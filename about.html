@@ -10,39 +10,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/hover.js"></script>
   </head>
-  <body style="overflow-y: scroll; height:auto;">
+  <body style="overflow-y: scroll; position:relative;">
 
     <div class ="topNav" id="nav">
     </div>
 
-    <div id="background">
+    <div id="background"></div>
 
-      <div id="manifesto-container">
-        <div id = "profile-container">
-          <img src = "images/anandround.png" id = "profile-image" onmouseover="onHover();" onmouseout="offHover();">
-          <div id = "overlay-text" onmouseover="onHover();" onmouseout="offHover();">
-            <h2>lights off...</h2>
-          </div>
+    <div id="manifesto-container">
+      <div id = "profile-container">
+        <img src = "images/anandround.png" id = "profile-image" onmouseover="onHover();" onmouseout="offHover();">
+        <div id = "overlay-text" onmouseover="onHover();" onmouseout="offHover();">
         </div>
-        <div class="manifesto">
-          Hi there! My name is <b>Anand</b>. I'm a designer, tinkerer, and aspiring chef based in Stanford, CA. I believe in vibrant communities and am a sucker for <b>old fashioned malt milkshakes</b>. </br></br>
-          I'm a senior at Stanford and excited for what the future holds. I spent two amazing summers working with the design nerds at <b>IDEO CoLab</b>, then worked on a storytelling feature for the elderly at <b>Facebook</b>. In between I worked at a YC-backed sous vide hardware company called <b>Cinder</b>.</br></br>
-          At Stanford, I lead a team of students to conduct unconventional automobile research with the <b>Ford Innovation Center</b>, I manage the <b>Stanford Robotics Club</b> as their president, and I play trumpet in a quirky, <b>democratic chamber orchestra</b>.</br></br>
-          In my free time I make minimalist wallets and mess around with <b>Arduinos</b>. In 2015, I created and curated a <b>TEDx</b> in my hometown that is still running today. Experimental cooking is pretty cool.</br></br>
-        </div>
-        <!-- <div class="manifesto">
-          At Stanford, I lead a team of students to conduct unconventional automobile research with the <b>Ford Innovation Center</b>, I manage the <b>Stanford Robotics Club</b> as their president, and I play trumpet in a quirky, <b>democratic chamber orchestra</b>.</br></br>
-          In my free time I make minimalist wallets and mess around with <b>Arduinos</b>. In 2015, I created and curated a <b>TEDx</b> in my hometown that is still running today. Experimental cooking is pretty cool.</br></br>
-        </div> -->
       </div>
+      <div class="manifesto">
+        <h2>Hi there! My name is <b>Anand</b>.</h2>I'm a designer, tinkerer, and aspiring chef based in Stanford, CA. I believe in vibrant communities and am a sucker for <b>old fashioned malt milkshakes</b>. </br></br>
+        I'm a senior at Stanford and excited for what the future holds. I spent two amazing summers working with the design nerds at <b>IDEO CoLab</b>, then worked on a storytelling feature for the elderly at <b>Facebook</b>. In between I worked at a YC-backed sous vide hardware company called <b>Cinder</b>.</br></br>
+        At Stanford, I lead a team of students to conduct unconventional automobile research with the <b>Ford Innovation Center</b>, I manage the <b>Stanford Robotics Club</b> as their president, and I play trumpet in a quirky, <b>democratic chamber orchestra</b>.</br></br>
+        In my free time I make minimalist wallets and mess around with <b>Arduinos</b>. In 2015, I created and curated a <b>TEDx</b> in my hometown that is still running today. Experimental cooking is pretty cool.</br></br>
+      </div>
+      <!-- <div class="manifesto">
+        At Stanford, I lead a team of students to conduct unconventional automobile research with the <b>Ford Innovation Center</b>, I manage the <b>Stanford Robotics Club</b> as their president, and I play trumpet in a quirky, <b>democratic chamber orchestra</b>.</br></br>
+        In my free time I make minimalist wallets and mess around with <b>Arduinos</b>. In 2015, I created and curated a <b>TEDx</b> in my hometown that is still running today. Experimental cooking is pretty cool.</br></br>
+      </div> -->
     </div>
 
-    <div id="footer">
+    <div id="footer" style="position:absolute;">
     </div>
 
     <script type="text/javascript" src="js/headerfooter.js"></script>
 
-    <div class="background-title"> About </div>
+    <h1 class="rellax background-title" data-rellax-speed="-6" data-rellax-zindex="1">About</h1>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="js/rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+
     <script>
       document.getElementById("about").style.setProperty("text-decoration", "line-through");
     </script>

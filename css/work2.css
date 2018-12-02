@@ -1,0 +1,81 @@
+#all-project-cards{
+  margin-top: 150px;
+}
+
+.project-card{
+  margin-bottom:200px;
+  display: flex;
+}
+
+.project-title{
+  text-decoration: underline;
+  text-decoration-color: red;
+  font-size: 72px;
+  margin-top: 30%;
+}
+
+.project-background-2{
+  display: flex !important;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute !important;
+  transform: rotateZ(-6deg) !important;
+  background-color: #EEE;
+  width:100%;
+  height:110%;
+  margin-left: 10%;
+}
+.project-image-container{
+  margin-top: 10%;
+}
+
+.project-image{
+  border: 3px solid white;
+}
+
+.project-question-2{
+  position: absolute;
+  bottom: -2.5em;
+  margin-top: 78%;
+  font-size: 24px;
+  text-align: right;
+  width:80%;
+}
+
+.extended{
+  bottom: -3.5em;
+}
+
+.project-button-2{
+  position: absolute;
+  transform: rotateZ(90deg) !important;
+  font-size: 18px;
+  text-align: center;
+  right:-90px
+}
+
+@media screen and (max-width: 600px) {
+  .project-background-2{
+    width:130%;
+    height:115%;
+    margin-left: -10%;
+  }
+  .project-title{
+    font-size: 48px;
+    margin-left: -15%;
+  }
+  .project-image-container{
+    height: 90% !important;
+    margin-left:20px !important;
+  }
+  .project-image{
+    max-width:100% !important;
+  }
+  .project-question-2{
+    font-size: 22px;
+    width: 100%;
+  }
+  .extended{
+    bottom: -4.7em;
+  }
+}

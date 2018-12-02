@@ -7,71 +7,88 @@
     <link href="https://fonts.googleapis.com/css?family=Karla|Share+Tech+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/work2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
   <body style="height: auto; overflow-y: scroll;">
 
+    <script>
+      var currProjectNum = 0;
+      var data = ["Malt", "Project 2", "Project 3", "Project 4"];
+      function moveLeft(){
+        if(currProjectNum == 0){
+          currProjectNum = data.length - 1;
+        }else{
+          currProjectNum--;
+        }
+        document.getElementById("project-title").innerHTML = data[currProjectNum];
+      }
+      function moveRight(){
+        if(currProjectNum == data.length - 1){
+          currProjectNum = 0;
+        }else{
+          currProjectNum++;
+        }
+        document.getElementById("project-title").innerHTML = data[currProjectNum];
+      }
+    </script>
+
     <div class ="topNav" id="nav"></div>
+
+    <!-- <div class="arrow-buttons-container">
+      <button class="arrow-buttons" onclick="moveLeft()">
+        <span class="left"></span>
+      </button>
+      <button class="arrow-buttons" onclick="moveRight()">
+        <span class="right"></span>
+      </button>
+    </div> -->
 
     <div class="button scroll-button"> scroll... <br/> &#x2193;</div>
 
     <div id="all-project-cards">
       <div class="project-card" id="project1">
-        <div class="project-background-2">
-          <div data-depth="0.6" class="project-question-2">How might we bring the joy of milkshakes, anywhere?</div>
-        </div>
-        <div class="project-background-2" style="background-color:none;">
-          <a data-depth="0.2" class="project-button-2" href="malt.html">&#x2191; <br/>	Launch Project </a>
-        </div>
         <div data-depth="0.25" class="project-title">Malt</div>
-        <div data-depth="0.7" class="project-image-container offset">
+        <div data-depth="0.25" class="project-rectangle"></div>
+        <div data-depth="0.4" class="project-dots"></div>
+        <div data-depth="0.6" class="project-question">How might we bring the joy of milkshakes, anywhere?</div>
+        <div data-depth="0.3" class="project-image-container offset">
           <img class="project-image" src="images/test.jpg"/>
         </div>
+        <a data-depth="0.1" class="button project-button" href="malt.html"> Launch Project </a>
       </div>
 
       <div class="project-card" id="project2">
-        <div class="project-background-2">
-          <div data-depth="0.6" class="project-question-2">How might we make better product recommendations?</div>
-        </div>
-        <div class="project-background-2" style="background-color:none;">
-          <a data-depth="0.1" class="project-button-2" href="malt.html">&#x2191; <br/>	Launch Project </a>
-        </div>
         <div data-depth="0.1" class="project-title">Me.Ai</div>
+        <div data-depth="0.1" class="project-rectangle"></div>
+        <div data-depth="0.6" class="project-dots"></div>
+        <div data-depth="0.2" class="project-question">How might we make better product recommendations?</div>
         <div data-depth="0.1" class="project-image-container offset">
           <img class="project-image" src="images/meai/meai.png"/>
         </div>
+        <a data-depth="0.6" class="button project-button" href="meai.html"> Launch Project </a>
       </div>
 
       <div class="project-card" id="project3">
-        <div class="project-background-2">
-          <div data-depth="0.6" class="project-question-2 extended">How might we enable true perspectives of local citizens be heard in times of global crisis?</div>
-        </div>
-        <div class="project-background-2" style="background-color:none;">
-          <a data-depth="0.1" class="project-button-2" href="malt.html">&#x2191; <br/>	Launch Project </a>
-        </div>
         <div data-depth="0.6" class="project-title">F&P</div>
+        <div data-depth="0.6" class="project-rectangle"></div>
+        <div data-depth="0.35" class="project-dots"></div>
+        <div data-depth="0.4" class="project-question">How might we enable true perspectives of local citizens be heard in times of global crisis?</div>
         <div data-depth="0.1" class="project-image-container offset">
           <img class="project-image" src="images/fandp.png"/>
         </div>
+        <a data-depth="0.1" class="button project-button" href="fandp.html"> Launch Project </a>
       </div>
 
     </div>
 
     <script>
-
       var projects = document.getElementsByClassName('project-card');
       for (var i = 0; i < projects.length; i++){
         var parallaxInstance = new Parallax(projects[i]);
+        console.log(projects[i]);
       }
-
-      var titles = document.getElementsByClassName("project-title");
-      for (var i = 0; i < titles.length; i++){
-        titles[i].style.transform = titles[i].style.transform + " rotateZ(6deg)";
-      }
-
     </script>
 
     <div id="footer" style="position:absolute;"></div>

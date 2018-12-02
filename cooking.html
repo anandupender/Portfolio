@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Upender</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla|Share+Tech+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body style="overflow-y: scroll;">
+
+    <script>
+      var currProjectNum = 0;
+      var data = ["Malt", "Project 2", "Project 3", "Project 4"];
+      function moveLeft(){
+        if(currProjectNum == 0){
+          currProjectNum = data.length - 1;
+        }else{
+          currProjectNum--;
+        }
+        document.getElementById("project-title").innerHTML = data[currProjectNum];
+      }
+      function moveRight(){
+        if(currProjectNum == data.length - 1){
+          currProjectNum = 0;
+        }else{
+          currProjectNum++;
+        }
+        document.getElementById("project-title").innerHTML = data[currProjectNum];
+      }
+    </script>
+
+    <div class ="topNav" id="nav"></div>
+
+
+    <div id="footer" style="position:absolute;"></div>
+
+    <script type="text/javascript" src="js/headerfooter.js"></script>
+
+    <div class="background-title"> Work </div>
+    <script>
+      document.getElementById("work").style.setProperty("text-decoration", "line-through");
+    </script>
+
+    <script>
+      function responsiveMenu() {
+          var x = document.getElementById("nav");
+          if (x.className === "topNav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topNav";
+          }
+      }
+    </script>
+
+  </body>
+</html>
