@@ -169,6 +169,8 @@ button:focus {outline:0;}
 @media screen and (max-width: 600px) {
   .bottom-button{
     font-size: 12px !important;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .bottom-button-large{
     font-size: 12px !important;
@@ -324,6 +326,12 @@ button:focus {outline:0;}
 .main-hello{
   margin-top:12vh;
   width:80%;
+}
+
+@media screen and (max-width: 600px) {
+  .main-hello{
+    margin-top:7vh;
+  }
 }
 
 /* ----------------------------------------------
