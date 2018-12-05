@@ -26,8 +26,10 @@
         <div class="project-background-2" style="background-color:none;">
           <a data-depth="0.2" class="project-button-2" href="malt.html">&#x2191; <br/>	Launch Project </a>
         </div>
-        <div data-depth="0.25" class="project-title">Malt</div>
-        <div data-depth="0.7" class="project-image-container offset">
+        <div class="project-title-container"  data-depth="0.25">
+          <div class="project-title">Malt</div>
+        </div>
+        <div data-depth="0.6" class="project-image-container offset">
           <img class="project-image" src="images/test.jpg"/>
         </div>
       </div>
@@ -39,8 +41,10 @@
         <div class="project-background-2" style="background-color:none;">
           <a data-depth="0.1" class="project-button-2" href="malt.html">&#x2191; <br/>	Launch Project </a>
         </div>
-        <div data-depth="0.1" class="project-title">Me.Ai</div>
-        <div data-depth="0.1" class="project-image-container offset">
+        <div class="project-title-container"  data-depth="0.4">
+          <div class="project-title">ME.AI</div>
+        </div>
+        <div data-depth="0.7" class="project-image-container offset">
           <img class="project-image" src="images/meai/meai.png"/>
         </div>
       </div>
@@ -52,7 +56,9 @@
         <div class="project-background-2" style="background-color:none;">
           <a data-depth="0.1" class="project-button-2" href="malt.html">&#x2191; <br/>	Launch Project </a>
         </div>
-        <div data-depth="0.6" class="project-title">F&P</div>
+        <div class="project-title-container"  data-depth="0.6">
+          <div class="project-title">F&P</div>
+        </div>
         <div data-depth="0.1" class="project-image-container offset">
           <img class="project-image" src="images/fandp.png"/>
         </div>
@@ -65,11 +71,6 @@
       var projects = document.getElementsByClassName('project-card');
       for (var i = 0; i < projects.length; i++){
         var parallaxInstance = new Parallax(projects[i]);
-      }
-
-      var titles = document.getElementsByClassName("project-title");
-      for (var i = 0; i < titles.length; i++){
-        titles[i].style.transform = titles[i].style.transform + " rotateZ(6deg)";
       }
 
     </script>

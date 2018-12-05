@@ -51,7 +51,8 @@
   transform: rotateZ(90deg) !important;
   font-size: 18px;
   text-align: center;
-  right:-90px
+  right:-90px;
+  transition: .25s ease;
 }
 
 @media screen and (max-width: 600px) {

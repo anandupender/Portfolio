@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Karla|Share+Tech+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/work2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/matter.js" type="text/javascript"></script>
   </head>
@@ -16,12 +18,28 @@
     <div class ="topNav" id="nav">
     </div>
 
-    <div class="main-hello">
-      <!-- <div class="slide-rotate-hor-b-fwd card"><h1>Projects</h1></div> -->
-      <h1 class="animated fadeInDown delay-1s">Hi! I'm Anand.</h1>
-      <h1 class="animated fadeInDown delay-1s">I design, code, and lead teams at Stanford.</h1>
-      <h4 class="animated fadeInDown delay-1s" style="font-family: 'Share Tech Mono', monospace; font-weight:400">Currently seeking <span class="color-change">full-time roles</span>, previously at Facebook and IDEO CoLab.</h4>
-      <a href="work.html"><div class="home-buttons animated fadeIn delay-2s">Check out my work &#x2192;</div></a>
+    <div class="index-container">
+      <div class="main-hello">
+        <!-- <div class="slide-rotate-hor-b-fwd card"><h1>Projects</h1></div> -->
+        <h1 class="animated fadeInDown delay-1s">Hi! I'm Anand.</h1>
+        <h1 class="animated fadeInDown delay-1s">I design, code, and lead teams at Stanford.</h1>
+        <h4 class="animated fadeInDown delay-1s" style="font-family: 'Share Tech Mono', monospace; font-weight:400">Currently seeking <span class="color-change">full-time roles</span>, previously at Facebook and IDEO CoLab.</h4>
+        <a href="work.html"><div class="home-buttons animated fadeIn delay-2s">Check out my work &#x2192;</div></a>
+      </div>
+
+      <!-- <div class="project-card" id="test2">
+        <div class="project-background-2">
+          <div data-depth="0.6" class="project-question-2">How might we bring the joy of milkshakes, anywhere?</div>
+        </div>
+        <div class="project-background-2" style="background-color:none;">
+          <a data-depth="0.2" class="project-button-2" href="malt.html">&#x2191; <br/>	Launch Project </a>
+        </div>
+        <div data-depth="0.25" class="project-title">Malt</div>
+        <div data-depth="0.7" class="project-image-container offset">
+          <img class="project-image" src="images/test.jpg"/>
+        </div>
+      </div> -->
+
     </div>
 
     <div id="footer">
@@ -38,6 +56,13 @@
               x.className = "topNav";
           }
       }
+    </script>
+
+    <script>
+
+      var project = document.getElementById('test2');
+      var parallaxInstance = new Parallax(project);
+
     </script>
 
     <!-- MATTER.JS -->

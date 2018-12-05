@@ -136,6 +136,7 @@ button:focus {outline:0;}
   margin-right: 30px;
   font-size: 22px;
   font-weight: 700;
+  transition: .25s ease;
 }
 
 .name{
@@ -210,11 +211,17 @@ button:focus {outline:0;}
   margin-bottom:120px;
 }
 
-.project-title{
-  font-size: 56px;
+.project-title-container{
+  margin-top: 20%;
   margin-left:10%;
   z-index:3;
+}
+
+.project-title{
+  font-size: 56px;
   font-weight: 700;
+  transform:rotate(6deg);
+  text-shadow: 2px 2px #fff;
 }
 
 .project-rectangle{
@@ -322,15 +329,61 @@ button:focus {outline:0;}
   }
 }
 
+.index-container{
+  display: flex;
+  flex-direction: row;
+  width:80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-card{
+  flex:3;
+  margin:0px !important;
+}
+
+.index-background{
+  /* width:150% !important; */
+  height:110%;
+}
+
+.index-image-container{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  z-index:1;
+  position:absolute !important;
+}
+
+.index-image{
+  max-width:90%;
+}
+
+.index-left{
+left:0px;
+}
+.index-middle{
+bottom:0px;
+}
+.index-right{
+  right:0px;
+}
+
+.offset{
+  margin-left: 25%;
+}
 
 .main-hello{
+  flex:4;
   margin-top:12vh;
   width:80%;
 }
 
 @media screen and (max-width: 600px) {
   .main-hello{
-    margin-top:7vh;
+    margin-top:5vh;
   }
 }
 
