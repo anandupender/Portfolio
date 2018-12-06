@@ -344,6 +344,7 @@ button:focus {outline:0;}
   justify-content: center;
   z-index:1;
   margin-left: 25%;
+  filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.3))
 }
 
 .offset{
