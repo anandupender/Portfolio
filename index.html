@@ -27,6 +27,12 @@
         <a href="work.html"><div class="home-buttons animated fadeIn delay-2s">Check out my work &#x2192;</div></a>
       </div>
 
+      <div class="index-image-container" id="image1">
+        <div class="diagonal-container" id="image2" data-depth="0.4">
+          <img data-depth="0.5" class="index-image" src="images/headshot.jpg"/>
+        </div>
+      </div>
+
       <!-- <div class="project-card" id="test2">
         <div class="project-background-2">
           <div data-depth="0.6" class="project-question-2">How might we bring the joy of milkshakes, anywhere?</div>
@@ -60,8 +66,11 @@
 
     <script>
 
-      var project = document.getElementById('test2');
+      var project = document.getElementById('image1');
       var parallaxInstance = new Parallax(project);
+
+      var project2 = document.getElementById('image2');
+      var parallaxInstance = new Parallax(project2);
 
     </script>
 
