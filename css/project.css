@@ -35,7 +35,7 @@ p, li{
   left:0;
   top:30vh;
   font-size: 64px;
-  background-color: red;
+  background-color: #FF7373;
   padding:10px 20px 10px 20px ;
   color:white;
   margin-left:0;
@@ -76,6 +76,17 @@ p, li{
   width:100%;
 }
 
+.food-container{
+  width:80%;
+  margin-top:130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom:70px;
+  z-index:1;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -85,13 +96,13 @@ p, li{
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
-  max-width: 25%;
   padding: 0 4px;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+  width:100%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

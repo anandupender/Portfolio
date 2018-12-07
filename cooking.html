@@ -7,43 +7,70 @@
     <link href="https://fonts.googleapis.com/css?family=Karla|Share+Tech+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/work2.css">
+    <link rel="stylesheet" href="css/project.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
-  <body style="overflow-y: scroll;">
-
-    <script>
-      var currProjectNum = 0;
-      var data = ["Malt", "Project 2", "Project 3", "Project 4"];
-      function moveLeft(){
-        if(currProjectNum == 0){
-          currProjectNum = data.length - 1;
-        }else{
-          currProjectNum--;
-        }
-        document.getElementById("project-title").innerHTML = data[currProjectNum];
-      }
-      function moveRight(){
-        if(currProjectNum == data.length - 1){
-          currProjectNum = 0;
-        }else{
-          currProjectNum++;
-        }
-        document.getElementById("project-title").innerHTML = data[currProjectNum];
-      }
-    </script>
+  <body style="height: auto; overflow-y: scroll;">
 
     <div class ="topNav" id="nav"></div>
 
+    <div class="food-container">
+      <h1> Food Adventures</h1>
+      <div class="row">
+        <div class="column">
+          <img src="images/food/1.jpg">
+          <img src="images/food/2.jpg">
+          <img src="images/food/11.jpg">
+          <img src="images/food/12.jpg">
+        </div>
+        <div class="column">
+          <img src="images/food/3.jpg">
+          <img src="images/food/5.jpg">
+          <img src="images/food/8.jpg">
+          <img src="images/food/10.jpg">
+          <img src="images/food/14.jpg">
+        </div>
+        <div class="column">
+          <img src="images/food/4.jpg">
+          <img src="images/food/6.jpg">
+          <img src="images/food/7.jpg">
+          <img src="images/food/13.jpg">
+        </div>
 
-    <div id="footer" style="position:absolute;"></div>
+      </div>
+    </div>
+    <script>
+
+      var projects = document.getElementsByClassName('project-card');
+      for (var i = 0; i < projects.length; i++){
+        var parallaxInstance = new Parallax(projects[i]);
+      }
+
+    </script>
+
+    <!-- <div id="footer" style="position:absolute;"></div> -->
+    <div id="footer"></div>
 
     <script type="text/javascript" src="js/headerfooter.js"></script>
 
-    <div class="background-title"> Work </div>
+    <h1 class="rellax background-title" data-rellax-speed="-6" >Cooking</h1>
+
+    <script type="text/javascript" src="js/rellax.js"></script>
+
     <script>
-      document.getElementById("work").style.setProperty("text-decoration", "line-through");
+    	var rellax = new Rellax('.rellax', {
+
+        callback: function(position) {
+            console.log(position);
+        }
+      });
+    </script>
+
+    <script>
+      document.getElementById("cooking").style.setProperty("text-decoration", "line-through");
     </script>
 
     <script>
