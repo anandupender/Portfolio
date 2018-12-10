@@ -568,13 +568,14 @@ button:focus {outline:0;}
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topNav.responsive {position: relative;}
+  #menu{ margin-top: 100px; margin-right: 80px;}
   .topNav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
   .topNav.responsive a{
-    float: none;
+    float:none;
     display: block;
     text-align: left;
     background-color: white;

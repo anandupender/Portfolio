@@ -10,9 +10,9 @@ nav.innerHTML = `
     <a href="work.html">
       <h1 class="menu-buttons" id="work">Work</h1>
     </a>
-    <!-- <a href="experiments.html">
+    <a href="experiments.html">
       <h1 class="menu-buttons" id="experiments">Experiments</h1>
-    </a> -->
+    </a>
     <a href="cooking.html">
       <h1 class="menu-buttons" id="cooking">Cooking</h1>
     </a>

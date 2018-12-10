@@ -49,9 +49,9 @@
 .project-button-2{
   position: absolute;
   transform: rotateZ(90deg) !important;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
-  right:-90px;
+  right:-115px;
   transition: .25s ease;
 }
 

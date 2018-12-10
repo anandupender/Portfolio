@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/experiments.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -16,36 +17,142 @@
     </div>
 
     <div id="all-experiments">
-      <!-- <div class="category">
-        Digital
-      </div> -->
-      <div class="experiment-container">
-        <h2 class="experiment-question">This is a question</h2>
-        <div class="experiment-image-container">
-          <img class="experiment-image" src="images/test.jpg"/>
+
+      <div class="experiment-card" id="project1">
+        <div class="experiment-spacer">
+          <div class="experiment-title">
+            Computer Music XPs
+          </div>
+          <div class="experiment-info">
+            Working with Ge Wang to create interactive, audio-visual experiences that speak to you.
+          </div>
+        </div>
+        <div class="experiment-background">
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/music1.png"/>
+          </div>
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/music2.png"/>
+          </div>
         </div>
       </div>
-      <div class="experiment-container">
-        <h2>This is a question</h2>
-        <!-- <div class="experiment-image"><img src="images/test.jpg"/></div> -->
+
+      <div class="experiment-card" id="project1">
+        <div class="experiment-spacer">
+          <div class="experiment-title">
+            Bose Design Challenge
+          </div>
+          <div class="experiment-info">
+            An Education & Sound makeathon held at Stanford CCRMA - First Place
+          </div>
+        </div>
+        <div class="experiment-background">
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/bose1.png"/>
+          </div>
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/bose2.png"/>
+          </div>
+        </div>
       </div>
-      <div class="experiment-container">
-        <h2>This is a question</h2>
-        <!-- <div class="experiment-image"><img src="images/test.jpg"/></div> -->
+
+      <div class="experiment-card" id="project1">
+        <div class="experiment-spacer">
+          <div class="experiment-title">
+            Brand Guidelines
+          </div>
+          <div class="experiment-info">
+            Giving a fresh look to the largest entrepreneurship group on Stanford's campus (used by over 80 officers)
+          </div>
+        </div>
+        <div class="experiment-background">
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/bases1.png"/>
+          </div>
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/bases2.png"/>
+          </div>
+        </div>
       </div>
-      <div class="experiment-container">
-        <h2>This is a question</h2>
-        <!-- <div class="experiment-image"><img src="images/test.jpg"/></div> -->
+
+      <div class="experiment-card" id="project1">
+        <div class="experiment-spacer">
+          <div class="experiment-title">
+            Shun-Inspired Flashlight
+          </div>
+          <div class="experiment-info">
+            Creating a flashlight inspired by the brand of the over 100 year-old Japanese Chef Knife company, Shun.
+          </div>
+        </div>
+        <div class="experiment-background">
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/shun1.png"/>
+          </div>
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/shun2.png"/>
+          </div>
+        </div>
       </div>
+
+      <div class="experiment-card" id="project1">
+        <div class="experiment-spacer">
+          <div class="experiment-title">
+            LED Fountain
+          </div>
+          <div class="experiment-info">
+            Recreating the joy of jumping in a fountain, in a drought.
+          </div>
+        </div>
+        <div class="experiment-background">
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/led1.png"/>
+          </div>
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/led2.png"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiment-card" id="project1">
+        <div class="experiment-spacer">
+          <div class="experiment-title">
+            Piqo Wallets
+          </div>
+          <div class="experiment-info">
+            An exploration into minimalist wallets.
+          </div>
+        </div>
+        <div class="experiment-background">
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/piqo1.png"/>
+          </div>
+          <div class="experiment-image-container">
+            <img class="experiment-image" src="images/experiments/piqo2.png"/>
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
     <div id="footer"></div>
 
     <script type="text/javascript" src="js/headerfooter.js"></script>
 
-    <div class="background-title"> Experiments </div>
+    <div class="rellax background-title" data-rellax-speed="-6" style="opacity:.5;"> Experiments </div>
+
     <script>
       document.getElementById("experiments").style.setProperty("text-decoration", "line-through");
+    </script>
+
+    <script type="text/javascript" src="js/rellax.js"></script>
+    <script>
+      var rellax = new Rellax('.rellax', {
+
+        callback: function(position) {
+            console.log(position);
+        }
+      });
     </script>
 
     <script>

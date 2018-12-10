@@ -8,46 +8,72 @@ h2{
 }
 
 #all-experiments{
-  width:80%;
+  width:85%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top:120px;
-  margin-bottom:200px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top:150px;
+  z-index:1;
+}
+
+.experiment-card{
+  flex:1;
+  display: flex;
+  height:300px;
+  margin-bottom:100px;
+}
+
+.experiment-spacer{
+  flex:1;
+}
+
+.experiment-background{
+  box-shadow: 2px 2px 10px #66666644;
+  flex:7;
+  background-color: #EEE;
+}
+
+.experiment-title{
+  text-decoration: underline;
+  text-decoration-color: #FF7373;
+  font-size: 48px;
+  transform: rotate(4deg);
+  position: absolute;
+  margin-top: 60px;
+  width:35%;
+  font-weight: 700;
+  text-shadow: 2px 2px #fff;
+}
+
+.experiment-info{
+  position: absolute;
+  margin-top: 200px;
+  width:35%;
+}
+
+.experiment-image-container{
+  height:300px;
+  width:350px;
+  overflow:hidden;
+  float: right;
+}
+
+
+.experiment-image{
+  height:250px;
+  margin-top:25px;
+  float: right;
+  margin-right:25px;
+}
+
+@media screen and (max-width: 950px) {
+  .experiment-card{
+    height:600px;
+  }
+  .experiment-image{
+    margin:15px;
+  }
 }
 
 #footer{
   position:absolute;
-}
-
-.experiment-container{
-  position: relative;
-  margin:20px;
-  height: 200px;
-  width:300px;
-  border: 2px solid black;
-}
-
-.experiment-question{
-  position: absolute;
-  left:0px;
-  z-index:1;
-}
-
-.experiment-image-container{
-  position: absolute;
-  flex:1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width:100%;
-  height: 200px;
-  z-index:0;
-  overflow: hidden;
-}
-
-.experiment-image{
-  max-width:100%;
-  object-fit:cover;
 }
