@@ -1,10 +1,26 @@
 #all-project-cards{
   margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom:120px;
+  z-index:1;
 }
 
 .project-card{
-  margin-bottom:200px;
   display: flex;
+  margin-right:10%; /* fix centering */
+  width:50%;
+  height:60%;
+  position: relative;
+  margin-bottom:200px;
+}
+
+.project-title-container{
+  margin-top: 20%;
+  margin-left:10%;
+  z-index:3;
 }
 
 .project-title{
@@ -12,9 +28,12 @@
   text-decoration-color: #FF7373;
   font-size: 72px;
   margin-top: 30%;
+  font-weight: 700;
+  transform:rotate(6deg);
+  text-shadow: 2px 2px #fff;
 }
 
-.project-background-2{
+.project-background{
   display: flex !important;
   justify-content: flex-end;
   align-items: center;
@@ -25,15 +44,25 @@
   height:110%;
   margin-left: 10%;
 }
+
+
 .project-image-container{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 10%;
+  height: 90%;
+  z-index:1;
+  position:relative !important;
 }
 
 .project-image{
   border: 3px solid white;
+  max-width: 100%;
 }
 
-.project-question-2{
+.project-question{
   position: absolute;
   bottom: -2.5em;
   margin-top: 78%;
@@ -46,7 +75,7 @@
   bottom: -3.5em;
 }
 
-.project-button-2{
+.project-button{
   position: absolute;
   transform: rotateZ(90deg) !important;
   font-size: 24px;
@@ -55,15 +84,17 @@
   transition: .25s ease;
 }
 
+
 @media screen and (max-width: 600px) {
-  .project-background-2{
+  .project-card{
+    margin-right:12%; /* fix centering */
+    width:60%;
+    margin-bottom:130px;
+  }
+  .project-background{
     width:130%;
     height:115%;
     margin-left: -10%;
-  }
-  .project-title{
-    font-size: 48px;
-    margin-left: -15%;
   }
   .project-image-container{
     height: 90% !important;
@@ -72,11 +103,19 @@
   .project-image{
     max-width:100% !important;
   }
-  .project-question-2{
-    font-size: 22px;
-    width: 100%;
+  .project-title{
+    font-size: 48px;
+    margin-left: -30%;
   }
   .extended{
     bottom: -4.7em;
+  }
+  .project-question{
+    font-size: 20px;
+    width: 100%;
+  }
+  .project-button{
+    font-size: 20px;
+    right:-95px;
   }
 }

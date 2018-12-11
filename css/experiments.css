@@ -46,8 +46,12 @@ h2{
 
 .experiment-info{
   position: absolute;
-  margin-top: 200px;
+  margin-top: 190px;
   width:35%;
+  font-size: 20px;
+  background-color: white;
+  padding:15px;
+  box-shadow: 2px 2px 10px #66666644;
 }
 
 .experiment-image-container{
@@ -56,7 +60,6 @@ h2{
   overflow:hidden;
   float: right;
 }
-
 
 .experiment-image{
   height:250px;
@@ -68,9 +71,18 @@ h2{
 @media screen and (max-width: 950px) {
   .experiment-card{
     height:600px;
+    margin-top:120px;
   }
   .experiment-image{
     margin:15px;
+  }
+  .experiment-title{
+    margin-top: -130px;
+    width:60%;
+  }
+  .experiment-info{
+    margin-left: -20px;
+    margin-top:220px;
   }
 }
 
