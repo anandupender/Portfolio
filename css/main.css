@@ -50,6 +50,7 @@ a:hover{
   font-size:18px;
 }
 
+
 .rotate-container{
   transform: rotateZ(3deg);
 }
@@ -140,7 +141,11 @@ button:focus {outline:0;}
   .background-title{
     font-size:20vh;
     left:-10px;
+    top:20% !important;
     /* bottom:10%; */
+  }
+  .home-buttons{
+    font-size:18px;
   }
 }
 
@@ -379,6 +384,9 @@ button:focus {outline:0;}
   flex:4;
   margin:0px;
 }
+.cooking-bio-text-small{
+  font-weight: 400;
+}
 
 @media screen and (max-width: 600px) {
   .cooking-bio-container{
@@ -401,11 +409,9 @@ button:focus {outline:0;}
     display: block;
     color: #FF7373;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 28px;
-    margin:15px;
-    margin-top:30px;
+    margin:20px;
 }
 
 /* Change the color of links on hover */
