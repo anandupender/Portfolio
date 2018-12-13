@@ -2,6 +2,7 @@ body{
   /* font-family: 'Cardo', serif; */
   font-family: 'Karla', sans-serif;
   overflow: hidden;
+  overflow-x: hidden !important;
   position: absolute;
   width: 100%;
   max-width: 100%;
@@ -11,7 +12,6 @@ body{
   align-items: center;
   flex-direction: column;
   margin:0px;
-  overflow-x: hidden;
 }
 
 a, button{
@@ -196,6 +196,9 @@ button:focus {outline:0;}
   }
   .bottom-button-large{
     font-size: 12px !important;
+  }
+  #footer{
+    bottom:-15px;
   }
 }
 
@@ -412,6 +415,7 @@ button:focus {outline:0;}
     text-decoration: none;
     font-size: 28px;
     margin:20px;
+    padding:5px;
 }
 
 /* Change the color of links on hover */
@@ -431,7 +435,7 @@ button:focus {outline:0;}
   .topNav span {display: none;}
   .topNav .name{
     display: inline-block;
-    margin-left: -10px;
+    margin-left: -15px;
   }
   .topNav a.icon {
     float: right;
