@@ -434,11 +434,14 @@ button:focus {outline:0;}
   .topNav span {display: none;}
   .topNav .name{
     display: inline-block;
-    margin-left: -15px;
+    margin-left: -10px;
   }
   .topNav a.icon {
     float: right;
     display: block;
+  }
+  .menu-buttons{
+    font-size: 20px;
   }
 }
 
