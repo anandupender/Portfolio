@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- NOT DOING THIS RIGHT NOW - PEOPLE DON'T LIKE <script src="js/hover.js"></script> -->
   </head>
-  <body style="overflow-y: scroll; position:relative;">
+  <body>
+    <style>
+      @media screen and (max-width: 600px) {
+        body{ height: auto; overflow-y: scroll;}
+      }
+    </style>
 
     <div class ="topNav" id="nav">
     </div>

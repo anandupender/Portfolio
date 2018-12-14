@@ -281,9 +281,9 @@ button:focus {outline:0;}
     z-index:-1;
   }
   .index-image{
-    height:380px;
+    height:360px;
     max-width:150%;
-    opacity: .4;
+    opacity: .5;
   }
 }
 
@@ -354,13 +354,13 @@ button:focus {outline:0;}
     margin-top: 40px;
   }
   #profile-container{
-  	width:40vw;
-  	height: 40vw;
+  	width:60vw;
+  	height: 60vw;
   }
 
   #profile-image{
-  	width:40vw;
-  	height:40vw;
+  	width:60vw;
+  	height:60vw;
   }
 }
 
