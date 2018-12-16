@@ -92,7 +92,7 @@ var footer = document.getElementById("footer");
 footer.innerHTML = `
   <a class="bottom-button" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">Email</div></a>
   <a class="bottom-button" target="_blank" href="https://drive.google.com/file/d/1vM6shkculwaScg8uXhQqi_6Atj0RV6TX/view?usp=sharing"><div class="animated fadeInUp delay-1s">Resume</div></a>
-  <div class="bottom-button bottom-button-large animated fadeInUp delay-1s">Made from scratch with <a style="color:#FA7268;" href="https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2019" target="_blank">&#9829;</a></div>
+  <div class="bottom-button bottom-button-large animated fadeInUp delay-1s">Made from scratch with&nbsp;<a class="heart" href="https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2019" target="_blank">&#9829;</a></div>
   <a class="bottom-button" target="_blank" href="https://www.github.com/anandupender"><div class="animated fadeInUp delay-1s">Github</div></a>
   <a class="bottom-button" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="animated fadeInUp delay-1s">Linkedin</div></a>
 `
