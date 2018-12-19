@@ -8,26 +8,11 @@ var googleAnalytics =
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-130786913-1');
 </script>
 `
 
-var googleAnalytics2 = `
-<!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-130786913-1', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics -->
-`
-
-headContent.innerHTML = googleAnalytics + googleAnalytics2 + headContent.innerHTML;
+headContent.innerHTML = googleAnalytics + headContent.innerHTML;
 
 headContent.innerHTML += `
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
