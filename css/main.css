@@ -365,7 +365,7 @@ button:focus {outline:0;}
   }
   #manifesto-container{
     flex-direction: column;
-    margin-bottom:90px;
+    margin-bottom:110px;
   }
   .manifesto{
     margin-top: 40px;

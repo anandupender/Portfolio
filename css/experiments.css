@@ -104,6 +104,9 @@ h2{
     margin-top:150px;
     flex-direction: column;
   }
+  .experiment-image-container{
+    width:320px;
+  }
   .experiment-image{
     margin:15px;
   }
