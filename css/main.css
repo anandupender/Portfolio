@@ -381,46 +381,6 @@ button:focus {outline:0;}
   }
 }
 
-/* STYLING for Cooking.html */
-
-.cooking-bio-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items:center;
-  width:70%;
-  margin-top:130px;
-}
-
-.cooking-bio-image{
-  flex:2;
-  width:30%;
-  height:auto;
-  margin-right:50px;
-  margin-bottom:40px;
-  align-self: center;
-}
-
-.cooking-bio-text{
-  flex:4;
-  margin:0px;
-}
-.cooking-bio-text-small{
-  font-weight: 400;
-}
-
-@media screen and (max-width: 600px) {
-  .cooking-bio-container{
-    flex-direction: column;
-  }
-  .cooking-bio-image{
-    width: 80%;
-  }
-  .cooking-bio-text-small{
-    font-size: 18px;
-  }
-
-}
 
 
   /* STYLING for Hanburger Menu Changing */

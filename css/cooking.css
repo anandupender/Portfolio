@@ -1,0 +1,35 @@
+.definition{
+  border: 2px black solid;
+  height:20%;
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  width:60%;
+  margin-top:200px;;
+  margin-bottom:100px;
+  padding:30px;
+}
+
+.definition h1, h2, h3, h4, p{
+  margin:5px;
+}
+
+.food-project{
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom:70px;
+  z-index:1;
+  border-top:2px black solid;
+}
+
+.cooking-bio-text-small{
+  font-weight: 400;
+  margin-bottom:30px;
+}
+
+@media screen and (max-width: 600px) {
+
+}
