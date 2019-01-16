@@ -57,7 +57,7 @@ nav.innerHTML = `
       <h1 class="menu-buttons" id="experiments">Experiments</h1>
     </a>
     <a href="cooking.html">
-      <h1 class="menu-buttons" id="cooking">Cooking</h1>
+      <h1 class="menu-buttons" id="cooking">Food Design</h1>
     </a>
     <a href="about.html">
       <h1 class="menu-buttons" id="about">About</h1>

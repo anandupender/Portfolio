@@ -8,6 +8,15 @@
   margin-top:200px;;
   margin-bottom:100px;
   padding:30px;
+  animation-name: fade;
+  animation-duration: 7000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+0% { border-color: #DDD; }
+50% { border-color: #FA7268; }
+100% { border-color: #DDD; }
 }
 
 .definition h1, h2, h3, h4, p{
