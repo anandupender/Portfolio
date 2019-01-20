@@ -39,6 +39,19 @@
   margin-bottom:30px;
 }
 
-@media screen and (max-width: 600px) {
+.extra-image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
 
+.extra-images{
+  width:35%;
+}
+
+@media screen and (max-width: 600px) {
+  .extra-images{
+    width:100%;
+  }
 }
