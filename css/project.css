@@ -120,6 +120,10 @@ p, li{
     flex: 100%;
     max-width: 100%;
   }
+  .project-title{
+    font-size: 36px;
+    top:20vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
