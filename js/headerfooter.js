@@ -47,7 +47,7 @@ nav.innerHTML = `
     <a class="name" href="index.html">
       <h1 class="menu-buttons name animated fadeInDown">Anand Upender</h1>
     </a>
-    <span id="logo-subtitle">futures designer + prototyper</span>
+    <span id="logo-subtitle">ux designer + prototyper</span>
   </div>
   <div id="menu">
     <a href="work.html">
