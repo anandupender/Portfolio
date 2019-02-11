@@ -260,6 +260,11 @@ button:focus {outline:0;}
   filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.3));
 }
 
+.index-image-container:hover{
+  transition: .8s ease-in-out;
+  transform: scale(1.1) !important;
+}
+
 .index-image{
   max-width:80%;
   background-color: #FA7268;
