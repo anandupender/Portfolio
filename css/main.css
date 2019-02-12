@@ -162,7 +162,10 @@ button:focus {outline:0;}
   }
   .home-buttons{
     font-size:18px;
+    margin-top: 0px !important;
   }
+  #nav{
+  height: 75px;}
 }
 
 .menu-buttons{
