@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Anand Upender</title>
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Karla|Share+Tech+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/work.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="js/matter.js" type="text/javascript"></script>
+  </head>
+  <body style="overflow-y:scroll;height:auto;">
+
+    <div class ="topNav" id="nav">
+    </div>
+
+    <div class="index-container-new">
+      <div class="main-hello">
+        <div class="rotate-container">
+          <h1 class="h1-large animated fadeInDown delay-1s">Hi! I'm Anand.</h1>
+        </div>
+        <h1 class="animated fadeInDown delay-1s">I build interactive demos, tackle hairy problems with large corporations, and blast my trumpet in Stanford, CA.</h1>
+        <h4 class="animated fadeInDown delay-1s" style="font-family: 'Share Tech Mono', monospace; font-weight:400">Currently seeking <span class="color-change">full-time roles</span>, previously at Facebook and IDEO CoLab.</h4>
+      </div>
+
+      <div class="index-image-container animated fadeIn delay-2s" id="diagonal-box">
+        <div class="diagonal-container" id="diagonal" data-depth="0.4">
+          <!-- <img data-depth="0.5" class="index-image" src="images/headshot.jpg"/> -->
+          <img data-depth="0.5" class="index-image" src="images/headshot2.jpg"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-bar animated fadeIn delay-3s">See Work </br>&#8595;</div>
+
+    <div id="all-project-cards" style="margin-top:0px;">
+      <div class="project-card" id="project1" data-aos="fade-in">
+        <div class="project-background">
+          <div data-depth="0.6" class="project-question">How might we bring the joy of milkshakes, anywhere?</div>
+        </div>
+        <div class="project-background" style="background-color:none;">
+          <a data-depth="0.2" class="project-button" href="malt.html">&#x2191; <br/>	Launch Project </a>
+        </div>
+        <div class="project-title-container"  data-depth="0.25">
+          <div class="project-title" style="text-decoration-color:#7ADBB2;">Malt</div>
+        </div>
+        <div data-depth="0.15" class="project-image-container offset">
+          <a href="malt.html">
+            <img class="project-image" src="images/test.jpg"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card" id="project4" data-aos="fade-in">
+        <div class="project-background">
+          <div data-depth="0.6" class="project-question extended">How might we facilatate storytelling among generations on Facebook?</div>
+        </div>
+        <div class="project-background" style="background-color:none;">
+          <a data-depth="0.1" class="project-button" href="fb.html">&#x2191; <br/>	Launch Project </a>
+        </div>
+        <div class="project-title-container"  data-depth="0.6">
+          <div class="project-title" style="text-decoration-color:#ED7159;">Facebook Records</div>
+        </div>
+        <div data-depth="0.1" class="project-image-container offset">
+          <a href="fb.html">
+            <img class="project-image" src="images/fb/sticker.png"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card" id="project2" data-aos="fade-in">
+        <div class="project-background">
+          <div data-depth="0.6" class="project-question">How might we make better product recommendations?</div>
+        </div>
+        <div class="project-background" style="background-color:none;">
+          <a data-depth="0.1" class="project-button" href="meai.html">&#x2191; <br/>	Launch Project </a>
+        </div>
+        <div class="project-title-container"  data-depth="0.4">
+          <div class="project-title" style="text-decoration-color:#EE847A;">ME.AI</div>
+        </div>
+        <div data-depth="0.4" class="project-image-container offset">
+          <a href="meai.html">
+            <img class="project-image" src="images/meai/meai.png"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card" id="project3" data-aos="fade-in">
+        <div class="project-background">
+          <div data-depth="0.6" class="project-question extended">How might we enable true perspectives of local citizens be heard in times of global crisis?</div>
+        </div>
+        <div class="project-background" style="background-color:none;">
+          <a data-depth="0.1" class="project-button" href="fandp.html">&#x2191; <br/>	Launch Project </a>
+        </div>
+        <div class="project-title-container"  data-depth="0.6">
+          <div class="project-title" style="text-decoration-color:#EFBE4F;">F&P</div>
+        </div>
+        <div data-depth="0.15" class="project-image-container offset">
+          <a href="fandp.html">
+            <img class="project-image" src="images/fandp.png"/>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+
+      var projects = document.getElementsByClassName('project-card');
+      for (var i = 0; i < projects.length; i++){
+        var parallaxInstance = new Parallax(projects[i]);
+      }
+
+    </script>
+
+    <div id="footer" style="position:absolute;">
+    </div>
+
+    <script type="text/javascript" src="js/headerfooter.js"></script>
+
+    <script>
+      function responsiveMenu() {
+          var x = document.getElementById("nav");
+          if (x.className === "topNav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topNav";
+          }
+      }
+    </script>
+
+    <script>
+
+      var project = document.getElementById('diagonal-box');
+      var parallaxInstance = new Parallax(project);
+
+      var project2 = document.getElementById('diagonal');
+      var parallaxInstance = new Parallax(project2);
+
+    </script>
+
+    <!-- MATTER.JS -->
+    <canvas width="800" height="600" style="position:fixed;z-index:-1;" id="world"></canvas>
+
+    <div id="logo-bank" style="display: none;">
+      <img class="logo-image" src="images/arduino.png">
+      <img class="logo-image" src="images/css.png">
+      <img class="logo-image" src="images/html.png">
+      <img class="logo-image" src="images/node.png">
+      <img class="logo-image" src="images/sketch.png">
+    </div>
+
+    <script>
+      function loadLogoWorld() {
+
+        var canvas = document.getElementById('world');
+
+          //Get window variables
+          var wWidth = window.innerWidth;
+          var wHeight = window.innerHeight;
+
+          //Set constants
+          var LOGO_SCALE = 0.05
+          var START_POS_X = 250
+          var DROP_INTERVAL_X = 50
+          if (wWidth < 1000) {
+              LOGO_SCALE = 0.05
+              START_POS_X = 80
+              DROP_INTERVAL_X = 10
+          }
+
+        //Setup Matter JS
+
+        var engine = Matter.Engine.create();
+        	var world = engine.world;
+        	var render = Matter.Render.create({
+        		canvas: canvas,
+        		engine: engine,
+        		options: {
+        			width: wWidth,
+        			height: wHeight,
+        			background: 'transparent',
+        			wireframes: false,
+        			showAngleIndicator: false,
+                    density: 0.001,
+                    friction: 0.1,
+                    frictionAir: 0.01,
+                    restitution: 0.9
+        		}
+        	})
+
+          // ONE BY ONE
+          var curLogoIndex = 0;
+          var interval = setInterval(function() {
+              if (curLogoIndex >= document.getElementById('logo-bank').children.length) {
+                  clearInterval(interval)
+                  return;
+              }
+              var logo = document.getElementById('logo-bank').children[curLogoIndex];
+              console.log(logo);
+              var startPosX = START_POS_X+curLogoIndex*DROP_INTERVAL_X
+              if (startPosX > wWidth)
+                  startPosX = wWidth - curLogoIndex*DROP_INTERVAL_X
+              var startPosY = -100
+              var matter = Matter.Bodies.rectangle(startPosX, startPosY, logo.width*LOGO_SCALE, logo.height*LOGO_SCALE, {
+                  render: {
+                      sprite: {
+                          texture: logo.src,
+                          xScale: LOGO_SCALE,
+                          yScale: LOGO_SCALE,
+                          visible: true
+                      },
+                      opacity: .6
+                  }
+              });
+              Matter.World.add(world, matter);
+              curLogoIndex++;
+          }, 500)
+
+        //Add a floor
+        var floor = Matter.Bodies.rectangle(wWidth/2 , wHeight-100, wWidth, 10, {
+          isStatic: true,
+              render: {
+                  visible: false
+              }
+        });
+
+          var leftWall = Matter.Bodies.rectangle(0, wHeight/2, 10, wHeight, {
+          isStatic: true,
+              render: {
+                  visible: false
+              }
+        });
+          var rightWall = Matter.Bodies.rectangle(wWidth, wHeight/2, 10, wHeight, {
+              isStatic: true,
+              render: {
+                  visible: false
+              }
+          });
+        Matter.World.add(world, [floor, leftWall, rightWall]);
+
+        //Make interactive
+        var mouseConstraint = Matter.MouseConstraint.create(engine, { //Create Constraint
+          element: canvas,
+          constraint: {
+            render: {
+                  visible: false
+              },
+              stiffness:0.8
+            }
+        });
+        Matter.World.add(world, mouseConstraint);
+
+        //Start the engine
+        Matter.Engine.run(engine);
+        Matter.Render.run(render);
+
+      };
+    </script>
+
+    <script src="js/instantpage.js" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>
