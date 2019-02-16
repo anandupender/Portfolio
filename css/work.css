@@ -92,6 +92,9 @@
 
 
 @media screen and (max-width: 600px) {
+  #all-project-cards{
+    margin-top: 150px;
+  }
   .project-card{
     margin-right:12%; /* fix centering */
     width:60%;

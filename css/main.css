@@ -295,6 +295,7 @@ button:focus {outline:0;}
 .diagonal-container{
   -webkit-clip-path: polygon(25% 0%, 64% 0, 38% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 64% 0, 38% 100%, 0% 100%);
+  left:auto !important;
 }
 
 .main-hello{
@@ -303,21 +304,21 @@ button:focus {outline:0;}
 }
 
 .work-bar{
-  margin:50px;
+  margin-top:20px;
   margin-bottom:150px;
   height:75px;
   text-align:center;
   position: absolute;
-  top:75vh;
+  top:70vh;
 }
 
 @media screen and (max-width: 600px) {
   .index-container{
-    width:80%;
     margin-top:110px;
   }
   .main-hello{
     margin-top:0;
+    margin-right: 75px;
   }
   .h1-large{
     font-size: 36px;
@@ -333,11 +334,16 @@ button:focus {outline:0;}
   .index-image{
     height:340px;
     max-width:94%;
-    opacity: .5;
-    margin-right: 0px !important;
+    left:-15px;
+  }
+  .diagonal-container{
+    right: -50%;
+    -webkit-clip-path: polygon(11% 0, 60% 0, 83% 100%, 32% 100%);
+  clip-path: polygon(11% 0, 60% 0, 83% 100%, 32% 100%);
   }
   .work-bar{
-    margin:15px;
+    margin-top:10px;
+    margin-bottom:10px;
     height:40px;
   }
 }

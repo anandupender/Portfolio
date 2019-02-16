@@ -18,6 +18,24 @@
 
     <div class ="topNav" id="nav"></div>
 
+    <div class="index-container">
+      <div class="main-hello">
+        <div class="rotate-container">
+          <h1 class="h1-large animated fadeInDown delay-1s">Food Design</h1>
+        </div>
+        <h1 class="animated fadeInDown delay-1s">A journey through food as a storytelling medium, a research topic, and a source for creative inspiration.</h1>
+        <h4 class="animated fadeInDown delay-1s" style="font-family: 'Share Tech Mono', monospace; font-weight:400">Highlights include pop-up-dinners, a stint at an Italian bakery, and the Stanford Food Design Lab</h4>
+      </div>
+
+      <div class="index-image-container animated fadeIn delay-1s" id="diagonal-box">
+        <div class="diagonal-container" id="diagonal" data-depth="0.4">
+          <img data-depth="0.5" class="index-image" src="images/food/florenceCook.png"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-bar animated fadeIn delay-2s"><h2 class="animated bounce delay-2s">Journey On</br>&#8595;<h2/></div>
+
     <div class="definition">
       <h1>Food Design &nbsp;&nbsp;<span style="font-size:18px;color:grey;">| fo͞od dəˈzīn |</span></h1>
       <h3>noun</h3>
@@ -163,7 +181,6 @@
 
     <h1 class="rellax background-title" data-rellax-speed="-9" style="top:10%;">Food Design</h1>
 
-
     <script type="text/javascript" src="js/rellax.js"></script>
 
     <script>
@@ -173,6 +190,14 @@
             console.log(position);
         }
       });
+    </script>
+
+    <script>
+      var project = document.getElementById('diagonal-box');
+      var parallaxInstance = new Parallax(project);
+
+      var project2 = document.getElementById('diagonal');
+      var parallaxInstance = new Parallax(project2);
     </script>
 
     <script>
