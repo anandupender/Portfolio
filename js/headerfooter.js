@@ -50,6 +50,9 @@ nav.innerHTML = `
     <span id="logo-subtitle" class="animated fadeInDown">ux designer + prototyper</span>
   </div>
   <div id="menu">
+    <!-- <a href="index.html#projects">
+      <h1 class="menu-buttons animated fadeInDown" id="work">Work</h1>
+    </a> -->
     <a href="experiments.html">
       <h1 class="menu-buttons animated fadeInDown" id="experiments">Tinkering</h1>
     </a>

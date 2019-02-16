@@ -245,15 +245,8 @@ button:focus {outline:0;}
   margin-left: 25%;
 }
 
-.index-container{
-  display: flex;
-  flex-direction: row;
-  width:85%;
-  align-items: center;
-  justify-content: center;
-}
 
-.index-container-new{
+.index-container{
   display: flex;
   flex-direction: row;
   width:85%;
@@ -281,7 +274,19 @@ button:focus {outline:0;}
   max-width:80%;
   background-color: #FA7268;
   transition: .25s ease;
+  /* animation-name: glitch;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; */
 }
+
+@keyframes glitch {
+  0% {filter: invert(0%);}
+  80% {filter: invert(0%);}
+  80.1% {filter: invert(100%);}
+  98% {filter: invert(0%);}
+  100% {filter: invert(0%);}
+}
+
 
 .offset{
   margin-left: 25%;
@@ -308,9 +313,6 @@ button:focus {outline:0;}
 
 @media screen and (max-width: 600px) {
   .index-container{
-    width:80%;
-  }
-  .index-container-new{
     width:80%;
     margin-top:110px;
   }

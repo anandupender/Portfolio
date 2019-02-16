@@ -17,6 +17,24 @@
     <div class ="topNav" id="nav">
     </div>
 
+    <div class="index-container">
+      <div class="main-hello">
+        <div class="rotate-container">
+          <h1 class="h1-large animated fadeInDown delay-1s">Tinkering</h1>
+        </div>
+        <h1 class="animated fadeInDown delay-1s">These are the projects and collaborations that didn't make it into full case studies.</h1>
+        <h4 class="animated fadeInDown delay-1s" style="font-family: 'Share Tech Mono', monospace; font-weight:400">They include academic research projects, experiments with OpenGL, large LED sculptures, strategic consulting, and leading cross functional teams.</h4>
+      </div>
+
+      <div class="index-image-container animated fadeIn delay-1s" id="diagonal-box">
+        <div class="diagonal-container" id="diagonal" data-depth="0.4">
+          <img data-depth="0.5" class="index-image" src="images/malt/cutting2.JPG"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-bar animated fadeIn delay-2s"><h2 class="animated bounce delay-2s">See Tinkerings </br>&#8595;<h2/></div>
+
     <div id="all-experiments">
 
       <div class="experiment-card" id="project1" data-aos="fade-in-up">
@@ -185,6 +203,14 @@
 
     <script>
       document.getElementById("experiments").style.setProperty("text-decoration", "line-through");
+    </script>
+
+    <script>
+      var project = document.getElementById('diagonal-box');
+      var parallaxInstance = new Parallax(project);
+
+      var project2 = document.getElementById('diagonal');
+      var parallaxInstance = new Parallax(project2);
     </script>
 
     <script type="text/javascript" src="js/rellax.js"></script>
