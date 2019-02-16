@@ -47,23 +47,20 @@ nav.innerHTML = `
     <a class="name" href="index.html">
       <h1 class="menu-buttons name animated fadeInDown">Anand Upender</h1>
     </a>
-    <span id="logo-subtitle">ux designer + prototyper</span>
+    <span id="logo-subtitle" class="animated fadeInDown">ux designer + prototyper</span>
   </div>
   <div id="menu">
-    <a href="work.html">
-      <h1 class="menu-buttons" id="work">Work</h1>
-    </a>
     <a href="experiments.html">
-      <h1 class="menu-buttons" id="experiments">Experiments</h1>
+      <h1 class="menu-buttons animated fadeInDown" id="experiments">Tinkering</h1>
     </a>
     <a href="cooking.html">
-      <h1 class="menu-buttons" id="cooking">Food Design</h1>
+      <h1 class="menu-buttons animated fadeInDown" id="cooking">Food Design</h1>
     </a>
     <a href="about.html">
-      <h1 class="menu-buttons" id="about">About</h1>
+      <h1 class="menu-buttons animated fadeInDown" id="about">About</h1>
     </a>
   </div>
-  <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+  <a href="javascript:void(0);" class="icon animated fadeInDown" onclick="responsiveMenu()">
     <i class="fa fa-bars"></i>
   </a>
 `

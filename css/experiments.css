@@ -19,7 +19,7 @@ h2{
   flex:1;
   display: flex;
   height:300px;
-  margin-bottom:100px;
+  margin-bottom:150px;
 }
 
 .experiment-spacer{
@@ -101,7 +101,7 @@ h2{
 @media screen and (max-width: 950px) {
   .experiment-card{
     height:600px;
-    margin-top:150px;
+    margin-top:175px;
     flex-direction: column;
   }
   .experiment-image-container{
