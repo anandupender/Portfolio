@@ -309,12 +309,12 @@ button:focus {outline:0;}
   height:75px;
   text-align:center;
   position: absolute;
-  top:70vh;
+  top:73vh;
 }
 
 @media screen and (max-width: 600px) {
   .index-container{
-    margin-top:110px;
+    margin-top:80px;
   }
   .main-hello{
     margin-top:0;
