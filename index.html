@@ -137,11 +137,13 @@
 
     <script>
 
-      var project = document.getElementById('diagonal-box');
-      var parallaxInstance = new Parallax(project);
-
       var project2 = document.getElementById('diagonal');
       var parallaxInstance = new Parallax(project2);
+
+      if(document.documentElement.clientWidth >= 680){
+        var project = document.getElementById('diagonal-box');
+        var parallaxInstance = new Parallax(project);
+      }
 
     </script>
 

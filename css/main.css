@@ -267,7 +267,7 @@ button:focus {outline:0;}
 
 .index-image-container:hover{
   transition: .8s ease-in-out;
-  transform: scale(1.1) !important;
+  /* transform: scale(1.1) !important; */
 }
 
 .index-image{
