@@ -109,7 +109,7 @@
   .project-card{
     margin-right:12%; /* fix centering */
     width:60%;
-    margin-bottom:130px;
+    margin-bottom:240px;
   }
   .project-background{
     width:130%;
@@ -125,7 +125,7 @@
   }
   .project-title{
     font-size: 48px;
-    margin-left: -30%;
+    margin-left: -20%;
   }
   .extended{
     bottom: -3.7em;
@@ -137,5 +137,15 @@
   .project-button{
     font-size: 20px;
     right:-95px;
+  }
+  .project-info{
+    margin-top: 100%;
+    margin-left: 10%;
+    font-size: 12px;
+    width:100%;
+    background-color: white;
+    padding:15px;
+    padding-top:5px;
+    box-shadow: 2px 2px 10px #66666644;
   }
 }
