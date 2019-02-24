@@ -23,7 +23,7 @@
 }
 
 .project-title-container{
-  margin-top: 10%;
+  margin-top: 5%;
   z-index:3;
 }
 
@@ -63,7 +63,7 @@
   /* border: 3px solid white; */
   box-shadow: 0px 0px 10px #00000022;
   max-width: 100%;
-  transform: rotateZ(-4deg) !important;
+  transform: rotateZ(-3deg) !important;
 }
 
 .project-question{
@@ -107,8 +107,7 @@
     margin-top: 150px;
   }
   .project-card{
-    margin-right:12%; /* fix centering */
-    width:60%;
+    width:70%;
     margin-bottom:240px;
   }
   .project-background{
@@ -117,14 +116,14 @@
     margin-left: -10%;
   }
   .project-image-container{
-    height: 90% !important;
+    height: 100% !important;
     margin-left:20px !important;
   }
   .project-image{
-    max-width:100% !important;
+    max-width:110% !important;
   }
   .project-title{
-    font-size: 48px;
+    font-size: 42px;
     margin-left: -20%;
   }
   .extended{
@@ -139,7 +138,7 @@
     right:-95px;
   }
   .project-info{
-    margin-top: 100%;
+    margin-top: 110%;
     margin-left: 10%;
     font-size: 12px;
     width:100%;
