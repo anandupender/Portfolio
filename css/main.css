@@ -154,6 +154,16 @@ button:focus {outline:0;}
   margin:0px;
 }
 
+.background-title-work{
+  z-index: 5;
+  margin-left: -20%;
+  font-size:15vh;
+  color:#F2F2f2;
+  margin: 0px;
+  mix-blend-mode: difference;
+
+}
+
 @media screen and (max-width: 600px) {
   .background-title{
     font-size:16vh;

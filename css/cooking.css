@@ -12,6 +12,7 @@
   animation-duration: 7000ms;
   animation-iteration-count: infinite;
   z-index:10;
+  background-color: white;
 }
 
 @keyframes fade {
