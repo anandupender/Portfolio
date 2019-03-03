@@ -324,17 +324,20 @@ button:focus {outline:0;}
 
 @media screen and (max-width: 600px) {
   .index-container{
-    margin-top:80px;
+    margin-top:75px;
   }
   .main-hello{
     margin-top:0;
     margin-right: 75px;
   }
   .h1-large{
-    font-size: 36px;
+    font-size: 32px;
   }
   h1{
-    font-size: 24px;
+    font-size: 22px;
+  }
+  h4{
+    font-size: 14px;
   }
   .index-image-container{
     position: absolute;
