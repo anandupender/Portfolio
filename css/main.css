@@ -314,12 +314,10 @@ button:focus {outline:0;}
 }
 
 .work-bar{
-  margin-top:20px;
+  margin-top:25px;
   margin-bottom:150px;
   height:75px;
   text-align:center;
-  position: absolute;
-  top:73vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -345,8 +343,8 @@ button:focus {outline:0;}
     margin-left: 15%;
   }
   .index-image{
-    height:340px;
-    max-width:94%;
+    height:300px;
+    max-width:90%;
     left:-15px;
   }
   .diagonal-container{
