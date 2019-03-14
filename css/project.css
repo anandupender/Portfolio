@@ -74,11 +74,11 @@ p, li{
 }
 
 .project-info-container{
-  margin:20px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width:100%;
+  justify-content: space-between;
+  width:81%;
 }
 
 .image-grid-container{
