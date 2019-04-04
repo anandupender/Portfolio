@@ -60,7 +60,7 @@ nav.innerHTML = `
       <h1 class="menu-buttons animated fadeInDown" id="cooking">Food Design</h1>
     </a>
     <a href="about.html">
-      <h1 class="menu-buttons animated fadeInDown" id="about">About</h1>
+      <h1 class="menu-buttons animated fadeInDown no-margin-right" id="about">About</h1>
     </a>
   </div>
   <a href="javascript:void(0);" class="icon animated fadeInDown" onclick="responsiveMenu()">
@@ -79,9 +79,9 @@ function responsiveMenu() {
 
 var footer = document.getElementById("footer");
 footer.innerHTML = `
-  <a class="bottom-button" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">Email</div></a>
+  <a class="bottom-button no-margin-left" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">Email</div></a>
   <a class="bottom-button" target="_blank" href="https://drive.google.com/file/d/1vM6shkculwaScg8uXhQqi_6Atj0RV6TX/view?usp=sharing"><div class="animated fadeInUp delay-1s">Resume</div></a>
   <div id="bottom-middle-button" class="bottom-button bottom-button-large animated fadeInUp delay-1s">Made from scratch with&nbsp;<a class="heart" href="https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2019" target="_blank">&#9829;</a></div>
   <a class="bottom-button" target="_blank" href="https://www.github.com/anandupender"><div class="animated fadeInUp delay-1s">Github</div></a>
-  <a class="bottom-button" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="animated fadeInUp delay-1s">Linkedin</div></a>
+  <a class="bottom-button no-margin-right" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="animated fadeInUp delay-1s">Linkedin</div></a>
 `

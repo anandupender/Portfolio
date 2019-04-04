@@ -81,10 +81,12 @@ a:hover{
 button:focus {outline:0;}
 
 #nav{
-  width: 100%;
+  width: 85vw;
   position: fixed;
   top: 0px;
   left: 0px;
+  right:0px;
+  margin:auto;
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -95,7 +97,6 @@ button:focus {outline:0;}
 }
 
 #logo{
-  margin-left: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -106,8 +107,12 @@ button:focus {outline:0;}
   font-size: 16px;
 }
 
-#menu{
-  margin-right: 60px;
+.no-margin-left{
+    margin-left: 0px !important;
+}
+
+.no-margin-right{
+    margin-right: 0px !important;
 }
 
 .color-change{
@@ -181,8 +186,8 @@ button:focus {outline:0;}
 .menu-buttons{
   display: inline-block;
   margin: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 0px;
+  margin-right: 50px;
   font-size: 22px;
   font-weight: 700;
   transition: .25s ease;
@@ -197,9 +202,10 @@ button:focus {outline:0;}
 
 #footer{
   font-family: 'Share Tech Mono', monospace;
-  width: 100%; position: fixed; bottom: 0px; left: 0px; display: block;
+  width: 85vw; position: fixed; bottom: 0px; left: 0px;right:0px; display: block; margin:auto;
   display: flex;
   align-items:center;
+  justify-content: space-between;
   z-index:10;
 }
 
@@ -208,10 +214,9 @@ button:focus {outline:0;}
 }
 
 .bottom-button{
-  text-align: center;
-  flex:1;
-  font-size: 14px;
   display: inline-block;
+  text-align: center;
+  font-size: 14px;
   margin:10px;
   margin-bottom:30px;
   transition: color 0.25s ease;
@@ -224,6 +229,7 @@ button:focus {outline:0;}
     margin-right: 0px;
   }
   .bottom-button-large{
+    width:35%;
     font-size: 12px !important;
   }
   #footer{
@@ -259,7 +265,7 @@ button:focus {outline:0;}
 .index-container{
   display: flex;
   flex-direction: row;
-  width:85%;
+  width:84vw;
   align-items: center;
   justify-content: center;
   margin-top:180px;
@@ -321,7 +327,7 @@ button:focus {outline:0;}
 
 @media screen and (max-width: 600px) {
   .index-container{
-    margin-top:75px;
+    margin-top:90px;
   }
   .main-hello{
     margin-top:0;
@@ -337,13 +343,14 @@ button:focus {outline:0;}
     font-size: 14px;
   }
   .index-image-container{
+    overflow: hidden;
     position: absolute;
     z-index:-1;
     margin-left: 15%;
   }
   .index-image{
     height:300px;
-    max-width:90%;
+    max-width:100%;
     left:-15px;
   }
   .diagonal-container{
@@ -475,7 +482,6 @@ button:focus {outline:0;}
   .topNav span {display: none;}
   .topNav .name{
     display: inline-block;
-    margin-left: -10px;
   }
   .topNav a.icon {
     float: right;
@@ -483,6 +489,7 @@ button:focus {outline:0;}
   }
   .menu-buttons{
     font-size: 20px;
+    margin-left: 10px;
   }
 }
 
