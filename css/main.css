@@ -154,7 +154,7 @@ button:focus {outline:0;}
   position: absolute;
   left:-30px;
   z-index:0;
-  top:35vh;
+  top:100vh;
   margin:0px;
 }
 
@@ -170,9 +170,9 @@ button:focus {outline:0;}
 
 @media screen and (max-width: 600px) {
   .background-title{
-    font-size:16vh;
+    font-size:18vh;
     left:5px;
-    top:20% !important;
+    top:100vh !important;
   }
   .home-buttons{
     font-size:18px;
