@@ -154,7 +154,7 @@ button:focus {outline:0;}
   position: absolute;
   left:-30px;
   z-index:0;
-  top:35%;
+  top:35vh;
   margin:0px;
 }
 
