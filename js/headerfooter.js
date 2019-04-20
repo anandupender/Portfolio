@@ -43,11 +43,12 @@ headContent.innerHTML += `
 
 var nav = document.getElementById("nav");
 nav.innerHTML = `
+  <div id="top-rectangle"></div>
   <div id="logo">
     <a class="name" href="index.html">
       <h1 class="menu-buttons name animated fadeInDown">Anand Upender</h1>
     </a>
-    <span id="logo-subtitle" class="animated fadeInDown">design engineer</span>
+    <!-- <span id="logo-subtitle" class="animated fadeInDown">design engineer</span> -->
   </div>
   <div id="menu">
     <!-- <a href="index.html#projects">
@@ -79,6 +80,7 @@ function responsiveMenu() {
 
 var footer = document.getElementById("footer");
 footer.innerHTML = `
+  <div id="bottom-rectangle"></div>
   <a class="bottom-button no-margin-left" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">Email</div></a>
   <a class="bottom-button" target="_blank" href="https://drive.google.com/file/d/1MZqF19jbrnSfgC-fTu9E4IYMhKm9M0fJ/view?usp=sharing"><div class="animated fadeInUp delay-1s">Resume</div></a>
   <div id="bottom-middle-button" class="bottom-button bottom-button-large animated fadeInUp delay-1s">Made from scratch with&nbsp;<a class="heart" href="https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2019" target="_blank">&#9829;</a></div>

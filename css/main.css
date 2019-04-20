@@ -96,6 +96,15 @@ button:focus {outline:0;}
   background-color: white;
 }
 
+#top-rectangle{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    height:100px;
+}
+
 #logo{
   display: flex;
   flex-direction: column;
@@ -180,6 +189,9 @@ button:focus {outline:0;}
   }
   #nav{
   height: 75px;}
+  #top-rectangle{
+    height: 75px;
+  }
 }
 
 .menu-buttons{
@@ -206,6 +218,16 @@ button:focus {outline:0;}
   align-items:center;
   justify-content: space-between;
   z-index:10;
+  height:60px;
+}
+
+#bottom-rectangle{
+    position: absolute;
+    bottom:0;
+    left: -7.5vw;
+    width: 100vw;
+    background-color: white;
+    height:60px;
 }
 
 .bottom-button-large{
@@ -232,7 +254,7 @@ button:focus {outline:0;}
     font-size: 12px !important;
   }
   #footer{
-    bottom:-15px;
+    bottom:-10px;
   }
 }
 
@@ -336,10 +358,10 @@ button:focus {outline:0;}
     font-size: 32px;
   }
   h1{
-    font-size: 22px;
+    font-size: 18px;
   }
   h4{
-    font-size: 14px;
+    font-size: 12px;
   }
   .index-image-container{
     overflow: hidden;
@@ -350,7 +372,7 @@ button:focus {outline:0;}
   .index-image{
     height:300px;
     max-width:100%;
-    left:-15px;
+    left:-40px !important;
   }
   .diagonal-container{
     right: -50%;
