@@ -44,6 +44,28 @@
 
     <h1 class="rellax background-title" data-rellax-speed="-6" style="top:45%;">About</h1>
 
+    <!-- <a class="user-portfolio-container" target="_blank" href="http://www.vivianx.com/">
+      <div class="user-portfolio"></div>
+    </a>
+
+    <script>
+      function circularText(txt, radius, classIndex) {
+        txt = txt.split(""),
+          classIndex = document.getElementsByClassName("user-portfolio")[classIndex];
+
+        var deg = 360 / txt.length,
+          origin = 0;
+
+        txt.forEach((ea) => {
+          ea = `<p style='height:${radius}px;position:absolute;left:50px;transform:rotate(${origin}deg);transform-origin:0 100%'>${ea}</p>`;
+          classIndex.innerHTML += ea;
+          origin += deg;
+        });
+      }
+
+      circularText("PORTFOLIO  ", 50, 0);
+    </script> -->
+
     <script type="text/javascript" src="js/rellax.js"></script>
     <script>
     	var rellax = new Rellax('.rellax', {

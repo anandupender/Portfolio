@@ -480,6 +480,30 @@ button:focus {outline:0;}
   }
 }
 
+.user-portfolio-container {
+  z-index:10;
+  text-align: center;
+  position: fixed;
+  left:200px;
+  top:200px;
+  border-radius: 50%;
+  background: #FF785C;
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+}
+
+.user-portfolio {
+  font-weight: bold;
+  color: white;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  -webkit-animation: rotating 6s linear infinite;
+  margin:7px;
+}
+
 
 
   /* STYLING for Hanburger Menu Changing */
