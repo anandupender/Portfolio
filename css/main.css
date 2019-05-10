@@ -26,6 +26,14 @@ a:hover{
   color:#FA7268;
 }
 
+.image-caption{
+  color: #888;
+  margin-top: 6px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
 .button, button{
   background-color: #FA7268;
   border: none;
