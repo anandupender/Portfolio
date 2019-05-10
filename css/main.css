@@ -401,6 +401,9 @@ button:focus {outline:0;}
     margin-bottom:10px;
     height:40px;
   }
+  .image-caption{
+    padding: 10px;
+  }
 }
 
 

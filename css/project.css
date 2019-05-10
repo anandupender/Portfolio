@@ -140,6 +140,9 @@ p, li{
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+  h1{
+    font-size: 28px;
+  }
   .column {
     margin-bottom: 15px;
     flex: 40%;
@@ -149,7 +152,7 @@ p, li{
     margin-bottom: 3px;
   }
   .project-title{
-    font-size: 36px;
+    font-size: 24px;
     top:20vh;
   }
   .project-hero-image-container{
@@ -157,6 +160,7 @@ p, li{
   }
   .project-image-container{
     height:auto;
+    max-width: 100%;
   }
   .project-section{
     margin-top:10px;
