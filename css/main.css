@@ -214,8 +214,8 @@ button:focus {outline:0;}
   display: inline-block;
   margin: 10px;
   margin-left: 0px;
-  margin-right: 50px;
-  font-size: 22px;
+  margin-right: 40px;
+  font-size: 20px;
   font-weight: 700;
   transition: .25s ease;
 }
@@ -223,7 +223,7 @@ button:focus {outline:0;}
 .name{
   color:#FA7268;
   top:0px;
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 0px;
 }
 
@@ -324,6 +324,8 @@ button:focus {outline:0;}
 }
 
 .index-image{
+  /* dont show image when in desktop because pendulum */
+  /* display:none !important; */
   max-width:80%;
   background-color: #FA7268;
   transition: .25s ease;
@@ -387,6 +389,8 @@ button:focus {outline:0;}
     margin-left: 15%;
   }
   .index-image{
+    /* show image when in mobile because no pendulum */
+    display: block !important;
     height:300px;
     max-width:100%;
     left:-40px !important;
