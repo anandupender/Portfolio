@@ -106,10 +106,60 @@ button:focus {outline:0;}
   display: flex;
   justify-content: space-between;
   align-items:center;
-  height:100px;
+  height:120px;
   vertical-align: middle;
   z-index:5;
   background-color: white;
+}
+
+#banner{
+  height:35px;
+  width:100vw;
+  position: fixed;
+  top:0px;
+  background: #FA7268;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+#banner-content a{
+  color:white;
+  padding-left:20px;
+}
+
+#banner-content{
+  animation: move 35s infinite linear;
+  white-space: nowrap;
+  position: absolute;
+  right:-2030px;
+}
+
+@keyframes move {
+    0% {
+      /* //hard coded from text width */
+      right: -2030px;
+    }
+    100% {
+      right: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  #banner{height:30px;}
+  #banner-content a{
+    color:white;
+    font-size: 12px;
+  }
+  @keyframes move {
+      0% {
+        /* //hard coded from text width */
+        right: -1530px;
+      }
+      100% {
+        right: 100%;
+      }
+  }
 }
 
 #top-rectangle{
@@ -204,7 +254,7 @@ button:focus {outline:0;}
     margin-top: 0px !important;
   }
   #nav{
-  height: 75px;}
+  height: 100px;}
   #top-rectangle{
     height: 75px;
   }
