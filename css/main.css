@@ -1,8 +1,12 @@
+html,body{
+  overflow-x: hidden !important;
+  position: relative;
+}
+
 body{
   /* font-family: 'Cardo', serif; */
   font-family: 'Karla', sans-serif;
   overflow: hidden;
-  overflow-x: hidden !important;
   position: absolute;
   width: 100%;
   max-width: 100%;
@@ -258,7 +262,7 @@ button:focus {outline:0;}
     margin-top: 0px !important;
   }
   #nav{
-  height: 95px;}
+  height: 105px;}
   #top-rectangle{
     height: 75px;
   }
