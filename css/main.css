@@ -49,6 +49,7 @@ a:hover{
   color:black;
   font-size: 24px;
   z-index: 10;
+  padding:0px;
 }
 
 .button:hover{
@@ -106,30 +107,32 @@ button:focus {outline:0;}
   display: flex;
   justify-content: space-between;
   align-items:center;
-  height:120px;
+  height:140px;
   vertical-align: middle;
   z-index:5;
   background-color: white;
 }
 
 #banner{
+  /* margin-top: 60px; */
   height:35px;
   width:100vw;
-  position: fixed;
+  position: absolute;
   top:0px;
-  background: #FA7268;
-  z-index: 10;
+  z-index:5;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   align-items: center;
 }
 
 #banner-content a{
-  color:white;
+  color:black;
   padding-left:20px;
 }
 
 #banner-content{
-  animation: move 35s infinite linear;
+  animation: move 28s infinite linear;
   white-space: nowrap;
   position: absolute;
   right:-2030px;
@@ -146,9 +149,10 @@ button:focus {outline:0;}
 }
 
 @media screen and (max-width: 600px) {
-  #banner{height:30px;}
+  #banner{height:30px;
+    /* margin-top:40px; */
+  }
   #banner-content a{
-    color:white;
     font-size: 12px;
   }
   @keyframes move {
@@ -254,7 +258,7 @@ button:focus {outline:0;}
     margin-top: 0px !important;
   }
   #nav{
-  height: 100px;}
+  height: 95px;}
   #top-rectangle{
     height: 75px;
   }
@@ -273,7 +277,7 @@ button:focus {outline:0;}
 .name{
   color:#FA7268;
   top:0px;
-  font-size: 36px;
+  font-size: 32px;
   margin-bottom: 0px;
 }
 
@@ -409,7 +413,7 @@ button:focus {outline:0;}
 }
 
 .work-bar{
-  margin-top:25px;
+  margin-top:15px;
   height:75px;
   text-align:center;
   z-index: 3;
