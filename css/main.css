@@ -111,7 +111,7 @@ button:focus {outline:0;}
   display: flex;
   justify-content: space-between;
   align-items:center;
-  height:140px;
+  height:110px;
   vertical-align: middle;
   z-index:5;
   background-color: white;
@@ -176,7 +176,7 @@ button:focus {outline:0;}
     left: 0;
     width: 100vw;
     background-color: white;
-    height:100px;
+    height:110px;
 }
 
 #logo{
@@ -262,9 +262,9 @@ button:focus {outline:0;}
     margin-top: 0px !important;
   }
   #nav{
-  height: 105px;}
+  height: 90px;}
   #top-rectangle{
-    height: 75px;
+    height: 90px;
   }
 }
 
@@ -373,7 +373,7 @@ button:focus {outline:0;}
   justify-content: center;
   z-index:1;
   margin-left: 15%;
-  filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.3));
+  /* filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.3)); commented out because sometimes creates glitching rectangle outline on image*/
 }
 
 .index-image-container:hover{
@@ -413,7 +413,6 @@ button:focus {outline:0;}
 
 .main-hello{
   flex:6;
-  /* margin-top:12vh; */
 }
 
 .work-bar{
