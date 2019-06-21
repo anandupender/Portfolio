@@ -372,14 +372,14 @@ button:focus {outline:0;}
   align-items: center;
   justify-content: center;
   z-index:1;
-  margin-left: 15%;
+  margin-left: 7%;
+  margin-right: 7%;
   /* filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.3)); commented out because sometimes creates glitching rectangle outline on image*/
 }
 
-.index-image-container:hover{
+/* .index-image-container:hover{
   transition: .8s ease-in-out;
-  /* transform: scale(1.1) !important; */
-}
+} */
 
 .index-image{
   /* dont show image when in desktop because pendulum */
@@ -443,7 +443,6 @@ button:focus {outline:0;}
     overflow: hidden;
     position: absolute;
     z-index:-1;
-    margin-left: 15%;
   }
   .index-image{
     /* show image when in mobile because no pendulum */

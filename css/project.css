@@ -44,7 +44,7 @@ p, li{
 .project-title-container{
   position: absolute;
   left:0;
-  bottom: 0;
+  bottom: -50px;
   background-color: #222;
   padding:10px 20px 10px 20px ;
   color:white;

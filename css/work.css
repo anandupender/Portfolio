@@ -9,7 +9,6 @@
 
 .project-card{
   display: flex;
-  margin-right:10%; /* fix centering */
   width:50%;
   height:60%;
   position: relative;
@@ -41,7 +40,8 @@
   justify-content: flex-end;
   align-items: center;
   position: absolute !important;
-  background-color: #EEE;
+  background-color: #000;
+  opacity: .1;
   width:70%;
   height:110%;
   margin-left: 40%;
