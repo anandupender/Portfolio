@@ -85,14 +85,17 @@
 
       .index-image{
         max-width:100%;
+        background-color: transparent;
+        -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1);
       }
       .index-image-container{
         margin-top: 10%;
         overflow: visible;
-        transform: rotate(-3deg) !important;
       }
       .project-background{
-        height:110%;
+        height:100%;
       }
       .project-card:hover, .project-card:hover .project-background{
         opacity: .5;
@@ -155,6 +158,7 @@
         .index-info{
           font-size: 14px;
           color:#000000FF;
+          font-weight: 400;
         }
         .profile-image-container{
           overflow: hidden;
@@ -198,7 +202,7 @@
           <div class="project-card" id="project4" data-aos="fade-up" data-aos-duration="1000">
             <div data-depth="0.2" class="index-image-container">
               <a href="fb.html">
-                <img class="index-image" src="images/fb/hero.png"/>
+                <img class="index-image" style="transform:scale(1) ;" src="images/fb/hero.png"/>
               </a>
               <div class="index-title" style="text-decoration-color:black;">Facebook</div>
               <h3 class="index-info">Full-Stack Engineering and Brand</h3>
@@ -214,22 +218,6 @@
       <div class="index-row">
         <div class="index-col">
 
-          <div class="project-card" id="project1" data-aos="fade-up" data-aos-duration="1000">
-            <div data-depth="0.4" class="index-image-container">
-              <a href="malt.html">
-                <img class="index-image" src="images/test.jpg"/>
-              </a>
-              <div class="index-title" style="text-decoration-color:black;">Malt</div>
-              <h3 class="index-info">Industrial Design and Manufacturing</h3>
-
-            </div>
-            <div data-depth="0.3" class="project-background"></div>
-
-          </div>
-
-        </div>
-        <div class="index-col">
-
           <div class="project-card" id="project4" data-aos="fade-up" data-aos-duration="1000">
             <div data-depth="0.2" class="index-image-container">
               <a href="meai.html">
@@ -237,14 +225,66 @@
               </a>
               <div class="index-title" style="text-decoration-color:black;">ME.AI</div>
               <h3 class="index-info">Machine Learning and User Research</h3>
-
             </div>
 
             <div data-depth="0.8" class="project-background"></div>
+          </div>
+
+        </div>
+        <div class="index-col">
+
+          <div class="project-card" id="project1" data-aos="fade-up" data-aos-duration="1000">
+            <div data-depth="0.4" class="index-image-container">
+              <a href="foodinno.html">
+                <img class="index-image" style="background-color:transparent;" src="images/foodinno/hero.png"/>
+              </a>
+              <div class="index-title" style="text-decoration-color:black;">FoodInno</div>
+              <h3 class="index-info">Visual Design and Leadership</h3>
+
+            </div>
+            <div data-depth="0.3" class="project-background"></div>
 
           </div>
 
         </div>
+
+
+      </div>
+
+      <div class="index-row">
+        <div class="index-col">
+
+          <div class="project-card" id="project4" data-aos="fade-up" data-aos-duration="1000">
+            <div data-depth="0.2" class="index-image-container">
+              <a href="malt.html">
+                <img class="index-image" src="images/test.jpg"/>
+              </a>
+              <div class="index-title" style="text-decoration-color:black;">MALT</div>
+              <h3 class="index-info">Industrial Design and Manufacturing</h3>
+            </div>
+
+            <div data-depth="0.8" class="project-background"></div>
+          </div>
+
+        </div>
+        <div class="index-col">
+
+          <div class="project-card" id="project1" data-aos="fade-up" data-aos-duration="1000">
+            <div data-depth="0.4" class="index-image-container">
+              <a href="illustrations.html">
+                <img class="index-image" style="background-color:transparent;" src="images/illustrations/collective.JPG"/>
+              </a>
+              <div class="index-title" style="text-decoration-color:black;">Illustrations</div>
+              <h3 class="index-info">Visual Design and Leadership</h3>
+
+            </div>
+            <div data-depth="0.3" class="project-background"></div>
+
+          </div>
+
+        </div>
+
+
       </div>
 
     </div>

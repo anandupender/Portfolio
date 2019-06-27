@@ -30,6 +30,12 @@ a:hover{
   color:#FA7268;
 }
 
+.add-shadow{
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.15);
+}
+
 .image-caption{
   color: #888;
   margin-top: 6px;
