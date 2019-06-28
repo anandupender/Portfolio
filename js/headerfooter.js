@@ -47,23 +47,24 @@ var nav = document.getElementById("nav");
 nav.innerHTML += `
   <div id="top-rectangle"></div>
   <div id="logo">
-    <a class="name" href="index.html">
-      <h1 class="menu-buttons name animated fadeInDown">Anand Upender</h1>
-    </a>
+      <!-- <a class="name menu-buttons animated fadeInDown" href="index.html"> Anand Upender</a> --!>
+    <h1 class="name menu-buttons animated fadeInDown"> Anand Upender</h1>
+
   </div>
   <div id="menu">
-    <!-- <a href="index.html#projects">
-      <h1 class="menu-buttons animated fadeInDown" id="work">Work</h1>
-    </a> -->
-    <a href="experiments.html">
-      <h1 class="menu-buttons animated fadeInDown" id="experiments">Tinkering</h1>
-    </a>
-    <a href="cooking.html">
-      <h1 class="menu-buttons animated fadeInDown" id="cooking">Food Design</h1>
-    </a>
-    <a href="about.html">
-      <h1 class="menu-buttons animated fadeInDown no-margin-right" id="about">About</h1>
-    </a>
+    <a href="index.html#scrollTo" class="menu-buttons animated fadeInDown" id="experiments"> Work </a>
+    <div class="dropdown">
+      <a href="cooking.html" class="menu-buttons animated fadeInDown" id="research">Research &#x25be;</a>
+      <div class="dropdown-content">
+        <a href="cooking.html" class="menu-buttons" style="padding-top:0px;">Food</a>
+        <a href="https://stanfordmobility.com" target="_blank" class="menu-buttons">Mobility</a>
+        <a href="place.html" class="menu-buttons">Spaces</a>
+        <!-- a href="#" class="menu-buttons">Web</a>
+        <a href="http://erinmacd.stanford.edu/?page_id=352" target="_blank" class="menu-buttons">Research Metaphors</a> --!>
+      </div>
+    </div>
+    <a href="experiments.html" class="menu-buttons animated fadeInDown" id="tinkering"> Tinkering </a>
+    <a href="about.html" class="menu-buttons animated fadeInDown no-margin-right" id="about">About</a>
   </div>
   <a href="javascript:void(0);" class="icon animated fadeInDown" onclick="responsiveMenu()">
     <i class="fa fa-bars"></i>
