@@ -51,8 +51,11 @@ nav.innerHTML += `
     <h1 class="name menu-buttons animated fadeInDown"> Anand Upender</h1>
 
   </div>
-  <div id="menu">
+  <div id="menu" class="add-shadow">
     <a href="index.html#scrollTo" class="menu-buttons animated fadeInDown" id="experiments"> Work </a>
+    <a href="cooking.html" class="menu-buttons only-mobile animated fadeInDown" style="padding-top:0px;">Food</a>
+    <a href="https://stanfordmobility.com" target="_blank" class="menu-buttons only-mobile animated fadeInDown">Mobility</a>
+    <a href="place.html" class="menu-buttons only-mobile animated fadeInDown">Spaces</a>
     <div class="dropdown">
       <a href="cooking.html" class="menu-buttons animated fadeInDown" id="research">Research &#x25be;</a>
       <div class="dropdown-content">

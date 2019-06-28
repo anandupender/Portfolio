@@ -287,6 +287,22 @@ button:focus {outline:0;}
   margin: 0px;
 }
 
+.only-mobile{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #research{
+    display: none;
+  }
+  .dropdown-content{
+    display: none !important;
+  }
+  .only-mobile{
+    display: inline-block;
+  }
+}
+
 .name{
   color:#FA7268;
   top:0px;
@@ -646,8 +662,7 @@ button:focus {outline:0;}
 }
 
 #menu{
-  position: relative;
-  display: flex;
+  display: none;
   flex-direction: row;
 }
 
@@ -671,7 +686,14 @@ button:focus {outline:0;}
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topNav.responsive {position: relative;}
-  #menu{ margin-top: 100px; margin-right: 80px; flex-direction: column;}
+  #menu{
+    position: fixed;
+    flex-direction: column;
+    top:0px;
+    right:0px;
+    width:50vw;
+    padding:20px;
+  }
   .topNav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -683,9 +705,9 @@ button:focus {outline:0;}
     text-align: left;
     background-color: white;
   }
-  .topNav.responsive div{
+  .topNav.responsive #menu{
     float:none;
-    display: block;
+    display: flex !important;
     text-align: left;
     background-color: white;
   }
