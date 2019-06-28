@@ -1,6 +1,7 @@
 html,body{
   overflow-x: hidden !important;
   position: relative;
+  /* cursor: url("../images/cursor-small.svg"), url("../images/cursor.png") 0 0, auto; */
 }
 
 body{
@@ -86,11 +87,11 @@ a:hover{
 }
 
 @keyframes grow {
-  0% { font-size: 14px; }
-  15% { font-size: 16px; }
-  30% { font-size: 14px; }
-  50% { font-size: 17px; }
-  90% { font-size: 14px; }
+  0% { font-size: 15px; }
+  15% { font-size: 18px; }
+  30% { font-size: 15px; }
+  50% { font-size: 19px; }
+  90% { font-size: 15px; }
   100% { font-size: 14px; }
 }
 
@@ -501,6 +502,7 @@ button:focus {outline:0;}
   margin-bottom: 120px;
   z-index:3;
   margin:5%;
+  margin-top: 12vh;
 }
 
 #profile-container{
