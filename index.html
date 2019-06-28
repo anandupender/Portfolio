@@ -19,7 +19,7 @@
     </div>
 
     <div class="index-container">
-      <div class="main-hello">
+      <div class="main-hello no-mobile">
         <div class="rotate-container">
           <h1 class="h1-large animated fadeInDown delay-1s">Hi! I'm Anand.</h1>
         </div>
@@ -33,6 +33,9 @@
           <img data-depth="0.3" class="profile-image" src="images/headshot2.jpg"/>
         </div>
       </div>
+      <h1 class="h1-large animated fadeInDown delay-1s only-mobile" style="margin-bottom:0px;">Hi! I'm Anand.</h1>
+      <h4 class="animated fadeInDown delay-1s only-mobile" style="font-family: 'Share Tech Mono', monospace; font-weight:400;text-align:center;">Previously at Facebook and IDEO CoLab. Interested in the design of Spaces, Web Experiences, Foods, and Communities.</h4>
+
     </div>
 
     <!-- <div id="banner" class="animated fadeInRight delay-3s">
@@ -54,7 +57,7 @@
         flex: 3;
         align-items: center;
         justify-content: center;
-        margin-left: 15%;
+        margin-left: 30%;
       }.profile-image{
         max-width: 80%;
         background-color: #FA7268;
@@ -158,11 +161,7 @@
           color:#000000FF;
           font-weight: 400;
         }
-        .profile-image-container{
-          overflow: hidden;
-          position: absolute;
-          z-index:-1;
-        }
+
         .profile-image{
           /* show image when in mobile because no pendulum */
           display: block !important;
@@ -356,8 +355,6 @@
             Bodies = Matter.Bodies,
             Vector = Matter.Vector;
 
-        // create engine only if not on mobile
-      if(screenWidth > 800){
 
         var engine = Engine.create(),
             world = engine.world;
@@ -392,12 +389,14 @@
             length = screenHeight/heightDivider,
             width = screenHeight/heightDivider/6;
 
+        var someMultiplier = .75;
         var heightMultiplier = .36;
         if(screenWidth < 800){
           heightMultiplier = .25;
+          someMultiplier = .5;
         }
 
-        var pendulum = Composites.stack(screenWidth*.75, screenHeight * heightMultiplier, 2, 1, -20, 0, function(x, y) {
+        var pendulum = Composites.stack(screenWidth*someMultiplier, screenHeight * heightMultiplier, 2, 1, -20, 0, function(x, y) {
             return Bodies.rectangle(x, y, length, width, {
                 collisionFilter: { group: group },
                 frictionAir: 0,
@@ -521,7 +520,6 @@
         }else if (val == 2){
           document.getElementsByClassName("index-image")[0].style.display = "block";
         }
-    }
 
     </script>
 
