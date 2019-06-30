@@ -116,11 +116,12 @@ button:focus {outline:0;}
   margin:auto;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items:flex-start;
   height:110px;
   vertical-align: middle;
   z-index:5;
   background-color: white;
+  padding-top:40px;
 }
 
 #banner{
@@ -268,7 +269,10 @@ button:focus {outline:0;}
     margin-top: 0px !important;
   }
   #nav{
-  height: 90px;}
+    height: 90px;
+    align-items:center;
+    padding-top: 20px;
+  }
   #top-rectangle{
     height: 90px;
   }
@@ -347,6 +351,9 @@ button:focus {outline:0;}
 }
 
 @media screen and (max-width: 600px) {
+  .name{
+    margin-top: 0px;
+  }
   .bottom-button{
     font-size: 12px !important;
     margin-left: 0px;
@@ -606,15 +613,14 @@ button:focus {outline:0;}
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
+  display:none;
   background-color: white;
-  top: 100%;
+  position: relative;
   margin: 0;
-  min-width: 160px;
   box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
   z-index: 1;
   padding: 15px;
+  top:-10px;
 }
 
 /* Links inside the dropdown */
@@ -665,7 +671,7 @@ button:focus {outline:0;}
 }
 
 #menu{
-  display: none;
+  display: flex;
   flex-direction: row;
 }
 
@@ -690,17 +696,13 @@ button:focus {outline:0;}
 @media screen and (max-width: 600px) {
   .topNav.responsive {position: relative;}
   #menu{
+    display: none;
     position: fixed;
     flex-direction: column;
-    top:0px;
+    top:15px;
     right:0px;
     width:50vw;
     padding:20px;
-  }
-  .topNav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
   }
   .topNav.responsive a{
     float:none;
