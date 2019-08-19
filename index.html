@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
   </head>
   <body style="overflow-y:scroll;height:auto;">
 
     <div class ="topNav" id="nav">
     </div>
+
+    <div class="animated fadeIn delay-2s" id="particles-js"></div>
 
     <div class="index-container">
       <div class="main-hello no-mobile">
@@ -24,13 +25,13 @@
           <h1 class="h1-large animated fadeInDown delay-1s">Hi! I'm Anand.</h1>
         </div>
         <h1 class="animated fadeInDown delay-1s">Creative Strategist and Prototyper exploring what it means to be a <em>Designer</em>.</h1>
-        <h4 class="animated fadeInDown delay-1s" style="font-family: 'Share Tech Mono', monospace; font-weight:400">Previously at Facebook and IDEO CoLab. Interested in the design of Spaces, Web Experiences, Foods, and Communities.</h4>
+        <h4 class="animated fadeInDown delay-1s" style="font-family: 'Share Tech Mono', monospace; font-weight:400">Previously at Facebook, IDEO CoLab, and Stanford. Interested in the design of Spaces, Web Experiences, Foods, and Communities.</h4>
         <br/><br/><br/><br/>
       </div>
 
       <div class="profile-image-container animated fadeIn delay-1s" id="diagonal-box">
-        <div class="diagonal-container" id="diagonal" data-depth="0.6" >
-          <img data-depth="0.3" class="profile-image" src="images/headshot2.jpg"/>
+        <div class="diagonal-container" id="diagonal" data-depth="0.9" >
+          <img data-depth="0.4" class="profile-image" src="images/headshot2.jpg"/>
         </div>
       </div>
       <h1 class="h1-large animated fadeInDown delay-1s only-mobile" style="margin-bottom:0px;">Hi! I'm Anand.</h1>
@@ -58,6 +59,7 @@
         align-items: center;
         justify-content: center;
         margin-left: 10%;
+        z-index:101;
       }.profile-image{
         max-width: 80%;
         background-color: #FA7268;
@@ -182,7 +184,7 @@
         <div class="index-col">
 
           <div class="project-card" id="project6" data-aos="fade-up" data-aos-duration="1000">
-            <div data-depth="0.4" class="index-image-container">
+            <div data-depth="0.6" class="index-image-container">
               <div class="index-title" style="text-decoration-color:black;">Family Room</div>
 
               <a href="familyRoom.html">
@@ -192,7 +194,7 @@
               <h3 class="index-info">Web Development and User Research</h3>
 
             </div>
-            <div data-depth="0.3" class="project-background"></div>
+            <div data-depth="0.4" class="project-background"></div>
 
           </div>
 
@@ -200,7 +202,7 @@
         <div class="index-col">
 
           <div class="project-card" id="project4" data-aos="fade-up" data-aos-duration="1000">
-            <div data-depth="0.2" class="index-image-container">
+            <div data-depth="0.9" class="index-image-container">
               <a href="fb.html">
                 <img class="index-image" style="transform:scale(1) ;" src="images/fb/hero.png"/>
               </a>
@@ -208,7 +210,7 @@
               <h3 class="index-info">Full-Stack Engineering and Brand</h3>
             </div>
 
-            <div data-depth="0.8" class="project-background"></div>
+            <div data-depth="0.5" class="project-background"></div>
 
           </div>
 
@@ -234,7 +236,7 @@
         <div class="index-col">
 
           <div class="project-card" id="project1" data-aos="fade-up" data-aos-duration="1000">
-            <div data-depth="0.4" class="index-image-container">
+            <div data-depth="0.7" class="index-image-container">
               <a href="foodinno.html">
                 <img class="index-image" style="background-color:transparent;" src="images/foodinno/hero.png"/>
               </a>
@@ -255,7 +257,7 @@
         <div class="index-col">
 
           <div class="project-card" id="project4" data-aos="fade-up" data-aos-duration="1000">
-            <div data-depth="0.2" class="index-image-container">
+            <div data-depth="0.6" class="index-image-container">
               <a href="malt.html">
                 <img class="index-image" src="images/test.jpg"/>
               </a>
@@ -270,7 +272,7 @@
         <div class="index-col">
 
           <div class="project-card" id="project1" data-aos="fade-up" data-aos-duration="1000">
-            <div data-depth="0.4" class="index-image-container">
+            <div data-depth="0.9" class="index-image-container">
               <a href="illustrations.html">
                 <img class="index-image" style="background-color:transparent;" src="images/illustrations/collective.JPG"/>
               </a>
@@ -278,7 +280,7 @@
               <h3 class="index-info">Graphic Design and Illustration</h3>
 
             </div>
-            <div data-depth="0.3" class="project-background"></div>
+            <div data-depth="0.4" class="project-background"></div>
 
           </div>
         </div>
@@ -297,6 +299,14 @@
         var parallaxInstance = new Parallax(projects[i]);
       }
 
+      var project2 = document.getElementById('diagonal');
+      var parallaxInstance = new Parallax(project2);
+
+      if(document.documentElement.clientWidth >= 680){
+        var project = document.getElementById('diagonal-box');
+        var parallaxInstance = new Parallax(project);
+      }
+
     </script>
 
     <script>
@@ -310,34 +320,10 @@
       }
     </script>
 
-    <script>
 
-      var project2 = document.getElementById('diagonal');
-      var parallaxInstance = new Parallax(project2);
+    <!--<script src="js/matter.js" type="text/javascript"></script>
 
-      if(document.documentElement.clientWidth >= 680){
-        var project = document.getElementById('diagonal-box');
-        var parallaxInstance = new Parallax(project);
-      }
-
-    </script>
-
-
-    <script src="js/matter.js" type="text/javascript"></script>
-
-    <style>
-      canvas{
-        position: absolute;
-        top:0px;
-        z-index:-1;
-      }
-      .bottom-button{
-        margin-top: 16px;
-        margin-bottom: 20px;
-      }
-    </style>
-
-    <script>
+     <script>
         var screenWidth = window.innerWidth;
         var screenHeight = window.innerHeight;
 
@@ -520,7 +506,10 @@
           document.getElementsByClassName("index-image")[0].style.display = "block";
         }
 
-    </script>
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particleInit.js"></script>
 
     <script src="js/instantpage.js" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
 

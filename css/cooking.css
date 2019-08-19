@@ -11,7 +11,7 @@
   animation-name: fade;
   animation-duration: 7000ms;
   animation-iteration-count: infinite;
-  z-index:10;
+  z-index:4;
   background-color: white;
 }
 

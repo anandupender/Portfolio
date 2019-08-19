@@ -47,8 +47,8 @@ var nav = document.getElementById("nav");
 nav.innerHTML += `
   <div id="top-rectangle"></div>
   <div id="logo">
-      <!-- <a class="name menu-buttons animated fadeInDown" href="index.html"> Anand Upender</a> --!>
-    <h1 class="name menu-buttons animated fadeInDown"> Anand Upender</h1>
+    <a class="name menu-buttons animated fadeInDown" href="index.html"> Anand Upender</a>
+    <! -- <h1 class="name menu-buttons animated fadeInDown"> Anand Upender</h1> --!>
 
   </div>
   <div id="menu">
