@@ -147,7 +147,7 @@ button:focus {outline:0;}
   width:100vw;
   position: absolute;
   top:0px;
-  z-index:5;
+  z-index:105;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   display: flex;
@@ -326,14 +326,18 @@ button:focus {outline:0;}
 
 
 @media screen and (max-width: 600px) {
-  .no-mobile{
-    display: none;
-  }
+
   #research{
     display: none;
   }
+}
+
+@media screen and (max-width: 800px) {
   .dropdown-content{
     display: none !important;
+  }
+  .no-mobile{
+    display: none;
   }
   .only-mobile{
     display: inline-block;
@@ -487,13 +491,13 @@ button:focus {outline:0;}
   z-index: 3;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .diagonal-container{
     -webkit-clip-path: polygon(20% 0%, 70% 0, 43% 100%, -5% 100%);
     clip-path: polygon(20% 0%, 70% 0, 43% 100%, -5% 100%);
   }
   .index-container{
-    margin-top:90px;
+    margin-top:120px;
     flex-direction: column;
   }
   .main-hello{
