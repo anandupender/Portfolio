@@ -142,10 +142,9 @@ button:focus {outline:0;}
 }
 
 #banner{
-  /* margin-top: 60px; */
   height:35px;
   width:100vw;
-  position: absolute;
+  position: fixed;
   top:0px;
   z-index:105;
   border-top: 1px solid black;
@@ -296,10 +295,10 @@ button:focus {outline:0;}
   #nav{
     height: 90px;
     align-items:center;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   #top-rectangle{
-    height: 90px;
+    height: 100px;
   }
 }
 
@@ -367,7 +366,7 @@ button:focus {outline:0;}
     left: -7.5vw;
     width: 100vw;
     background-color: white;
-    height:60px;
+    height:70px;
 }
 
 .bottom-button-large{
@@ -379,8 +378,7 @@ button:focus {outline:0;}
   text-align: center;
   font-size: 14px;
   margin:10px;
-  margin-bottom:30px;
-  transition: color 0.25s ease;
+  margin-bottom:20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -399,6 +397,16 @@ button:focus {outline:0;}
   #footer{
     bottom:-10px;
   }
+  #bottom-rectangle{
+    height:60px;
+  }
+}
+
+#insta-button{
+  background: radial-gradient(circle at 50% 70%, #FFE32E 0%, #fdf497 5%, #fd5949 30%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .logo-image {

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Anand Upender</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/cooking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafetch.js/1.5.0/instafetch.min.js"></script>
+
+  </head>
+  <body>
+    <div class ="topNav" id="nav">
+
+    </div>
+
+    <div class="insta-header">
+      <h1>#Instagram</h1>
+      <p style="color:grey;">note: some posts are videos and seem lame here. thanks insta api...</p>
+    </div>
+
+    <div id="instafetch" class="row">
+      <div class="column" id="0"> </div>
+      <div class="column" id="1"> </div>
+      <div class="column" id="2"> </div>
+    </div>
+
+    <script type="text/javascript">
+      instafetch.init({
+        accessToken: '280725348.1677ed0.d8d407b1e93149fc81984c944ba30a5b',
+        target: 'instafetch',
+        numOfPics: 15,
+        caption: true
+      });
+
+      var instafetch = document.getElementById("instafetch");
+
+      var interval = setInterval(function(){
+        if(document.getElementsByTagName('article').length != 0){
+          clearInterval(interval);
+          console.log("here");
+          var images = document.getElementsByTagName('article');
+          console.log(images);
+          for (var i = 0; i < images.length; i++) {
+            console.log(i);
+            var column = i%3;
+            var newBorder = document.createElement('div');
+            newBorder.className = "border-box";
+            newBorder.appendChild(images[i]);
+            var div = document.getElementById(column).appendChild(newBorder);
+          }
+        }
+      }
+      ,50);
+
+    </script>
+
+    <style>
+      .insta-header{
+        margin-top:15vh;
+        text-align:center;
+        width:80vw;
+      }
+      #instafetch{
+          margin-top:2vh;
+          margin-bottom:15vh;
+          margin-left:3vw;
+          margin-right:3vw;
+      }
+      .column{
+        padding:10px;
+      }
+      article{
+        padding:25px;
+        -webkit-box-shadow: 0px 10px 30px -14px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 10px 30px -14px rgba(0,0,0,0.3);
+        box-shadow: 0px 10px 30px -14px rgba(0,0,0,0.3);
+        background:white;
+        z-index:5;
+      }
+      figure{
+        margin:0px;
+      }
+      p{
+        margin-top:15px;
+        font-size:14px;
+      }
+      .border-box{
+        padding:5px;
+        z-index:1;
+        margin-top:40px;
+      }
+      .border-box:hover, .border-box:active{
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      }
+      @media screen and (max-width: 800px) {
+        .column{
+          padding:0px;
+          flex:60%;
+        }
+        .border-box{
+          margin-top:20px;
+        }
+      }
+    </style>
+
+    <div id="footer"></div>
+
+    <script type="text/javascript" src="js/headerfooter.js"></script>
+
+  </body>
+</html>
