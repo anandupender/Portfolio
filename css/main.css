@@ -7,8 +7,7 @@ html,body{
 }
 
 body{
-  /* font-family: 'Cardo', serif; */
-  font-family: 'Karla', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -20,6 +19,10 @@ body{
   margin:0px;
   scroll-behavior: smooth;
   background-color: white;
+}
+
+.monospace{
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .name:hover{
@@ -71,8 +74,11 @@ canvas{
   background-color: #FFFFFF00;
   color:black;
   font-size: 24px;
-  z-index: 10;
   padding:0px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+#scrollTo{
+  z-index: 10000;
 }
 
 .button:hover{
@@ -137,7 +143,6 @@ button:focus {outline:0;}
   align-items:flex-start;
   vertical-align: middle;
   z-index:102;
-  background-color: white;
   padding-top:40px;
 }
 

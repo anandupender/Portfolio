@@ -39,7 +39,7 @@ headContent.innerHTML += `
   <meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
-  <link href="https://fonts.googleapis.com/css?family=Barlow|Cardo|Karla|Share+Tech+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Cardo|Karla|Share+Tech+Mono|Lexend+Deca|Manjari" rel="stylesheet">
 
 `
 
