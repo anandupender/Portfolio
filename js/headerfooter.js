@@ -1,21 +1,20 @@
-var headContent = document.getElementsByTagName('head')[0];
+var headContent = document.getElementsByTagName("head")[0];
 
-var googleAnalyticsFirst = "https://www.googletagmanager.com/gtag/js?id=UA-130786913-1"
+var googleAnalyticsFirst =
+  "https://www.googletagmanager.com/gtag/js?id=UA-130786913-1";
 
-var googleAnalyticsInner =
-  `
+var googleAnalyticsInner = `
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-130786913-1');
-`
-var gFirst = document.createElement('script');
-
+`;
+var gFirst = document.createElement("script");
 
 gFirst.src = googleAnalyticsFirst;
 
-var gInner = document.createElement('script');
-var s = document.getElementsByTagName('script')[0];
+var gInner = document.createElement("script");
+var s = document.getElementsByTagName("script")[0];
 gInner.text = googleAnalyticsInner;
 s.parentNode.insertBefore(gFirst, s);
 s.parentNode.insertBefore(gInner, s);
@@ -43,9 +42,10 @@ headContent.innerHTML += `
   <meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
-  <link href="https://fonts.googleapis.com/css?family=Barlow|Cardo|Karla|Share+Tech+Mono|Lexend+Deca|Manjari" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Cardo|Karla|Share+Tech+Mono|Lexend+Deca|Manjari" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet" />
 
-`
+`;
 
 var nav = document.getElementById("nav");
 nav.innerHTML += `
