@@ -459,10 +459,6 @@ button:focus {outline:0;}
   /* filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.3)); commented out because sometimes creates glitching rectangle outline on image*/
 }
 
-/* .index-image-container:hover{
-  transition: .8s ease-in-out;
-} */
-
 .index-image{
   /* dont show image when in desktop because pendulum */
   /* display:none !important; */
@@ -586,6 +582,20 @@ button:focus {outline:0;}
   margin-right:30px;
 }
 
+.profile-image-container{
+  display: flex;
+  flex: 3;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  z-index:101;
+}
+.profile-image{
+  max-width: 80%;
+  background-color: #FA7268;
+  transition: .25s ease;
+}
+
 #profile-image{
 	position: absolute;
 	width:25vw;
@@ -626,7 +636,9 @@ button:focus {outline:0;}
   	width:60vw;
   	height: 60vw;
   }
-
+  .profile-image-container{
+    margin-left:20%;
+  }
   #profile-image{
   	width:60vw;
   	height:60vw;
@@ -720,6 +732,10 @@ button:focus {outline:0;}
 #menu{
   display: flex;
   flex-direction: row;
+}
+
+ul#menu{
+   list-style-type: none;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
