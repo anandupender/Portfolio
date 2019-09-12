@@ -1,0 +1,71 @@
+{
+  "name": "AnandUpenderPersonalSite",
+  "version": "1.0.0",
+  "description": "My Personal Evolving Portfolio created in Dec. 2018 and refined constantly",
+  "main": "gulpfile.js",
+  "paths": {
+    "generic": {
+      "src": "./src",
+      "dest": "./dist"
+    },
+    "markup": {
+      "src": "./src/*.html",
+      "dest": "./dist"
+    },
+    "styles": {
+      "src": "./src/css/*.css",
+      "dest": "./dist/css"
+    },
+    "scripts": {
+      "src": "./src/js/*.js",
+      "dest": "./dist/js"
+    },
+    "assets": {
+      "src": [
+        "./src/newImages/**/*.*"
+      ],
+      "dest": "./dist/images"
+    },
+    "unsupportedImages": {
+      "src": [
+        "./src/images/**/*.{gif,svg,ico,txt,pdf}"
+      ],
+      "dest": "./src/newImages"
+    },
+    "images": {
+      "src": [
+        "./src/images/**/*.{jpg,png,webp,JPG,jpeg}"
+      ],
+      "dest": "./src/newImages"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandupender/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandupender/Portfolio/issues"
+  },
+  "homepage": "https://github.com/anandupender/Portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrent-transform": "^1.0.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "os": "^0.1.1"
+  }
+}

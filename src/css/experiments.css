@@ -1,0 +1,141 @@
+body{
+  height: auto;
+  overflow-y: scroll;
+}
+
+h2{
+  margin:7px;
+}
+
+#all-experiments{
+  width:85%;
+  display: flex;
+  flex-direction: column;
+  margin-top:100px;
+  z-index:1;
+}
+
+.experiment-card{
+  flex:1;
+  display: flex;
+  height:300px;
+  margin-bottom:150px;
+}
+
+.experiment-spacer{
+  flex:2;
+}
+
+.experiment-background{
+  box-shadow: 2px 2px 10px #66666644;
+  flex:9;
+  background-color: #EEE;
+  align-items: center;
+  justify-content: center;
+}
+
+.experiment-title{
+  text-decoration: underline;
+  text-decoration-color: #FA7268;
+  font-size: 48px;
+  transform: rotate(4deg);
+  position: absolute;
+  margin-top: 60px;
+  width:35%;
+  font-weight: 700;
+  text-shadow: 2px 2px #fff;
+}
+
+.experiment-info{
+  position: absolute;
+  margin-top: 190px;
+  width:35%;
+  font-size: 20px;
+  background-color: white;
+  padding:15px;
+  box-shadow: 2px 2px 10px #66666644;
+  word-wrap: break-word;
+}
+
+.experiment-info h3{
+  margin-bottom:10px;
+}
+
+.experiment-image-container{
+  height:300px;
+  width:350px;
+  overflow:hidden;
+  float: right;
+}
+
+.experiment-image{
+  width: 90%;
+  margin-top:25px;
+  float: right;
+  margin-right:25px;
+}
+
+.experiment-button{
+  /* border: 2px black solid; */
+  flex:1;
+  margin-left:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.experiment-button:hover .experiment-button-text{
+  background-color: #FA7268;
+  color:white;
+  border:0px white solid;
+}
+
+
+.experiment-button-text{
+  position: absolute;
+  border: 2px black solid;
+  padding: 10px 15px;
+  transform: rotate(90deg);
+  flex:1;
+  width:250%;
+}
+
+@media screen and (max-width: 950px) {
+  .experiment-card{
+    height:600px;
+    margin-top:125px;
+    flex-direction: column;
+  }
+  .experiment-image-container{
+    width:320px;
+  }
+  .experiment-image{
+    margin:15px;
+  }
+  .experiment-title{
+    margin-top: -90px;
+    width:80%;
+    font-size: 36px;
+  }
+  .experiment-info{
+    margin-left: -20px;
+    margin-top:220px;
+  }
+  .experiment-info h3{
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  .experiment-button-text{
+    transform: rotate(0deg);
+    margin-left: 0px;
+    margin-top: 50px;
+    width:300px;
+  }
+}
+
+#footer{
+  position:absolute;
+}
