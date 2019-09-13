@@ -20,23 +20,27 @@
       "src": "./src/js/*.js",
       "dest": "./dist/js"
     },
-    "assets": {
-      "src": [
-        "./src/newImages/**/*.*"
-      ],
+    "copyImages": {
+      "src": "./src/optimizedImages/**/*.*",
       "dest": "./dist/images"
     },
     "unsupportedImages": {
       "src": [
         "./src/images/**/*.{gif,svg,ico,txt,pdf}"
       ],
-      "dest": "./src/newImages"
+      "dest": "./src/optimizedImages"
     },
     "images": {
-      "src": [
-        "./src/images/**/*.{jpg,png,webp,JPG,jpeg}"
-      ],
-      "dest": "./src/newImages"
+      "src": "./src/images/**/*.{jpg,webp,JPG,jpeg}",
+      "dest": "./src/optimizedImages"
+    },
+    "pngs": {
+      "src": "./src/images/**/*.png",
+      "dest": "./src/optimizedImages"
+    },
+    "largeImages": {
+      "src": "./src/images/**/hero.{png,jpg,jpeg}",
+      "dest": "./src/optimizedImages"
     }
   },
   "scripts": {
@@ -66,6 +70,7 @@
   },
   "dependencies": {
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.1.0",
     "os": "^0.1.1"
   }
 }

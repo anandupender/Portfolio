@@ -63,27 +63,62 @@ const scripts = () =>
 
 // Assets
 // Copy assets to ./dist/
-const assets = () => src(paths.assets.src).pipe(dest(paths.assets.dest));
+const copyImages = () =>
+  src(paths.copyImages.src).pipe(dest(paths.copyImages.dest));
 
 // Image Resize
 const resizeImages = () =>
   src(paths.images.src)
-    .pipe(parallelImage(imageResize({ width: 1400 }), os.cpus().length))
+    .pipe(parallelImage(imageResize({ width: 1080 }), os.cpus().length))
     .pipe(dest(paths.images.dest));
+exports.test = resizeImages;
+
+// Image Resize and PNG to JPEG
+const resizeImagesPNG = () =>
+  src(paths.pngs.src)
+    .pipe(
+      parallelImage(
+        imageResize({ width: 1080, format: "jpeg" }),
+        os.cpus().length
+      )
+    )
+    .pipe(dest(paths.pngs.dest));
+
+exports.png = resizeImagesPNG;
+
+// Image Resize and PNG to JPEG
+const copyLargeImages = () =>
+  src(paths.largeImages.src)
+    .pipe(
+      parallelImage(
+        imageResize({ width: 2400, format: "jpeg" }),
+        os.cpus().length
+      )
+    )
+    .pipe(dest(paths.largeImages.dest));
+exports.large = copyLargeImages;
+
+exports.png = resizeImagesPNG;
 
 // Unsupported Images
-const unsupportedImages = () =>
-  src(paths.unsupportedImages.src).pipe(dest(paths.unsupportedImages.dest));
-exports.unsupported = unsupportedImages;
+const copyUnsupportedImages = () =>
+  src(paths.unsupportedImages.src).pipe(dest(paths.images.dest));
+exports.unsupported = copyUnsupportedImages;
 
 // Image Clean
 const cleanImages = () => del(paths.images.dest);
 exports.cleanImages = cleanImages;
 
-exports.image = series(cleanImages, resizeImages, unsupportedImages);
+exports.image = series(
+  cleanImages,
+  resizeImages,
+  resizeImagesPNG,
+  copyUnsupportedImages,
+  copyLargeImages
+);
 
 // Build
-const build = parallel(markup, styles, scripts, assets);
+const build = parallel(markup, styles, scripts, copyImages);
 exports.build = series(clean, build);
 exports.build.description = "Clean, build ";
 
@@ -96,11 +131,6 @@ const watchFiles = done => {
   // watch(paths.assets.src).on("change", series(assets, browserSync.reload));
   done();
 };
-
-function doNothing(cb) {
-  // place code for your default task here
-  cb();
-}
 
 watchFiles.displayName = "Watch";
 exports.default = series(clean, build, watchFiles);
