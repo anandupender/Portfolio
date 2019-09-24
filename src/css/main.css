@@ -1,10 +1,12 @@
+:root {
+  --accent_color: #fa7268;
+}
+
 html,
 body {
   overflow-x: hidden !important;
   position: relative;
-  /* background-color:#FA7268; */
   background-color: white;
-  /* cursor: url("../images/svg/cursor-small.svg"), url("../images/cursor.jpeg") 0 0, auto; */
 }
 
 body {
@@ -39,7 +41,7 @@ button {
 }
 
 a:hover {
-  color: #fa7268;
+  color: var(--accent_color);
 }
 
 canvas {
@@ -64,7 +66,7 @@ canvas {
 
 .button,
 button {
-  background-color: #fa7268;
+  background-color: var(--accent_color);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -90,12 +92,12 @@ button {
 
 .home-buttons {
   margin-top: 40px !important;
-  color: #fa7268;
+  color: var(--accent_color) 8;
   padding: 0px;
 }
 
 .heart {
-  color: #fa7268;
+  color: var(--accent_color);
   font-size: 18px;
   position: fixed;
   animation-name: grow;
@@ -136,7 +138,7 @@ button {
 .h1-large {
   font-size: 64px;
   text-decoration: underline;
-  text-decoration-color: #fa7268;
+  text-decoration-color: var(--accent_color);
 }
 
 button:focus {
@@ -195,7 +197,6 @@ button:focus {
 @media screen and (max-width: 600px) {
   #banner {
     height: 30px;
-    /* margin-top:40px; */
   }
   #banner-content a {
     font-size: 12px;
@@ -244,70 +245,6 @@ button:focus {
 
 .no-margin-right {
   margin-right: 0px !important;
-}
-
-.color-change {
-  -webkit-animation: color-change 5s infinite;
-  -moz-animation: color-change 5s infinite;
-  -o-animation: color-change 5s infinite;
-  -ms-animation: color-change 5s infinite;
-  animation: color-change 5s infinite;
-}
-
-@-webkit-keyframes color-change {
-  0% {
-    color: #fa7268;
-  }
-  50% {
-    color: black;
-  }
-  100% {
-    color: #fa7268;
-  }
-}
-@-moz-keyframes color-change {
-  0% {
-    color: #fa7268;
-  }
-  50% {
-    color: black;
-  }
-  100% {
-    color: #fa7268;
-  }
-}
-@-ms-keyframes color-change {
-  0% {
-    color: #fa7268;
-  }
-  50% {
-    color: black;
-  }
-  100% {
-    color: #fa7268;
-  }
-}
-@-o-keyframes color-change {
-  0% {
-    color: #fa7268;
-  }
-  50% {
-    color: black;
-  }
-  100% {
-    color: #fa7268;
-  }
-}
-@keyframes color-change {
-  0% {
-    color: #fa7268;
-  }
-  50% {
-    color: black;
-  }
-  100% {
-    color: #fa7268;
-  }
 }
 
 .background-title {
@@ -389,7 +326,7 @@ button:focus {
 }
 
 .name {
-  color: #fa7268;
+  color: var(--accent_color);
   top: 0px;
   font-size: 32px;
   margin-bottom: 0px;
@@ -409,6 +346,53 @@ button:focus {
   justify-content: space-between;
   z-index: 10;
   height: 60px;
+}
+
+.image-grid-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 70px;
+  z-index: 1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 23%;
+  padding: 0 8px;
+}
+
+.column img {
+  margin-top: 16px;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 48%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    margin-bottom: 15px;
+    flex: 98%;
+    max-width: 100%;
+  }
 }
 
 #bottom-rectangle {
@@ -462,6 +446,7 @@ button:focus {
     #d6249f 60%,
     #285aeb 90%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -507,34 +492,10 @@ button:focus {
   z-index: 1;
   margin-left: 7%;
   margin-right: 7%;
-  /* filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.3)); commented out because sometimes creates glitching rectangle outline on image*/
 }
 
 .index-image {
-  /* dont show image when in desktop because pendulum */
-  /* display:none !important; */
   max-width: 80%;
-  /* animation-name: glitch;
-  animation-duration: 3s;
-  animation-iteration-count: infinite; */
-}
-
-@keyframes glitch {
-  0% {
-    filter: invert(0%);
-  }
-  80% {
-    filter: invert(0%);
-  }
-  80.1% {
-    filter: invert(100%);
-  }
-  98% {
-    filter: invert(0%);
-  }
-  100% {
-    filter: invert(0%);
-  }
 }
 
 .offset {
@@ -647,7 +608,7 @@ button:focus {
 }
 .profile-image {
   max-width: 80%;
-  background-color: #fa7268;
+  background-color: var(--accent_color);
   transition: 0.25s ease;
 }
 
@@ -725,7 +686,7 @@ button:focus {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  color: #fa7268;
+  color: var(--accent_color);
 }
 
 /* Show the dropdown menu on hover */
@@ -743,7 +704,7 @@ button:focus {
 /* Style the links inside the navigation bar */
 .icon {
   display: block;
-  fill: #fa7268;
+  fill: var(--accent_color);
   text-align: center;
   text-decoration: none;
   font-size: 28px;
@@ -756,7 +717,7 @@ button:focus {
 
 /* Change the color of links on hover */
 .icon:hover {
-  color: #fa7268;
+  color: var(--accent_color);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
