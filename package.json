@@ -34,6 +34,10 @@
       "src": "./src/images/**/*.{jpg,webp,JPG,jpeg}",
       "dest": "./src/optimizedImages"
     },
+    "oneTimeImages": {
+      "src": "./src/images/stream/*.{jpg,JPG,jpeg,png}",
+      "dest": "./src/optimizedImages/tempBatch"
+    },
     "pngs": {
       "src": "./src/images/**/*.png",
       "dest": "./src/optimizedImages"

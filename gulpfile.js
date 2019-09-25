@@ -66,6 +66,18 @@ const scripts = () =>
 const copyImages = () =>
   src(paths.copyImages.src).pipe(dest(paths.copyImages.dest));
 
+// Image Resize One Time
+const resizeImagesOnce = () =>
+  src(paths.oneTimeImages.src)
+    .pipe(
+      parallelImage(
+        imageResize({ width: 720, format: "jpeg" }),
+        os.cpus().length
+      )
+    )
+    .pipe(dest(paths.oneTimeImages.dest));
+exports.oneTimeImage = resizeImagesOnce;
+
 // Image Resize
 const resizeImages = () =>
   src(paths.images.src)
