@@ -366,7 +366,7 @@ button:focus {
 
 /* Create three equal columns that sits next to each other */
 .column {
-  flex: 23%;
+  flex: 22%;
   padding: 0 8px;
 }
 
@@ -383,7 +383,7 @@ button:focus {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 48%;
+    flex: 46%;
     max-width: 50%;
   }
 }
@@ -599,11 +599,12 @@ button:focus {
 }
 
 .profile-image-container {
+  position: relative;
   display: flex;
   flex: 3;
   align-items: center;
   justify-content: center;
-  margin-left: 10%;
+  margin-left: 25px;
   z-index: 101;
 }
 .profile-image {
@@ -652,7 +653,8 @@ button:focus {
     height: 60vw;
   }
   .profile-image-container {
-    margin-left: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   #profile-image {
     width: 60vw;

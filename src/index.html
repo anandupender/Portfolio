@@ -18,14 +18,14 @@
   <body style="overflow-y:scroll;height:auto;">
     <div class="topNav" id="nav"></div>
 
-    <div class="animated fadeIn   delay-2s" id="particles-js"></div>
+    <!-- <div class="animated fadeIn   delay-2s" id="particles-js"></div> -->
 
     <div class="index-container">
       <div class="main-hello no-mobile">
         <div class="rotate-container">
           <h1 class="h1-large animated fadeInDown delay-1s">Hi! I'm Anand.</h1>
         </div>
-        <h1 class="animated fadeInDown   delay-1s">
+        <h1 class="animated fadeInDown delay-1s" style="margin-top:0px;">
           Creative Strategist and Prototyper exploring what it means to be a
           <em>Designer</em>.
         </h1>
@@ -34,45 +34,53 @@
           style="font-weight:400"
         >
           Previously at Facebook, IDEO CoLab, and Stanford. Interested in the
-          design of Web Experiences, Spaces, Creative Tools, Foods, and
-          Communities.
+          design of Web Experiences, Emotional Spaces, Creative Tools, Foods,
+          and Communities.
         </h4>
         <br /><br /><br /><br />
       </div>
 
       <div
         class="profile-image-container animated fadeIn delay-1s"
-        id="diagonal-box"
+        id="profile-box"
       >
-        <div class="diagonal-container" id="diagonal" data-depth="0.9">
-          <picture data-depth="0.4">
-            <source
-              type="image/webp"
-              class="profile-image"
-              media="(max-width:1080px)"
-              srcset="images/headshot-s.webp"
-              alt="Headshot of Anand"
-            />
-            <source
-              type="image/webp"
-              class="profile-image"
-              srcset="images/headshot.webp"
-              alt="Headshot of Anand"
-            />
-            <source
-              class="profile-image"
-              srcset="images/headshot-s.jpg"
-              media="(max-width:1080px)"
-              alt="Headshot of Anand"
-            />
-            <img
-              class="profile-image"
-              src="images/headshot.jpg"
-              alt="Headshot of Anand"
-            />
-          </picture>
-        </div>
+        <img
+          class="t-profile-image-letter animated fadeIn"
+          src="images/a.svg"
+          data-depth="0.2"
+        />
+        <img class="t-profile-image-object" id="object" data-depth="0.7" />
       </div>
+      <script>
+        var object = document.getElementById("object");
+        var globalCounter = 0;
+        var images = [
+          "a-me.png",
+          "a-color.png",
+          "a-malt.png",
+          "a-beet.png",
+          "a-circles.png",
+          "a-phone.png"
+        ];
+        setInterval(function() {
+          object.src = "images/" + images[globalCounter];
+          globalCounter++;
+          if (globalCounter >= images.length) {
+            globalCounter = 0;
+          }
+        }, 1800);
+      </script>
+      <style>
+        .t-profile-image-letter {
+          width: 100%;
+        }
+        .t-profile-image-object {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          width: 100%;
+        }
+      </style>
       <h1
         class="h1-large animated fadeInDown delay-1s only-mobile"
         style="margin-bottom:0px;"
@@ -120,7 +128,7 @@
     <div id="all-project-cards" style="width:95%;">
       <div class="index-row">
         <div class="index-col">
-          <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="project-card" data-aos="fade-up" data-aos-duration="500">
             <div data-depth="0.6" class="index-project-image-container">
               <div class="index-title" style="text-decoration-color:black;">
                 Family Room
@@ -140,7 +148,7 @@
           </div>
         </div>
         <div class="index-col">
-          <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="project-card" data-aos="fade-up" data-aos-duration="500">
             <div data-depth="0.9" class="index-project-image-container">
               <a href="fb.html">
                 <img
@@ -163,7 +171,7 @@
 
       <div class="index-row">
         <div class="index-col">
-          <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="project-card" data-aos="fade-up" data-aos-duration="500">
             <div data-depth="0.2" class="index-project-image-container">
               <a href="meai.html">
                 <img
@@ -182,7 +190,7 @@
           </div>
         </div>
         <div class="index-col">
-          <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="project-card" data-aos="fade-up" data-aos-duration="500">
             <div data-depth="0.7" class="index-project-image-container">
               <a href="foodinno.html">
                 <img
@@ -204,7 +212,7 @@
 
       <!-- <div class="index-row">
         <div class="index-col">
-          <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="project-card" data-aos="fade-up" data-aos-duration="500">
             <div data-depth="0.6" class="index-project-image-container">
               <a href="malt.html">
                 <img
@@ -223,7 +231,7 @@
           </div>
         </div>
         <div class="index-col">
-          <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="project-card" data-aos="fade-up" data-aos-duration="500">
             <div data-depth="0.9" class="index-project-image-container">
               <a href="illustrations.html">
                 <img
@@ -312,11 +320,11 @@
         var parallaxInstance = new Parallax(projects[i]);
       }
 
-      var profileImage = document.getElementById("diagonal");
+      var profileImage = document.getElementById("object");
       var profileParallax = new Parallax(profileImage);
 
       if (document.documentElement.clientWidth >= 680) {
-        var project = document.getElementById("diagonal-box");
+        var project = document.getElementById("profile-box");
         var parallaxInstance = new Parallax(project);
       }
     </script>
