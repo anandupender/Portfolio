@@ -1,28 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Anand Upender</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"><link rel="stylesheet" href="css/main.min.css"><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></head><body style="overflow-y:scroll;height:auto;"><div class="topNav" id="nav"></div><!-- <div class="animated fadeIn   delay-2s" id="particles-js"></div> --><div class="index-container"><div class="main-hello no-mobile"><div class="rotate-container"><h1 class="h1-large animated fadeInDown delay-1s">Hi! I'm Anand.</h1></div><h1 class="animated fadeInDown delay-1s" style="margin-top:0px;">Creative Strategist and Prototyper exploring what it means to be a <em>Designer</em>.</h1><h4 class="animated fadeInDown delay-1s monospace" style="font-weight:400">Previously at Facebook, IDEO CoLab, and Stanford. Interested in the design of Web Experiences, Emotional Spaces, Creative Tools, Foods, and Communities.</h4><br><br><br><br></div><div class="profile-image-container animated fadeIn delay-1s" id="profile-box"><img class="t-profile-image-letter animated fadeIn" src="images/a.svg" data-depth="0.2"> <img class="t-profile-image-object" id="object" data-depth="0.7"> <img class="t-profile-image-letter animated fadeIn" src="images/a-triangle.svg" data-depth="0.2"></div><script>var object = document.getElementById("object");
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Anand Upender</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"><link rel="stylesheet" href="css/main.min.css"><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></head><body style="overflow-y:scroll;height:auto;"><div class="topNav" id="nav"></div><!-- <div class="animated fadeIn   delay-2s" id="particles-js"></div> --><div class="index-container"><div class="main-hello no-mobile"><div class="rotate-container"><h1 class="h1-large animated fadeInDown delay-1s">Hi! I'm Anand.</h1></div><h1 class="animated fadeInDown delay-1s" style="margin-top:0px;">Creative Strategist and Prototyper exploring what it means to be a <em>Designer</em>.</h1><h4 class="animated fadeInDown delay-1s monospace" style="font-weight:400">Previously at Facebook, IDEO CoLab, and Stanford. Interested in the design of Web Experiences, Emotional Spaces, Creative Tools, Foods, and Communities.</h4><br><br><br><br></div><div class="profile-image-container animated fadeIn delay-1s" id="profile-box"><img class="t-profile-image-letter animated fadeIn" src="images/a.svg" data-depth="0.2"> <img class="t-profile-image-object" id="o1" data-depth="0.7" src="images/a-me.png"> <img class="t-profile-image-object" id="o2" data-depth="0.7" src="images/a-color.png"> <img class="t-profile-image-object" id="o3" data-depth="0.7" src="images/a-malt.png"> <img class="t-profile-image-object" id="o4" data-depth="0.7" src="images/a-beet.png"> <img class="t-profile-image-object" id="o5" data-depth="0.7" src="images/a-trumpet.png"> <img class="t-profile-image-object" id="o6" data-depth="0.7" src="images/a-heart.png"> <img class="t-profile-image-object" id="o7" data-depth="0.7" src="images/a-circles.png"> <img class="t-profile-image-letter animated fadeIn" src="images/a-triangle.svg" data-depth="0.2"></div><script>var objects = document.getElementsByClassName("t-profile-image-object");
         var globalCounter = 0;
-        var images = [
-          "a-me.png",
-          "a-color.png",
-          "a-malt.png",
-          "a-beet.png",
-          "a-trumpet.png",
-          "a-heart.png",
-          "a-circles.png"
-        ];
+
         setInterval(function() {
-          object.src = "images/" + images[globalCounter];
+          for (var i = 0; i < objects.length; i++) {
+            if (globalCounter != i) {
+              objects[i].style.opacity = 0;
+            } else {
+              objects[i].style.opacity = 1;
+            }
+          }
           globalCounter++;
-          if (globalCounter >= images.length) {
+          if (globalCounter >= objects.length) {
             globalCounter = 0;
           }
         }, 900);</script><style>.t-profile-image-letter {
           width: 100%;
+          position: absolute;
         }
         .t-profile-image-object {
           position: absolute;
-          bottom: 0px;
           left: 0px;
           width: 100%;
+          transition: opacity 0.25s ease-in-out;
+          -moz-transition: opacity 0.25s ease-in-out;
+          -webkit-transition: opacity 0.25s ease-in-out;
         }</style><h1 class="h1-large animated fadeInDown delay-1s only-mobile" style="margin-bottom:0px;">Hi! I'm Anand.</h1><h4 class="animated fadeInDown delay-1s only-mobile" style="font-family: 'Share Tech Mono', monospace; font-weight:400;text-align:center;">Previously at Facebook and IDEO CoLab. Interested in the design of Spaces, Web Experiences, Foods, and Communities.</h4></div><div id="banner" class="animated fadeIn delay-2s"><div id="banner-content"><a href="https://docs.google.com/document/d/1MmJk9w8OQtfJkDjO_Nnj2qhCwh5Cgjw30ilFGPWjuL8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">✈️ ✈️ Currently crafting and living a 12 month experimental work/study with interesting design+product orgs around the world! <span style="color:#FA7268">Right Now: Copenhagen!</span> Read about it and share advice by clicking this banner. Seeking intense projects for post-November 2019 ✈️ ✈️</a></div></div><div id="scrollTo" class="work-bar animated fadeIn delay-2s"><h2 class="animated bounce delay-2s"><button onclick="window.scrollBy({top: 510, left: 0, behavior: 'smooth' });console.log('test');" class="no-style-button">See Work<br>&#8595;</button></h2></div><a name="projects"></a><div id="all-project-cards" style="width:95%;"><div class="index-row"><div class="index-col"><div class="project-card" data-aos="fade-up" data-aos-duration="500"><div data-depth="0.6" class="index-project-image-container"><div class="index-title" style="text-decoration-color:black;">Family Room</div><a href="familyRoom.html"><img class="index-project-image" src="images/familyRoom/heroLarge.jpeg" alt="Family Room Hero Image"></a><h3 class="index-info">Web Development and User Research</h3></div><div data-depth="0.4" class="project-background"></div></div></div><div class="index-col"><div class="project-card" data-aos="fade-up" data-aos-duration="500"><div data-depth="0.9" class="index-project-image-container"><a href="fb.html"><img class="index-project-image" style="transform:scale(1);" src="images/fb/cover.jpeg" alt="Facebook Hero Image"></a><div class="index-title" style="text-decoration-color:black;">Facebook</div><h3 class="index-info">Full-Stack Engineering and Brand</h3></div><div data-depth="0.5" class="project-background"></div></div></div></div><div class="index-row"><div class="index-col"><div class="project-card" data-aos="fade-up" data-aos-duration="500"><div data-depth="0.2" class="index-project-image-container"><a href="meai.html"><img class="index-project-image" src="images/meai/meai.jpeg" alt="ME.AI Hero Image"></a><div class="index-title" style="text-decoration-color:black;">Me.Ai</div><h3 class="index-info">Machine Learning and User Research</h3></div><div data-depth="0.8" class="project-background"></div></div></div><div class="index-col"><div class="project-card" data-aos="fade-up" data-aos-duration="500"><div data-depth="0.7" class="index-project-image-container"><a href="foodinno.html"><img class="index-project-image" style="background-color:transparent;" src="images/foodinno/cover.jpeg" alt="FoodInno Hero Image"></a><div class="index-title" style="text-decoration-color:black;">FoodInno</div><h3 class="index-info">Visual Design and Leadership</h3></div><div data-depth="0.3" class="project-background"></div></div></div></div><!-- <div class="index-row">
         <div class="index-col">
           <div class="project-card" data-aos="fade-up" data-aos-duration="500">
@@ -62,19 +63,16 @@
             <div data-depth="0.4" class="project-background"></div>
           </div>
         </div>
-      </div> --></div><div class="image-grid-container" style="margin-top:30px;"><h1 class="h1-large" style="text-align:center;width:100%;margin-bottom:10px;">Work Stream</h1><p style="text-align:center;width:100%;margin-bottom:20px;">An un-collection of unexplained visual work. Give me a call to talk through the projects behind the work.</p><div class="row"><div class="column"><img src="images/stream/4.gif"> <img src="images/stream/2.jpeg"> <img src="images/stream/13.jpeg"> <img src="images/stream/9.gif"> <img src="images/stream/11.jpeg"></div><div class="column"><img src="images/stream/1.jpeg"> <img src="images/stream/3.gif"> <img src="images/stream/14.jpeg"> <img src="images/stream/12.jpeg"> <img src="images/stream/6.jpeg"></div><div class="column"><img src="images/stream/1.gif"> <img src="images/stream/3.jpeg"> <img src="images/stream/2.gif"> <img src="images/stream/7.gif"> <img src="images/stream/8.jpeg"> <img src="images/stream/10.jpeg"></div><div class="column"><img src="images/stream/8.gif"> <img src="images/stream/5.jpeg"> <img src="images/stream/4.jpeg"> <img src="images/stream/9.jpeg"> <img src="images/stream/7.jpeg"></div></div></div><script>var</script><span style="width:100%;height:100px;"></span><div id="footer" style="background-color:white;position:fixed;"></div><script type="text/javascript" src="js/headerfooter.js"></script><script>document
+      </div> --></div><div class="image-grid-container" style="margin-top:30px;"><h1 class="h1-large" style="text-align:center;width:100%;margin-bottom:10px;">Work Stream</h1><p style="text-align:center;width:100%;margin-bottom:20px;">An un-collection of unexplained visual work. Give me a call to talk through the projects behind the work.</p><div class="row"><div class="column"><img src="images/stream/4.gif"> <img src="images/stream/2.jpeg"> <img src="images/stream/13.jpeg"> <img src="images/stream/9.gif"> <img src="images/stream/11.jpeg"></div><div class="column"><img src="images/stream/1.jpeg"> <img src="images/stream/3.gif"> <img src="images/stream/14.jpeg"> <img src="images/stream/12.jpeg"> <img src="images/stream/6.jpeg"></div><div class="column"><img src="images/stream/1.gif"> <img src="images/stream/3.jpeg"> <img src="images/stream/2.gif"> <img src="images/stream/7.gif"> <img src="images/stream/8.jpeg"> <img src="images/stream/10.jpeg"></div><div class="column"><img src="images/stream/8.gif"> <img src="images/stream/5.jpeg"> <img src="images/stream/4.jpeg"> <img src="images/stream/9.jpeg"> <img src="images/stream/7.jpeg"></div></div></div><span style="width:100%;height:100px;"></span><div id="footer" style="background-color:white;position:fixed;"></div><script type="text/javascript" src="js/headerfooter.js"></script><script>document
         .getElementById("work")
         .style.setProperty("text-decoration", "line-through");</script><script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script><script>var projects = document.getElementsByClassName("project-card");
       for (var i = 0; i < projects.length; i++) {
         var parallaxInstance = new Parallax(projects[i]);
       }
 
-      var profileImage = document.getElementById("object");
-      var profileParallax = new Parallax(profileImage);
-
       if (document.documentElement.clientWidth >= 680) {
-        var project = document.getElementById("profile-box");
-        var parallaxInstance = new Parallax(project);
+        var thing = document.getElementById("profile-box");
+        var parallaxInstance = new Parallax(thing);
       }</script><script>function responsiveMenu() {
         var x = document.getElementById("nav");
         if (x.className === "topNav") {
@@ -82,4 +80,4 @@
         } else {
           x.className = "topNav";
         }
-      }</script><script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script><script src="js/particleInit.js"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script><script>AOS.init();</script></body></html>
+      }</script><script src="https://unpkg.com/aos@next/dist/aos.js"></script><script>AOS.init();</script></body></html>

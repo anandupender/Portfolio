@@ -49,7 +49,48 @@
           src="images/a.svg"
           data-depth="0.2"
         />
-        <img class="t-profile-image-object" id="object" data-depth="0.7" />
+        <img
+          class="t-profile-image-object"
+          id="o1"
+          data-depth="0.7"
+          src="images/a-me.png"
+        />
+        <img
+          class="t-profile-image-object"
+          id="o2"
+          data-depth="0.7"
+          src="images/a-color.png"
+        />
+        <img
+          class="t-profile-image-object"
+          id="o3"
+          data-depth="0.7"
+          src="images/a-malt.png"
+        />
+        <img
+          class="t-profile-image-object"
+          id="o4"
+          data-depth="0.7"
+          src="images/a-beet.png"
+        />
+        <img
+          class="t-profile-image-object"
+          id="o5"
+          data-depth="0.7"
+          src="images/a-trumpet.png"
+        />
+        <img
+          class="t-profile-image-object"
+          id="o6"
+          data-depth="0.7"
+          src="images/a-heart.png"
+        />
+        <img
+          class="t-profile-image-object"
+          id="o7"
+          data-depth="0.7"
+          src="images/a-circles.png"
+        />
         <img
           class="t-profile-image-letter animated fadeIn"
           src="images/a-triangle.svg"
@@ -57,21 +98,19 @@
         />
       </div>
       <script>
-        var object = document.getElementById("object");
+        var objects = document.getElementsByClassName("t-profile-image-object");
         var globalCounter = 0;
-        var images = [
-          "a-me.png",
-          "a-color.png",
-          "a-malt.png",
-          "a-beet.png",
-          "a-trumpet.png",
-          "a-heart.png",
-          "a-circles.png"
-        ];
+
         setInterval(function() {
-          object.src = "images/" + images[globalCounter];
+          for (var i = 0; i < objects.length; i++) {
+            if (globalCounter != i) {
+              objects[i].style.opacity = 0;
+            } else {
+              objects[i].style.opacity = 1;
+            }
+          }
           globalCounter++;
-          if (globalCounter >= images.length) {
+          if (globalCounter >= objects.length) {
             globalCounter = 0;
           }
         }, 900);
@@ -79,12 +118,15 @@
       <style>
         .t-profile-image-letter {
           width: 100%;
+          position: absolute;
         }
         .t-profile-image-object {
           position: absolute;
-          bottom: 0px;
           left: 0px;
           width: 100%;
+          transition: opacity 0.25s ease-in-out;
+          -moz-transition: opacity 0.25s ease-in-out;
+          -webkit-transition: opacity 0.25s ease-in-out;
         }
       </style>
       <h1
@@ -303,10 +345,6 @@
       </div>
     </div>
 
-    <script>
-      var
-    </script>
-
     <span style="width:100%;height:100px;"></span>
 
     <div id="footer" style="background-color:white;position:fixed;"></div>
@@ -326,12 +364,9 @@
         var parallaxInstance = new Parallax(projects[i]);
       }
 
-      var profileImage = document.getElementById("object");
-      var profileParallax = new Parallax(profileImage);
-
       if (document.documentElement.clientWidth >= 680) {
-        var project = document.getElementById("profile-box");
-        var parallaxInstance = new Parallax(project);
+        var thing = document.getElementById("profile-box");
+        var parallaxInstance = new Parallax(thing);
       }
     </script>
 
@@ -345,8 +380,6 @@
         }
       }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="js/particleInit.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

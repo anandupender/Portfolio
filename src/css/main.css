@@ -663,6 +663,16 @@ button:focus {
   }
 }
 
+.interview-tag {
+  position: fixed;
+  top: 30px;
+  right: 0px;
+  z-index: 1000;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
