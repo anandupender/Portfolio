@@ -50,6 +50,11 @@
           data-depth="0.2"
         />
         <img class="t-profile-image-object" id="object" data-depth="0.7" />
+        <img
+          class="t-profile-image-letter animated fadeIn"
+          src="images/a-triangle.svg"
+          data-depth="0.2"
+        />
       </div>
       <script>
         var object = document.getElementById("object");
@@ -59,8 +64,9 @@
           "a-color.png",
           "a-malt.png",
           "a-beet.png",
-          "a-circles.png",
-          "a-phone.png"
+          "a-trumpet.png",
+          "a-heart.png",
+          "a-circles.png"
         ];
         setInterval(function() {
           object.src = "images/" + images[globalCounter];
@@ -68,7 +74,7 @@
           if (globalCounter >= images.length) {
             globalCounter = 0;
           }
-        }, 1800);
+        }, 900);
       </script>
       <style>
         .t-profile-image-letter {
