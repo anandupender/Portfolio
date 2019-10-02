@@ -45,90 +45,58 @@
         id="profile-box"
       >
         <img
-          class="t-profile-image-letter animated fadeIn"
+          class="a-profile-image-letter animated fadeIn"
           src="images/a.svg"
           data-depth="0.2"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o1"
           data-depth="0.7"
           src="images/a-me.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o2"
           data-depth="0.7"
           src="images/a-color.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o3"
           data-depth="0.7"
           src="images/a-malt.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o4"
           data-depth="0.7"
           src="images/a-beet.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o5"
           data-depth="0.7"
           src="images/a-trumpet.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o6"
           data-depth="0.7"
           src="images/a-heart.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o7"
           data-depth="0.7"
           src="images/a-circles.png"
         />
         <img
-          class="t-profile-image-letter animated fadeIn"
+          class="a-profile-image-letter animated fadeIn"
           src="images/a-triangle.svg"
           data-depth="0.2"
         />
       </div>
-      <script>
-        var objects = document.getElementsByClassName("t-profile-image-object");
-        var globalCounter = 0;
-
-        setInterval(function() {
-          for (var i = 0; i < objects.length; i++) {
-            if (globalCounter != i) {
-              objects[i].style.opacity = 0;
-            } else {
-              objects[i].style.opacity = 1;
-            }
-          }
-          globalCounter++;
-          if (globalCounter >= objects.length) {
-            globalCounter = 0;
-          }
-        }, 900);
-      </script>
-      <style>
-        .t-profile-image-letter {
-          width: 100%;
-          position: absolute;
-        }
-        .t-profile-image-object {
-          position: absolute;
-          left: 0px;
-          width: 100%;
-          transition: opacity 0.25s ease-in-out;
-          -moz-transition: opacity 0.25s ease-in-out;
-          -webkit-transition: opacity 0.25s ease-in-out;
-        }
-      </style>
       <h1
         class="h1-large animated fadeInDown delay-1s only-mobile"
         style="margin-bottom:0px;"
@@ -350,6 +318,25 @@
     <div id="footer" style="background-color:white;position:fixed;"></div>
 
     <script type="text/javascript" src="js/headerfooter.js"></script>
+
+    <script>
+      var objects = document.getElementsByClassName("a-profile-image-object");
+      var globalCounter = 0;
+
+      setInterval(function() {
+        for (var i = 0; i < objects.length; i++) {
+          if (globalCounter != i) {
+            objects[i].style.opacity = 0;
+          } else {
+            objects[i].style.opacity = 1;
+          }
+        }
+        globalCounter++;
+        if (globalCounter >= objects.length) {
+          globalCounter = 0;
+        }
+      }, 900);
+    </script>
 
     <script>
       document

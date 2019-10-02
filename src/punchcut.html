@@ -35,9 +35,8 @@
           </h1>
         </div>
         <h1 class="animated fadeInDown delay-1s" style="margin-top:0px;">
-          I'm Anand, a Creative Strategist and Prototyper exploring what it
-          means to be a
-          <em>Designer</em>.
+          I'm Anand, a User-Centered Prototyper excited about futures design and
+          interactive experiences.
         </h1>
         <h4
           class="animated fadeInDown delay-1s monospace"
@@ -55,90 +54,58 @@
         id="profile-box"
       >
         <img
-          class="t-profile-image-letter animated fadeIn"
+          class="a-profile-image-letter animated fadeIn"
           src="images/a.svg"
           data-depth="0.2"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o1"
           data-depth="0.7"
           src="images/a-me.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o2"
           data-depth="0.7"
           src="images/a-color.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o3"
           data-depth="0.7"
           src="images/a-malt.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o4"
           data-depth="0.7"
           src="images/a-beet.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o5"
           data-depth="0.7"
           src="images/a-trumpet.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o6"
           data-depth="0.7"
           src="images/a-heart.png"
         />
         <img
-          class="t-profile-image-object"
+          class="a-profile-image-object"
           id="o7"
           data-depth="0.7"
           src="images/a-circles.png"
         />
         <img
-          class="t-profile-image-letter animated fadeIn"
+          class="a-profile-image-letter animated fadeIn"
           src="images/a-triangle.svg"
           data-depth="0.2"
         />
       </div>
-      <script>
-        var objects = document.getElementsByClassName("t-profile-image-object");
-        var globalCounter = 0;
-
-        setInterval(function() {
-          for (var i = 0; i < objects.length; i++) {
-            if (globalCounter != i) {
-              objects[i].style.opacity = 0;
-            } else {
-              objects[i].style.opacity = 1;
-            }
-          }
-          globalCounter++;
-          if (globalCounter >= objects.length) {
-            globalCounter = 0;
-          }
-        }, 900);
-      </script>
-      <style>
-        .t-profile-image-letter {
-          width: 100%;
-          position: absolute;
-        }
-        .t-profile-image-object {
-          position: absolute;
-          left: 0px;
-          width: 100%;
-          transition: opacity 0.25s ease-in-out;
-          -moz-transition: opacity 0.25s ease-in-out;
-          -webkit-transition: opacity 0.25s ease-in-out;
-        }
-      </style>
     </div>
 
     <div class="row project-info-container" style="margin-top:150px; ">
@@ -193,8 +160,8 @@
               </a>
 
               <h3 class="index-info">
-                Leading a small team of researchers to understand the future of
-                city mobility through prototyping and user research.
+                Led a small team of researchers to understand the future of city
+                mobility through prototyping and user research.
               </h3>
             </div>
           </div>
@@ -213,7 +180,10 @@
               <div class="index-title" style="text-decoration-color:black;">
                 Prototyping Food Experiences
               </div>
-              <h3 class="index-info">asdfasdf</h3>
+              <h3 class="index-info">
+                Led team to research and design ways to reduce leftover food
+                waste and increase culinary confidence.
+              </h3>
             </div>
           </div>
         </div>
@@ -233,7 +203,10 @@
               <div class="index-title" style="text-decoration-color:black;">
                 Prototyping AI Experiences
               </div>
-              <h3 class="index-info">Machine Learning and User Research</h3>
+              <h3 class="index-info">
+                Built small AI prototypes to propose future interactions and
+                design systems for AI systems.
+              </h3>
             </div>
           </div>
         </div>
@@ -252,9 +225,46 @@
                 Prototyping Audio-Visual Games
               </div>
               <h3 class="index-info">
-                Making games that "read" and evoked emotions in viewers using
-                music, visuals, and interactivity. Class led by Ge Wang. Created
-                using Unity, ChucK and OpenGL.
+                Made emotional, immersive games using music, visuals, and
+                interactivity. Class led by Ge Wang. Created using Unity, ChucK
+                and OpenGL.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="index-row">
+        <div class="index-col">
+          <div class="project-card">
+            <div class="index-project-image-container">
+              <img
+                class="index-project-image"
+                src="images/punchcut/ar-car.jpg"
+              />
+              <div class="index-title" style="text-decoration-color:black;">
+                Prototyping Autonomous Futures
+              </div>
+              <h3 class="index-info">
+                A research-focused approach to designing car heads up displays.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="index-col">
+          <div class="project-card">
+            <div class="index-project-image-container">
+              <img
+                class="index-project-image"
+                style="background-color:transparent;"
+                src="images/punchcut/tobi.png"
+                alt="FoodInno Hero Image"
+              />
+              <div class="index-title" style="text-decoration-color:black;">
+                Prototyping Voice Experiences
+              </div>
+              <h3 class="index-info">
+                Making hiring more humane for applicants and more efficient for
+                recruiters.
               </h3>
             </div>
           </div>
@@ -262,8 +272,7 @@
       </div>
     </div>
 
-    <!-- SMALL PROJECTS 
-
+    <!-- 
     <div class="project-image-container" style="height: 30%;">
       <h1>
         Prototyping Computer Vision Experiences
@@ -273,32 +282,30 @@
         JS prototypes for AR Camera Stuff
       </h3>
     </div>
-
-    <div class="project-image-container" style="height: 30%;">
-      <h1>
-        Prototyping Autonomous Futures
-      </h1>
-      <img src="images/punchcut/ar-car.jpg" class="project-image" />
-      <h3 class="image-caption">
-        Class: Designing Emotion for Reactive Car Interfaces // Professor:
-        Barbara Karanian
-      </h3>
-    </div>
-
-    <div class="project-image-container" style="height: 30%">
-      <h1>
-        Prototyping Voice Experiences
-      </h1>
-      <img src="images/punchcut/tobi.png" class="project-image" />
-      <h3 class="image-caption">
-        IDEO Colab Project
-      </h3>
-    </div>
     -->
 
     <span style="width:100%;height:100px;"></span>
 
     <div id="footer" style="background-color:white;position:fixed;"></div>
+
+    <script>
+      var objects = document.getElementsByClassName("a-profile-image-object");
+      var globalCounter = 0;
+
+      setInterval(function() {
+        for (var i = 0; i < objects.length; i++) {
+          if (globalCounter != i) {
+            objects[i].style.opacity = 0;
+          } else {
+            objects[i].style.opacity = 1;
+          }
+        }
+        globalCounter++;
+        if (globalCounter >= objects.length) {
+          globalCounter = 0;
+        }
+      }, 900);
+    </script>
 
     <script type="text/javascript" src="js/headerfooter.js"></script>
 

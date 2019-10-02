@@ -625,6 +625,19 @@ button:focus {
   filter: grayscale(1);
 }
 
+.a-profile-image-letter {
+  width: 100%;
+  position: absolute;
+}
+.a-profile-image-object {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+
 .manifesto {
   flex: 1;
   margin-top: 10px;
