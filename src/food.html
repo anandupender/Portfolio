@@ -12,21 +12,19 @@
   <body style="height: auto; overflow-y: scroll;">
 
     <div class ="topNav" id="nav"></div>
-
-    <div class="animated fadeIn delay-2s" id="particles-js"></div>
-
     <div class="index-container">
       <div class="main-hello">
         <div class="rotate-container">
           <h1 class="h1-large animated fadeInDown delay-1s">Food Design</h1>
         </div>
         <h1 class="animated fadeInDown delay-1s">A journey through food as a storytelling medium, a research topic, and a source for creative inspiration.</h1>
-        <h4 class="animated fadeInDown delay-1s" style="font-family: 'Share Tech Mono', monospace; font-weight:400">Highlights include pop-up-dinners, a stint at an Italian bakery, and Stanford Food Design research</h4>
+        <h4 class="animated fadeInDown delay-1s" style="font-family: 'Share Tech Mono', monospace; font-weight:400">Highlights include pop-up-dinners, a stint at an Italian bakery, and Stanford Food Design research<br/><br/></h4>
+
       </div>
 
       <div class="index-image-container animated fadeIn delay-1s" id="diagonal-box">
         <div class="diagonal-container" id="diagonal" data-depth="0.6">
-          <img data-depth="0.3" class="index-image" src="images/food/florenceCook.jpg"/>
+          <img data-depth="0.3" class="index-image" src="images/food/action.jpg"/>
         </div>
       </div>
     </div>
@@ -36,11 +34,12 @@
     <div class="definition">
       <h1>Food Design &nbsp;&nbsp;<span style="font-size:18px;color:grey;">| fo͞od dəˈzīn |</span></h1>
       <h3>noun</h3>
-      <p style="margin-left:30px;">1. Intentional research into the interactions between people and the kitchens, restaurants and food that they inhabit or consume. </p>
-      <p style="margin-left:30px;">2. The design of food and food experiences. </p>
-      <p style="margin-left:30px;">3. A focus of much of my work. </p>
-
-      <h3 style="margin-top:40px; color:grey;">See Examples: <span style="color:black;">Stanford Food Design research | My Food | Creative Cooking Confidence | Cinder </span></h3>
+      <ol style="list-style-type: decimal;">
+        <li>The design of food and the large universe of products and services around it. </li>
+        <li>Design research into the interactions between major stakeholders: people and their kitchens, restaurants and their supply chains, farmers and their seeds, and much more. </li>
+        <li>A new term constantly being redefined and evolved.</li>
+      </ol>
+      <h3 style="margin-top:40px; color:grey;">See Examples: <span style="color:black;">My Food | Stanford Food Design Research | FoodInno | Creative Cooking Confidence </span></h3>
 
     </div>
 
@@ -83,37 +82,53 @@
 
     <div class="food-project">
       <h1>Stanford Food Design</h1>
-      <h2>Summary</h2>
-      <p>In the Center for Design Research at Stanford is a group of food designers, scientists, and enthusiasts that conduct research led by Dr. Soh Kim. We work with students and industry experts to understand
-      trends in the food space, research extreme user groups, and design provocations for new interactions with food. </br>We also host an annual conference called FoodInno.</p>
+      <p class="cooking-bio-text-small">In the Center for Design Research at Stanford is a group of food designers, scientists, and enthusiasts that conduct research led by Dr. Soh Kim. We work with students and industry experts to understand
+        trends in the food space, research extreme user groups, and design provocations for new interactions with food. </br></br>We also host an annual conference called FoodInno.
+      </p>
 
-      <h2>Current Research</h2>
-      <p>We are building prototypes to tackle the learning curve many Americans face when they move into their first home and need to cook regularly.
+      <div class="project-image-container" style="height: 30%; margin-bottom:30px;">
+          <img src="images/food/korea.jpg" class="project-image" />
+          <h3 class="image-caption">presenting research to Hongik University in Korea</h3>
+      </div>
+
+      <h2 style="margin-top:50px; ">Current Research</h2>
+      <p style="margin-bottom: 50px;">We are building prototypes to tackle the learning curve many Americans face when they move into their first home and need to cook regularly.
         Our main finding was that new cooks follow recipes to the tee to remove blame from themselves whereas more experienced homecooks improvise with ingredients freely.
         We want to get people to that confidence earlier. We have a hunch that this beings with redesigning the recipe, making it more dynamic and context-aware.
       </p>
 
-      <!-- photos: me speaking in Korea, protoype i built, user interviews in co-op, food inno logo, SKS-->
-      <div class="row">
-        <div class="column">
+      <h2>Published Papers (HCI International)</h2>
+    
+      <div style="display:flex;flex-direction: row;width:100%;justify-content: flex-start;text-align: center">
+        <div>
+          <object width="400" height="500" data="data/food1.pdf" style="margin-right:30px;"></object>
         </div>
-        <div class="column">
-        </div>
-        <div class="column">
+        <div>
+            <object width="400" height="500" data="data/food2.pdf"></object>
         </div>
       </div>
     </div>
 
     <div class="food-project">
-      <h1>Creative Cooking Confidence</h1>
+      <h1>FoodInno</h1>
+      <p class="cooking-bio-text-small">In 2019, I was able to direct the fourth annual Food Innovation summit at Stanford. <span style="text-decoration: underline">Click the image to read the case!</span></p>
+      <div class="project-image-container" style="max-width: 80%; margin-bottom:30px;">
+          <a href="foodinno.html"><img src="images/foodinno/hero.jpeg" class="project-image add-shadow" /></a>
+      </div>
+    </div>
+
+      <!-- protoype i built, user interviews in co-op, food inno logo-->
+
+    <div class="food-project">
+      <h1>Creative Cooking Confidence: A Framework</h1>
       <h2>Summary</h2>
       <p>As an independent study with Professor David Kelley, I decided to completely understand what was different between young people (15-21) who say they can cook and those who say they will "burn water."
       I created a framework of gaining intuition that I used to explain how meal kit delivery services act as a band-aid on a larger problem of how hard it is to experiment with flavors.
       I proposed the concept of "base recipes" or building blocks that people can learn and then experiment on top of after. It may be harder to learn the perfect chicken picatta from a recipe than to learn how to cook chicken and then realize that you can add tomato, soy sauce or capers to make three different dishes.
      </p>
-     <div class="extra-image-container">
-       <img style="margin-top:30px;" src="images/food/cccposter.jpeg" class="extra-images">
-     </div>
+     <div class="extra-image-container" style="margin-top:40px;">
+        <object width="500" height="820" data="data/food3.pdf"></object>
+      </div>
     </div>
 
     <style>
@@ -173,11 +188,6 @@
           }
       }
     </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="js/particleInit.js"></script>
-
-
 
   </body>
 </html>

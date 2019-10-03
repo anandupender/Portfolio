@@ -24,6 +24,10 @@ body {
   background-color: white;
 }
 
+.accent-text {
+  color: var(--accent_color);
+}
+
 .monospace {
   font-family: "Share Tech Mono", monospace;
 }

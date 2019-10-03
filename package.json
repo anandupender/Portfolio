@@ -12,6 +12,10 @@
       "src": "./src/*.html",
       "dest": "./dist"
     },
+    "files": {
+      "src": "./src/data/*.*",
+      "dest": "./dist/data"
+    },
     "styles": {
       "src": "./src/css/*.css",
       "dest": "./dist/css"

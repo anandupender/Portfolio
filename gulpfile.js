@@ -61,6 +61,10 @@ const scripts = () =>
     .pipe(rename({ extname: ".min.js" }))
     .pipe(dest(paths.scripts.dest));
 
+// Files
+// Copy assets to ./dist/
+const copyFiles = () => src(paths.files.src).pipe(dest(paths.files.dest));
+
 // Assets
 // Copy assets to ./dist/
 const copyImages = () =>
@@ -130,7 +134,7 @@ exports.image = series(
 );
 
 // Build
-const build = parallel(markup, styles, scripts, copyImages);
+const build = parallel(markup, styles, scripts, copyFiles, copyImages);
 exports.build = series(clean, build);
 exports.build.description = "Clean, build ";
 

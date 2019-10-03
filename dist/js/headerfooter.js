@@ -55,13 +55,13 @@ nav.innerHTML += `
   <nav>
     <ul id="menu">
       <li><a href="index.html#scrollTo" class="menu-buttons animated fadeInDown" id="work" title="Anand's Work"> Work </a></li>
-      <li><a href="cooking.html" class="menu-buttons only-mobile animated fadeInDown" style="padding-top:0px;" title="Anand's Food Research">Food</a></li>
+      <li><a href="food.html" class="menu-buttons only-mobile animated fadeInDown" style="padding-top:0px;" title="Anand's Food Research">Food</a></li>
       <li><a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons only-mobile animated fadeInDown" title="Anand's Mobility Research">Mobility</a></li>
       <li><a href="place.html" class="menu-buttons only-mobile animated fadeInDown" title="Anand's Spaces Research">Spaces</a></li>
       <li><div class="dropdown">
-        <a href="cooking.html" class="menu-buttons animated fadeInDown" id="research" title="Anand's Research">Research &#x25be;</a>
+        <a href="food.html" class="menu-buttons animated fadeInDown" id="research" title="Anand's Research">Research &#x25be;</a>
         <div class="dropdown-content">
-          <a href="cooking.html" class="menu-buttons" style="padding-top:0px;" title="Anand's Food Research">Food</a>
+          <a href="food.html" class="menu-buttons" style="padding-top:0px;" title="Anand's Food Research">Food</a>
           <a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons" title="Anand's Mobility Research">Mobility</a>
           <a href="place.html" class="menu-buttons" title="Anand's Spaces Research">Spaces</a>
           <!-- a href="#" class="menu-buttons">Web</a>
@@ -73,7 +73,7 @@ nav.innerHTML += `
     </div>
   </nav>
   <a href="javascript:void(0);" class="icon animated fadeInDown" onclick="responsiveMenu()" title="hamburger menu for mobile">
-    <img src="images/hamburger.svg" />
+    <img src="images/hamburger.svg" style="background-color:transparent"/>
   </a>
 `;
 

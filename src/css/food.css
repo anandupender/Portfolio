@@ -1,0 +1,77 @@
+.definition {
+  border: 2px black solid;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 60%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 30px;
+  animation-name: fade;
+  animation-duration: 7000ms;
+  animation-iteration-count: infinite;
+  z-index: 4;
+  background-color: white;
+}
+
+@keyframes fade {
+  0% {
+    border-color: #ddd;
+  }
+  50% {
+    border-color: #fa7268;
+  }
+  100% {
+    border-color: #ddd;
+  }
+}
+
+.definition h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.food-project {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  margin-top: 40px;
+  z-index: 1;
+  border-top: 2px black solid;
+}
+
+.food-project h1,
+h2,
+p {
+  width: 100%;
+}
+
+.cooking-bio-text-small {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.extra-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.extra-images {
+  width: 35%;
+}
+
+@media screen and (max-width: 600px) {
+  .extra-images {
+    width: 100%;
+  }
+}
