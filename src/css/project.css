@@ -2,39 +2,10 @@ body {
   height: auto;
   overflow-y: scroll;
 }
-h1 {
-  font-size: 36px;
-}
-h2 {
-  font-family: "Share Tech Mono", monospace;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 32px;
-  margin: 15px;
-  margin-left: 0px;
-}
-h4 {
-  margin: 3px;
-}
-h4.white {
-  color: white;
-  font-weight: lighter;
-}
-p,
-li {
-  font-size: 16px;
-  color: #333;
-  /* font-family: 'Share Tech Mono', monospace; */
-}
 #footer {
   position: absolute;
 }
-.subheader {
-  margin-bottom: 15px;
-  color: #aaa;
-  text-transform: uppercase;
-  font-weight: bold !important;
-}
+
 .project-main-container {
   display: flex;
   flex-direction: column;
@@ -95,19 +66,13 @@ li {
 
 .project-info-container {
   background-color: #222;
-  padding-top: 100px !important;
-  padding-bottom: 100px !important;
-  padding-left: 10vw !important;
-  padding-right: 10vw !important;
+  padding: 60px 10vw 60px 10vw !important;
   width: 80vw;
   margin-top: -5px;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 28px;
-  }
+@media screen and (max-width: 640px) {
   .subheader {
     margin-bottom: 3px;
   }

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>TED Interview</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"><link rel="stylesheet" href="css/main.min.css"><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></head><body style="overflow-y:scroll;height:auto;"><div class="topNav" id="nav"></div><div class="interview-tag"><h4>Interview Mode: On</h4><h4 style="color:grey;">TED</h4></div><div class="index-container"><div class="main-hello no-mobile"><div class="rotate-container"><h1 class="h1-large animated fadeInDown delay-1s">Hi TED!</h1></div><h1 class="animated fadeInDown delay-1s h1-subtitle" style="margin-top:0px;">I'm Anand, a User-Centered Prototyper excited about building intentional interfaces and facilitating supportive communities.</h1><div class="spacer-medium"></div><h4 class="animated fadeInDown delay-1s monospace" style="font-weight:400">Previously at Facebook, IDEO CoLab, and Stanford.<br>Creator, TEDxChurchillHighSchool. Volunteer, TEDxStanford.</h4><br><br><br><br></div><div class="profile-image-container animated fadeIn delay-1s" id="profile-box"><img class="a-profile-image-letter animated fadeIn" src="images/a.svg" data-depth="0.2"> <img class="a-profile-image-object" id="o1" data-depth="0.7" src="images/a-me.png"> <img class="a-profile-image-object" id="o2" data-depth="0.7" src="images/a-color.png"> <img class="a-profile-image-object" id="o3" data-depth="0.7" src="images/a-malt.png"> <img class="a-profile-image-object" id="o4" data-depth="0.7" src="images/a-beet.png"> <img class="a-profile-image-object" id="o5" data-depth="0.7" src="images/a-trumpet.png"> <img class="a-profile-image-object" id="o6" data-depth="0.7" src="images/a-heart.png"> <img class="a-profile-image-object" id="o7" data-depth="0.7" src="images/a-circles.png"> <img class="a-profile-image-letter animated fadeIn" src="images/a-triangle.svg" data-depth="0.2"></div></div><div class="row project-info-container" style="margin-top:150px;"><div class="column"><h4 class="subheader">Visual Design</h4><h4 class="white">Sketch & Figma</h4><h4 class="white">Adobe After Effects, Illustrator and Photoshop</h4><h4 class="white">Origami Studio, InVision</h4></div><div class="column"><h4 class="subheader">Code</h4><h4 class="white">HTML & CSS</h4><h4 class="white">JS - Node, Gulp, React, Vue</h4><h4 class="white">Unity & D3</h4><h4 class="white">Google APIs</h4></div><div class="column"><h4 class="subheader">Community Design</h4><h4 class="white">Stanford Robotics Club</h4><h4 class="white">pop-up dinners</h4><h4 class="white">design underground</h4></div><div class="column"><h4 class="subheader">Manufacturing</h4><h4 class="white">Metal Lathe and Mill</h4><h4 class="white">Laser Cutting & 3D Printing</h4><h4 class="white">Foam Core</h4></div></div><div class="project-section" style="text-align: center"><h1>"Never show up to a meeting without a prototype"</h1></div><div id="all-project-cards" style="width:95%;"><div class="index-row"><div class="index-col"><div class="project-card"><div class="index-project-image-container"><div class="index-title" style="text-decoration-color:black;">Creating a TEDx Conference</div><img class="index-project-image" src="images/ted/hero.jpeg" alt="Food Inno Hero Image"><h3 class="index-info">Curating, designing, and hosting a TEDx conference in Potomac, MD.</h3></div></div></div><div class="index-col"><div class="project-card"><div class="index-project-image-container"><img class="index-project-image" style="transform:scale(1);" src="images/ted/stanford.jpeg" alt="F and P Hero Image"><div class="index-title" style="text-decoration-color:black;">Leading Student Volunteers</div><h3 class="index-info">A small design and marketing role at TEDxStanford.</h3></div></div></div></div><div class="index-row"><div class="index-col"><div class="project-card"><div class="index-project-image-container"><div class="index-title" style="text-decoration-color:black;">Branding and Leading a Conference</div><a href="/foodinno.html"><img class="index-project-image" src="images/foodinno/cover.jpeg" alt="Food Inno Hero Image"></a><h3 class="index-info">Crafted a community to create the fourth annual FoodInno conference.</h3></div></div></div><div class="index-col"><div class="project-card"><div class="index-project-image-container"><a href="/fandp.html"><img class="index-project-image" style="transform:scale(1);" src="images/fandp/hero-small.jpeg" alt="F and P Hero Image"></a><div class="index-title" style="text-decoration-color:black;">Designing Trusted News</div><h3 class="index-info">A short sprint into highlighting perspectives and news about global issues from the locals that live there.</h3></div></div></div></div></div><span style="width:100%;height:100px;"></span><div id="footer" style="background-color:white;position:fixed;"></div><script>var objects = document.getElementsByClassName("a-profile-image-object");
+      var globalCounter = 0;
+
+      setInterval(function() {
+        for (var i = 0; i < objects.length; i++) {
+          if (globalCounter != i) {
+            objects[i].style.opacity = 0;
+          } else {
+            objects[i].style.opacity = 1;
+          }
+        }
+        globalCounter++;
+        if (globalCounter >= objects.length) {
+          globalCounter = 0;
+        }
+      }, 900);</script><script type="text/javascript" src="js/headerfooter.js"></script><style>.index-title {
+        text-align: left;
+        font-size: 48px;
+        top: -125px;
+      }</style><script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script><script>var projects = document.getElementsByClassName("project-card");
+      for (var i = 0; i < projects.length; i++) {
+        var parallaxInstance = new Parallax(projects[i]);
+      }
+      if (document.documentElement.clientWidth >= 680) {
+        var thing = document.getElementById("profile-box");
+        var parallaxInstance = new Parallax(thing);
+      }
+
+      //focus mode
+      var menu = document.getElementById("menu");
+      menu.style.display = "none";</script><script>function responsiveMenu() {
+        var x = document.getElementById("nav");
+        if (x.className === "topNav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topNav";
+        }
+      }</script><script src="https://unpkg.com/aos@next/dist/aos.js"></script><script>AOS.init();</script></body></html>

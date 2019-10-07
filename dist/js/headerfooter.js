@@ -42,7 +42,7 @@ headContent.innerHTML += `
   <meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
-  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Lexend+Deca" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Space+Mono|Lexend+Deca|Montserrat:thin,regular,bold,extra-bold" rel="stylesheet" />
 `;
 
 var nav = document.getElementById("nav");
@@ -91,7 +91,7 @@ footer.innerHTML += `
   <div id="bottom-rectangle"></div>
   <a class="bottom-button no-margin-left" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">Email</div></a>
   <a class="bottom-button" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1MZqF19jbrnSfgC-fTu9E4IYMhKm9M0fJ/view?usp=sharing"><div class="animated fadeInUp delay-1s">Resume</div></a>
-  <div id="bottom-middle-button" class="bottom-button bottom-button-large animated fadeInUp delay-1s">Made from scratch with&nbsp;<a class="heart" href="https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2019" target="_blank" rel="noopener noreferrer">&#9829;</a></div>
+  <div id="bottom-middle-button" class="bottom-button bottom-button-large animated fadeInUp delay-1s"><a target="_blank" href="https://github.com/anandupender/Portfolio">Coded from scratch with&nbsp;<span class="heart">&#9829;</span></a></div>
   <a class="bottom-button" target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender"><div class="animated fadeInUp delay-1s">Github</div></a>
   <a class="bottom-button no-margin-right" href="instagram.html"><div class="animated fadeInUp delay-1s" id="insta-button">Instagram</div></a>
 `;

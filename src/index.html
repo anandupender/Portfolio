@@ -16,28 +16,35 @@
   </head>
 
   <body style="overflow-y:scroll;height:auto;">
-    <div class="topNav" id="nav"></div>
+    <div class="topNav" id="nav" style="padding-top:30px;"></div>
 
     <!-- <div class="animated fadeIn   delay-2s" id="particles-js"></div> -->
 
     <div class="index-container">
       <div class="main-hello no-mobile">
-        <div class="rotate-container">
-          <h1 class="h1-large animated fadeInDown delay-1s">Hi! I'm Anand.</h1>
+        <div>
+          <div class="rotate-container">
+            <h1 class="h1-large animated fadeInDown delay-1s">
+              Hi! I'm Anand.
+            </h1>
+          </div>
+          <h1
+            class="animated fadeInDown delay-1s h1-subtitle"
+            style="margin-top:0px;"
+          >
+            Creative Strategist and Prototyper exploring what it means to be a
+            <em>Designer</em>.
+          </h1>
         </div>
-        <h1 class="animated fadeInDown delay-1s" style="margin-top:0px;">
-          Creative Strategist and Prototyper exploring what it means to be a
-          <em>Designer</em>.
-        </h1>
+        <div class="spacer-medium"></div>
         <h4
           class="animated fadeInDown delay-1s monospace"
           style="font-weight:400"
         >
-          Previously at Facebook, IDEO CoLab, and Stanford. Interested in the
-          design of Web Experiences, Emotional Spaces, Creative Tools, Foods,
-          and Communities.
+          Previously at Facebook, IDEO CoLab, and Stanford. <br />Interested in
+          the design of Web Experiences, Emotional Spaces, Foods, and
+          Communities.
         </h4>
-        <br /><br /><br /><br />
       </div>
 
       <div
@@ -111,7 +118,7 @@
       </h1>
       <h4
         class="animated fadeInDown delay-1s only-mobile"
-        style="font-family: 'Share Tech Mono', monospace; font-weight:400;text-align:center;"
+        style="text-align:center;"
       >
         Previously at Facebook and IDEO CoLab. Interested in the design of
         Spaces, Web Experiences, Foods, and Communities.
@@ -150,7 +157,7 @@
     <div id="all-project-cards" style="width:95%;">
       <div class="index-row">
         <div class="index-col">
-          <div class="project-card" data-aos="fade-up" data-aos-duration="500">
+          <div class="project-card">
             <div data-depth="0.6" class="index-project-image-container">
               <div class="index-title" style="text-decoration-color:black;">
                 Family Room
@@ -170,7 +177,7 @@
           </div>
         </div>
         <div class="index-col">
-          <div class="project-card" data-aos="fade-up" data-aos-duration="500">
+          <div class="project-card">
             <div data-depth="0.9" class="index-project-image-container">
               <a href="fb.html">
                 <img
@@ -193,7 +200,7 @@
 
       <div class="index-row">
         <div class="index-col">
-          <div class="project-card" data-aos="fade-up" data-aos-duration="500">
+          <div class="project-card">
             <div data-depth="0.2" class="index-project-image-container">
               <a href="meai.html">
                 <img
@@ -212,7 +219,7 @@
           </div>
         </div>
         <div class="index-col">
-          <div class="project-card" data-aos="fade-up" data-aos-duration="500">
+          <div class="project-card">
             <div data-depth="0.7" class="index-project-image-container">
               <a href="foodinno.html">
                 <img
@@ -283,7 +290,7 @@
       </h1>
       <p style="text-align:center;width:100%;margin-bottom:20px;">
         An un-collection of unexplained visual work. Give me a call to talk
-        through the projects behind the work.
+        through the projects behind the photos.
       </p>
 
       <div class="row">
@@ -357,10 +364,8 @@
         var parallaxInstance = new Parallax(projects[i]);
       }
 
-      if (document.documentElement.clientWidth >= 680) {
-        var thing = document.getElementById("profile-box");
-        var parallaxInstance = new Parallax(thing);
-      }
+      var thing = document.getElementById("profile-box");
+      var parallaxInstance = new Parallax(thing);
     </script>
 
     <script>
@@ -372,11 +377,6 @@
           x.className = "topNav";
         }
       }
-    </script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
     </script>
   </body>
 </html>

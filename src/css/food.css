@@ -27,15 +27,6 @@
   }
 }
 
-.definition h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
 .food-project {
   width: 80%;
   display: flex;
@@ -46,12 +37,6 @@ p {
   margin-top: 40px;
   z-index: 1;
   border-top: 2px black solid;
-}
-
-.food-project h1,
-h2,
-p {
-  width: 100%;
 }
 
 .cooking-bio-text-small {
@@ -70,7 +55,7 @@ p {
   width: 35%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .extra-images {
     width: 100%;
   }
