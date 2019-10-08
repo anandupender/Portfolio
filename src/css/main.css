@@ -253,6 +253,7 @@ button:focus {
 
 .only-mobile {
   display: none;
+  text-align: center;
 }
 
 @media screen and (max-width: 640px) {
