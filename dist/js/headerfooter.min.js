@@ -47,12 +47,11 @@ headContent.innerHTML += `
 
 var nav = document.getElementById("nav");
 nav.innerHTML += `
-  <div id="top-rectangle"></div>
   <div id="logo">
     <a class="name menu-buttons animated fadeInDown" href="index.html" title="Anand Upender Logo"> Anand Upender</a>
 
   </div>
-  <nav>
+  <nav class="navigation">
     <ul id="menu">
       <li><a href="index.html#scrollTo" class="menu-buttons animated fadeInDown" id="work" title="Anand's Work"> Work </a></li>
       <li><a href="food.html" class="menu-buttons only-mobile animated fadeInDown" style="padding-top:0px;" title="Anand's Food Research">Food</a></li>
@@ -88,7 +87,6 @@ function responsiveMenu() {
 
 var footer = document.getElementById("footer");
 footer.innerHTML += `
-  <div id="bottom-rectangle"></div>
   <a class="bottom-button no-margin-left" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">Email</div></a>
   <a class="bottom-button" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1MZqF19jbrnSfgC-fTu9E4IYMhKm9M0fJ/view?usp=sharing"><div class="animated fadeInUp delay-1s">Resume</div></a>
   <div id="bottom-middle-button" class="bottom-button bottom-button-large animated fadeInUp delay-1s"><a target="_blank" href="https://github.com/anandupender/Portfolio">Coded from scratch with&nbsp;<span class="heart">&#9829;</span></a></div>

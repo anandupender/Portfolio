@@ -53,9 +53,9 @@ li {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   margin: 10px 0 14px 0;
-  line-height: 180%;
+  line-height: 1.8em;
 }
 
 .image-caption {
