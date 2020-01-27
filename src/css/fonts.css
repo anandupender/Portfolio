@@ -160,7 +160,7 @@ p {
 @media screen and (max-width: 640px) {
   .name {
     margin-top: 0px;
-    font-size: 24px;
+    font-size: 22px !important;
   }
   .bottom-button {
     font-size: 12px !important;
@@ -168,7 +168,6 @@ p {
     margin-right: 0px;
   }
   .bottom-button-large {
-    width: 35%;
     font-size: 12px !important;
   }
   .manifesto {

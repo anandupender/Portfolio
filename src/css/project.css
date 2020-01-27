@@ -2,9 +2,6 @@ body {
   height: auto;
   overflow-y: scroll;
 }
-#footer {
-  position: absolute;
-}
 
 .project-main-container {
   display: flex;

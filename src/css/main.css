@@ -4,17 +4,16 @@
 
 html,
 body {
-  overflow-x: hidden !important;
   position: relative;
   background-color: white;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden !important;
   position: absolute;
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,6 +128,7 @@ button:focus {
 
 #nav {
   width: 100%;
+  max-width: 100vw;
   background-color: #fff;
   box-sizing: border-box;
   position: fixed;
@@ -233,9 +233,9 @@ button:focus {
     margin-top: 0px !important;
   }
   #nav {
-    height: 90px;
+    height: 75px;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 0px;
   }
   #top-rectangle {
     height: 100px;
@@ -272,6 +272,7 @@ button:focus {
 #footer {
   font-family: "Space Mono", monospace;
   width: 100%;
+  max-width: 100vw;
   box-sizing: border-box;
   padding-left: 7.5%;
   padding-right: 7.5%;
@@ -625,8 +626,8 @@ button:focus {
   margin: 20px;
   margin-right: 0px;
   padding: 5px;
-  height: 28px;
-  width: 28px;
+  height: 24px;
+  width: 24px;
 }
 
 /* Change the color of links on hover */

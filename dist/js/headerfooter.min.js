@@ -88,8 +88,8 @@ function responsiveMenu() {
 var footer = document.getElementById("footer");
 footer.innerHTML += `
   <a class="bottom-button no-margin-left" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">Email</div></a>
-  <a class="bottom-button" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1MZqF19jbrnSfgC-fTu9E4IYMhKm9M0fJ/view?usp=sharing"><div class="animated fadeInUp delay-1s">Resume</div></a>
+  <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1MZqF19jbrnSfgC-fTu9E4IYMhKm9M0fJ/view?usp=sharing"><div class="animated fadeInUp delay-1s">Resume</div></a>
   <div id="bottom-middle-button" class="bottom-button bottom-button-large animated fadeInUp delay-1s"><a target="_blank" href="https://github.com/anandupender/Portfolio">Coded from scratch with&nbsp;<span class="heart">&#9829;</span></a></div>
-  <a class="bottom-button" target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender"><div class="animated fadeInUp delay-1s">Github</div></a>
+  <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender"><div class="animated fadeInUp delay-1s">Github</div></a>
   <a class="bottom-button no-margin-right" href="instagram.html"><div class="animated fadeInUp delay-1s" id="insta-button">Instagram</div></a>
 `;
