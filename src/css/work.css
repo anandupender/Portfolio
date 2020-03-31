@@ -32,7 +32,7 @@
 }
 
 .project-card:hover {
-  transition: 0.8s ease-in-out;
+  transition: 0.25s ease;
   transform: scale(1.05) !important;
 }
 
@@ -55,13 +55,15 @@
 
 .project-background {
   display: flex !important;
+  top: 0;
+  z-index: -1;
   justify-content: flex-end;
   align-items: center;
   position: absolute !important;
   background-color: #000;
   opacity: 0.1;
   width: 70%;
-  height: 110%;
+  height: 105%;
   margin-left: 40%;
   -webkit-clip-path: polygon(25% 0%, 64% 0, 38% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 64% 0, 38% 100%, 0% 100%);
@@ -83,12 +85,13 @@
 .index-project-image-container {
   flex: 3;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   justify-content: center;
   z-index: 1;
   margin-left: 7%;
   margin-right: 7%;
-  margin-top: 10%;
+  margin-top: 3%;
   overflow: visible;
 }
 
