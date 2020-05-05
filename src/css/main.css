@@ -149,6 +149,14 @@ button:focus {
   box-shadow: 0px 5px 20px 1px rgba(191, 191, 191, 0.1);
 }
 
+#stayhomeimage {
+  width: 20vw;
+  position: fixed;
+  top: 70vh;
+  right: 20px;
+  z-index: 10000;
+}
+
 #banner {
   height: 35px;
   width: 100vw;
@@ -184,6 +192,10 @@ button:focus {
 }
 
 @media screen and (max-width: 640px) {
+  #stayhomeimage {
+    width: 40vw;
+    top: 75vh;
+  }
   #banner {
     height: 30px;
   }
