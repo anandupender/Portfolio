@@ -48,30 +48,32 @@ headContent.innerHTML += `
 var nav = document.getElementById("nav");
 nav.innerHTML += `
   <div id="logo">
-    <a class="name menu-buttons animated fadeInDown" href="index.html" title="Anand Upender Logo"> Anand Upender</a>
+    <a class="name menu-buttons animated fadeInDown delay-1s" href="index.html" title="Anand Upender Logo"> Anand Upender</a>
 
   </div>
   <nav class="navigation">
     <ul id="menu">
-      <li><a href="index.html#scrollTo" class="menu-buttons animated fadeInDown" id="work" title="Anand's Work"> Work </a></li>
-      <li><a href="food.html" class="menu-buttons only-mobile animated fadeInDown" style="padding-top:0px;" title="Anand's Food Research">Food</a></li>
-      <li><a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons only-mobile animated fadeInDown" title="Anand's Mobility Research">Mobility</a></li>
-      <li><a href="place.html" class="menu-buttons only-mobile animated fadeInDown" title="Anand's Spaces Research">Spaces</a></li>
+      <li><a href="index.html#scrollTo" class="menu-buttons animated fadeInDown delay-1s" id="work" title="Anand's Work"> Work </a></li>
+      <li><a href="food.html" class="menu-buttons only-mobile animated fadeInDown delay-1s" style="padding-top:0px;" title="Anand's Food Research">Food</a></li>
+      <li><a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons only-mobile animated fadeInDown delay-1s" title="Anand's Mobility Research">Mobility</a></li>
+      <li><a href="https://musicviz.netlify.app/" target="_blank" rel="noopener noreferrer" class="menu-buttons only-mobile animated fadeInDown delay-1s" title="Anand's Music Projects">Music</a></li>
+      <li><a href="place.html" class="menu-buttons only-mobile animated fadeInDown delay-1s" title="Anand's Spaces Research">Spaces</a></li>
       <li><div class="dropdown">
-        <a href="food.html" class="menu-buttons animated fadeInDown" id="research" title="Anand's Research">Research &#x25be;</a>
+        <a href="food.html" class="menu-buttons animated fadeInDown delay-1s" id="research" title="Anand's Research">Research &#x25be;</a>
         <div class="dropdown-content">
           <a href="food.html" class="menu-buttons" style="padding-top:0px;" title="Anand's Food Research">Food</a>
           <a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons" title="Anand's Mobility Research">Mobility</a>
+          <a href="https://musicviz.netlify.app/" target="_blank" rel="noopener noreferrer" class="menu-buttons" title="Anand's Music Projects">Music</a>
           <a href="place.html" class="menu-buttons" title="Anand's Spaces Research">Spaces</a>
           <!-- a href="#" class="menu-buttons">Web</a>
           <a href="http://erinmacd.stanford.edu/?page_id=352" target="_blank" class="menu-buttons" title="Anand's Metaphor Research">Research Metaphors</a> --!>
         </div>
       </div></li>
-      <li><a href="experiments.html" class="menu-buttons animated fadeInDown" id="tinkering" title="Anand's Experiments"> Tinkering </a></li>
-      <li><a href="about.html" class="menu-buttons animated fadeInDown no-margin-right" id="about" title="About Anand">About</a></li>
+      <li><a href="experiments.html" class="menu-buttons animated fadeInDown delay-1s" id="tinkering" title="Anand's Experiments"> Tinkering </a></li>
+      <li><a href="about.html" class="menu-buttons animated fadeInDown delay-1s no-margin-right" id="about" title="About Anand">About</a></li>
     </div>
   </nav>
-  <a href="javascript:void(0);" class="icon animated fadeInDown" onclick="responsiveMenu()" title="hamburger menu for mobile">
+  <a href="javascript:void(0);" class="icon animated fadeInDown delay-1s" onclick="responsiveMenu()" title="hamburger menu for mobile">
     <img src="images/hamburger.svg" style="background-color:transparent"/>
   </a>
 `;
