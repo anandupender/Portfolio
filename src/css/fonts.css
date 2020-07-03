@@ -13,7 +13,7 @@
 /* MAIN FONT TYPES */
 
 .h1-large {
-  font-size: 72px;
+  font-size: 64px;
   text-decoration: underline;
   text-decoration-color: var(--accent_color);
   font-weight: 900;
@@ -119,9 +119,9 @@ p {
   display: inline-block;
   margin: 10px;
   margin-left: 0px;
-  margin-right: 40px;
-  font-size: 18px;
-  font-weight: 400;
+  margin-right: 30px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .menu-buttons:hover {
@@ -137,14 +137,15 @@ p {
   text-align: center;
   font-size: 14px;
   margin: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .name {
   color: var(--accent_color);
   top: 0px;
-  font-size: 28px;
-  margin-bottom: 0px;
+  font-size: 24px;
+  margin: 0px;
   font-weight: 700;
 }
 
