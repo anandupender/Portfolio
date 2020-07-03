@@ -17,93 +17,54 @@
 
   <body style="overflow-y: scroll; height: auto;">
     <div class="topNav" id="nav"></div>
-
-    <!-- <div class="animated fadeIn   delay-2s" id="particles-js"></div> -->
-
     <div class="index-container">
-      <div class="main-hello no-mobile">
-        <div>
-          <div class="rotate-container">
-            <h1 class="h1-large animated fadeInDown delay">
-              Hi! I'm Anand.
-            </h1>
-          </div>
+      <div class="profile-image-container animated fadeIn">
+        <div class="profile-image-wrapper" id="profile-box">
+          <img
+            class="a-profile-image-letter"
+            src="images/a.svg"
+            data-depth="0.2"
+          />
+          <img
+            class="a-profile-image-letter object"
+            id="o1"
+            data-depth="0.9"
+            src="images/a-color.png"
+          />
+          <img
+            class="a-profile-image-letter object"
+            id="o2"
+            data-depth="0.9"
+            style="opacity: 0;"
+            src="images/a-beet.png"
+          />
+          <img
+            class="a-profile-image-letter object"
+            id="o3"
+            data-depth="0.9"
+            style="opacity: 0;"
+            src="images/a-trumpet.png"
+          />
+          <img
+            class="a-profile-image-letter object"
+            id="o4"
+            data-depth="0.9"
+            style="opacity: 0;"
+            src="images/a-heart.png"
+          />
+          <img
+            class="a-profile-image-letter object"
+            id="o5"
+            data-depth="0.9"
+            style="opacity: 0;"
+            src="images/a-me.png"
+          />
+          <img
+            class="a-profile-image-letter"
+            src="images/a-triangle.svg"
+            data-depth="0.2"
+          />
         </div>
-        <h4
-          class="animated fadeIn delay-2s monospace"
-          style="font-weight: 400; padding-right: 15%;"
-        >
-          Currently the Design Lead of the Healthy Internet Project at
-          <span style="font-weight: bold; color: #e62b1e;">TED</span
-          >.<br /><br />
-          I've been humbled to work with fascinating designers and engineers at
-          Facebook, IDEO CoLab, Urgent.Agency and Cinder (YC'15). Generally, I'm
-          fascinated by intentionally designed Web Experiences, Emotional
-          Spaces, Foods, Stories, and Communities. <br />Follow me
-          <a
-            href="https://www.instagram.com/pixels_and_plates/"
-            target="_blank"
-            style="text-decoration: underline;"
-            >@pixels_and_plates</a
-          >
-        </h4>
-      </div>
-
-      <div
-        class="profile-image-container animated fadeIn delay-2s"
-        id="profile-box"
-      >
-        <img
-          class="a-profile-image-letter animated fadeIn"
-          src="images/a.svg"
-          data-depth="0.2"
-        />
-        <img
-          class="a-profile-image-object"
-          id="o1"
-          data-depth="0.7"
-          src="images/a-me.png"
-        />
-        <img
-          class="a-profile-image-object"
-          id="o2"
-          data-depth="0.7"
-          style="opacity: 0;"
-          src="images/a-color.png"
-        />
-        <img
-          class="a-profile-image-object"
-          id="o3"
-          data-depth="0.7"
-          style="opacity: 0;"
-          src="images/a-malt.png"
-        />
-        <img
-          class="a-profile-image-object"
-          id="o4"
-          data-depth="0.7"
-          style="opacity: 0;"
-          src="images/a-beet.png"
-        />
-        <img
-          class="a-profile-image-object"
-          id="o5"
-          data-depth="0.7"
-          style="opacity: 0;"
-          src="images/a-trumpet.png"
-        />
-        <img
-          class="a-profile-image-object"
-          id="o6"
-          data-depth="0.7"
-          style="opacity: 0;"
-          src="images/a-heart.png"
-        />
-        <img
-          class="a-profile-image-letter animated fadeIn"
-          src="images/a-triangle.svg"
-          data-depth="0.2"
-        />
       </div>
       <h1 class="h1-large only-mobile" style="margin-bottom: 0px;">
         Hi! I'm Anand.
@@ -113,40 +74,31 @@
         Interested in the design of Spaces, Web Experiences, Foods, and
         Communities.
       </h4>
+
+      <div id="scrollTo" class="work-bar animated fadeIn delay-2s">
+        <h2 class="animated bounce delay-2s">
+          <button
+            onclick="window.scrollBy({top: 500, left: 0, behavior: 'smooth' });console.log('test');"
+            class="no-style-button"
+          >
+            👇🏾
+          </button>
+        </h2>
+      </div>
     </div>
 
-    <img
-      src="images/stayhome.gif"
-      alt=""
-      id="stayhomeimage"
-      class="animated fadeIn delay-4s"
-    />
-
-    <!-- <div id="banner" class="animated fadeIn delay-2s">
+    <div id="banner" class="animated fadeIn delay-2s">
       <div id="banner-content">
-        <a
-          href="https://docs.google.com/document/d/1MmJk9w8OQtfJkDjO_Nnj2qhCwh5Cgjw30ilFGPWjuL8/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ✈️ ✈️ Currently crafting and living a 12 month experimental work/study
-          with interesting design+product orgs around the world!
-          <span style="color:#FA7268">Right Now: Copenhagen!</span> Read about
-          it and share advice by clicking this banner. Seeking intense projects
-          for post-November 2019 ✈️ ✈️</a
-        >
+        <span>
+          👈🏾Hi! I'm Anand. I'm currently leading design at the Healthy Internet
+          Project, incubated at
+          <span style="font-weight: bold; color: #e62b1e;">TED</span>. I've been
+          humbled to work with some lovely folks at Facebook, IDEO CoLab,
+          Urgent.Agency and Cinder (YC'15). I'm fascinated by intentionally
+          designed Web Experiences, Emotional Spaces, Foods, Stories, and
+          Communities.
+        </span>
       </div>
-    </div> -->
-
-    <div id="scrollTo" class="work-bar animated fadeIn delay-2s">
-      <h2 class="animated bounce delay-2s">
-        <button
-          onclick="window.scrollBy({top: 510, left: 0, behavior: 'smooth' });console.log('test');"
-          class="no-style-button"
-        >
-          See Work <br />&#8595;
-        </button>
-      </h2>
     </div>
 
     <a name="projects"></a>
@@ -174,7 +126,6 @@
 
               <h3 class="index-info">Creative Coding and Sound Design</h3>
             </div>
-            <div data-depth="0.4" class="project-background"></div>
           </div>
         </div>
         <div class="index-col">
@@ -193,7 +144,6 @@
               </a>
               <h3 class="index-info">Digital Design and Brand Strategy</h3>
             </div>
-            <div data-depth="0.3" class="project-background"></div>
           </div>
         </div>
       </div>
@@ -215,8 +165,6 @@
               </a>
               <h3 class="index-info">Full-Stack Engineering and Brand</h3>
             </div>
-
-            <div data-depth="0.5" class="project-background"></div>
           </div>
         </div>
         <div class="index-col">
@@ -236,7 +184,6 @@
 
               <h3 class="index-info">Web Development and User Research</h3>
             </div>
-            <div data-depth="0.4" class="project-background"></div>
           </div>
         </div>
       </div>
@@ -257,7 +204,6 @@
               </a>
               <h3 class="index-info">Visual Design and Leadership</h3>
             </div>
-            <div data-depth="0.3" class="project-background"></div>
           </div>
         </div>
         <div class="index-col">
@@ -275,8 +221,6 @@
               </a>
               <h3 class="index-info">Industrial Design and Manufacturing</h3>
             </div>
-
-            <div data-depth="0.8" class="project-background"></div>
           </div>
         </div>
       </div>
@@ -332,11 +276,8 @@
     <div id="footer"></div>
 
     <script type="text/javascript" src="js/headerfooter.min.js"></script>
-    <!-- <script type="text/javascript" src="js/music.min.js"></script>
-    <script src="js/p5.min.js"></script>
-    <script src="js/p5.sound.min.js"></script> -->
     <script>
-      var objects = document.getElementsByClassName("a-profile-image-object");
+      var objects = document.getElementsByClassName("object");
       var globalCounter = 0;
 
       setInterval(function () {
@@ -351,7 +292,7 @@
         if (globalCounter >= objects.length) {
           globalCounter = 0;
         }
-      }, 900);
+      }, 1200);
     </script>
 
     <script>
@@ -375,6 +316,15 @@
           x.className = "topNav";
         }
       }
+    </script>
+
+    <script>
+      var banner = document.querySelector("#banner-content");
+      window.addEventListener("scroll", function () {
+        if (!banner.classList.contains("animate") && window.scrollY > 100) {
+          banner.classList.add("animate");
+        }
+      });
     </script>
   </body>
 </html>

@@ -2,38 +2,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-bottom: 40px;
   z-index: 1;
 }
 .index-row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 90%;
-  margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 .index-col {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  flex-basis: 48%;
   align-items: center;
 }
 
 .project-card {
   display: inline-block;
-  width: 95%;
+  width: 100%;
   height: 100%;
   position: relative;
   margin-bottom: 10px;
-  transition: 0.4s ease-in-out;
+  transition: transform 200ms ease;
 }
 
 .project-card:hover {
-  transition: 0.25s ease;
-  transform: scale(1.05) !important;
+  transform: scale(1.01) !important;
 }
 
 .project-card:hover,
@@ -48,39 +46,20 @@
 .project-card:hover .index-info {
   color: #000000ff;
 }
-.project-background {
-  transition: 0.8s ease-in-out;
-  height: 100%;
-}
-
-.project-background {
-  display: flex !important;
-  top: 0;
-  z-index: -1;
-  justify-content: flex-end;
-  align-items: center;
-  position: absolute !important;
-  background-color: #000;
-  opacity: 0.1;
-  width: 70%;
-  height: 105%;
-  margin-left: 40%;
-  -webkit-clip-path: polygon(25% 0%, 64% 0, 38% 100%, 0% 100%);
-  clip-path: polygon(25% 0%, 64% 0, 38% 100%, 0% 100%);
-}
 
 .extended {
   bottom: -3.5em;
 }
 
 .index-project-image {
-  max-width: 100%;
+  width: 100%;
   background-color: transparent;
   -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1);
-  background-color: #fa7268;
-  transition: 0.25s ease;
+  transition: 400ms ease;
+  object-fit: cover;
+  max-height: 400px;
 }
 .index-project-image-container {
   flex: 3;
@@ -89,9 +68,6 @@
   align-items: start;
   justify-content: center;
   z-index: 1;
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-top: 3%;
   overflow: visible;
 }
 

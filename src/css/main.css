@@ -61,12 +61,13 @@ button {
 .no-style-button {
   background-color: #ffffff00;
   color: black;
-  font-size: 24px;
+  font-size: 36px;
   padding: 0px;
   font-family: "Montserrat", sans-serif;
 }
 #scrollTo {
   z-index: 1;
+  margin-top: 70px;
 }
 
 .button:hover {
@@ -141,22 +142,14 @@ button:focus {
   backdrop-filter: blur(7px);
 }
 
-#stayhomeimage {
-  width: 15vw;
-  position: fixed;
-  top: 70vh;
-  right: 20px;
-  z-index: 10000;
-}
-
 #banner {
   height: 35px;
   width: 100vw;
-  position: fixed;
-  top: 0px;
-  z-index: 105;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  /* position: absolute;
+  top: 100vh; */
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 3px;
   display: flex;
   align-items: center;
 }
@@ -167,11 +160,21 @@ button:focus {
 }
 
 #banner-content {
-  animation: move 25s infinite linear;
   white-space: nowrap;
   position: absolute;
   will-change: transform;
-  transform: translateX(100vw);
+  font-weight: bold;
+  transform: translateX(10%);
+  transition: transform 40s linear;
+}
+
+#banner:hover {
+  cursor: wait;
+}
+
+#banner:hover #banner-content {
+  transform: translateX(-100%);
+  /* animation: move 30s infinite linear; */
 }
 
 @keyframes move {
@@ -184,15 +187,8 @@ button:focus {
 }
 
 @media screen and (max-width: 640px) {
-  #stayhomeimage {
-    width: 40vw;
-    top: 75vh;
-  }
   #banner {
-    height: 30px;
-  }
-  #banner-content a {
-    font-size: 12px;
+    display: none;
   }
   @keyframes move {
     0% {
@@ -390,11 +386,11 @@ button:focus {
 
 .index-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 84vw;
   align-items: center;
   justify-content: center;
-  margin-top: 140px;
+  height: 100vh;
 }
 
 .index-image-container {
@@ -505,10 +501,8 @@ button:focus {
 .profile-image-container {
   position: relative;
   display: flex;
-  flex: 3;
   align-items: center;
   justify-content: center;
-  margin-left: 25px;
   z-index: 101;
 }
 .profile-image {
@@ -529,17 +523,15 @@ button:focus {
   filter: grayscale(1);
 }
 
+.profile-image-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
 .a-profile-image-letter {
   width: 100%;
   position: absolute;
-}
-.a-profile-image-object {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -webkit-transition: opacity 0.25s ease-in-out;
 }
 
 @media screen and (max-width: 1100px) {
