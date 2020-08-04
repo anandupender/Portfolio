@@ -61,7 +61,7 @@ button {
 .no-style-button {
   background-color: #ffffff00;
   color: black;
-  font-size: 36px;
+  font-size: 18px;
   padding: 0px;
   font-family: "Montserrat", sans-serif;
 }
@@ -386,7 +386,7 @@ button:focus {
 
 .index-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 84vw;
   align-items: center;
   justify-content: center;
