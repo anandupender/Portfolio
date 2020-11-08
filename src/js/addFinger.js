@@ -38,17 +38,19 @@ function handleMouseMove(e){
 }
 
 window.onload = function(){
-    finger = new Image();
-    finger.src = "images/Finger.svg";
-    finger.classList.add("finger");
-    document.body.appendChild(finger);
-
-    centerX = window.innerWidth/2;
-    centerY = window.innerHeight/2;
-
-    document.onmousemove = handleMouseMove;
-
-    addButtonInteractions();
+    if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        finger = new Image();
+        finger.src = "images/Finger.svg";
+        finger.classList.add("finger");
+        document.body.appendChild(finger);
+    
+        centerX = window.innerWidth/2;
+        centerY = window.innerHeight/2;
+    
+        document.onmousemove = handleMouseMove;
+    
+        addButtonInteractions();
+    }
 }
 
      
