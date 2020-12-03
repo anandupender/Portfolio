@@ -93,7 +93,7 @@ p {
 
 @media screen and (max-width: 640px) {
   .h1-large {
-    font-size: 48px;
+    font-size: 42px;
   }
   h1 {
     font-size: 36px;

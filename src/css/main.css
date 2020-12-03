@@ -434,8 +434,11 @@ button:focus {
     clip-path: polygon(20% 0%, 70% 0, 43% 100%, -5% 100%);
   }
   .index-container {
-    margin-top: 120px;
+    margin-top: 80px;
+    width:94vw;
     flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
   }
   .main-hello {
     margin-top: 0;
@@ -685,5 +688,14 @@ ul#menu {
     display: flex !important;
     text-align: left;
     background-color: white;
+  }
+
+  .profile-image-wrapper {
+    width: 280px;
+    height: 280px;
+  }
+
+  #scrollTo {
+    margin-top: 20px;
   }
 }
