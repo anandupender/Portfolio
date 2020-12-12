@@ -56,14 +56,12 @@ nav.innerHTML += `
       <li><a href="index.html#scrollTo" class="menu-buttons animated fadeInDown delay-1s" id="work" title="Anand's Work"> Work </a></li>
       <li><a href="food.html" class="menu-buttons only-mobile animated fadeInDown delay-1s" style="padding-top:0px;" title="Anand's Food Research">Food</a></li>
       <li><a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons only-mobile animated fadeInDown delay-1s" title="Anand's Mobility Research">Mobility</a></li>
-      <li><a href="https://musicviz.netlify.app/" target="_blank" rel="noopener noreferrer" class="menu-buttons only-mobile animated fadeInDown delay-1s" title="Anand's Music Projects">Music</a></li>
       <li><a href="place.html" class="menu-buttons only-mobile animated fadeInDown delay-1s" title="Anand's Spaces Research">Spaces</a></li>
       <li><div class="dropdown">
         <a href="food.html" class="menu-buttons animated fadeInDown delay-1s" id="research" title="Anand's Research">Research &#x25be;</a>
         <div class="dropdown-content">
           <a href="food.html" class="menu-buttons" style="padding-top:0px;" title="Anand's Food Research">Food</a>
           <a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons" title="Anand's Mobility Research">Mobility</a>
-          <a href="https://musicviz.netlify.app/" target="_blank" rel="noopener noreferrer" class="menu-buttons" title="Anand's Music Projects">Music</a>
           <a href="place.html" class="menu-buttons" title="Anand's Spaces Research">Spaces</a>
           <!-- a href="#" class="menu-buttons">Web</a>
           <a href="http://erinmacd.stanford.edu/?page_id=352" target="_blank" class="menu-buttons" title="Anand's Metaphor Research">Research Metaphors</a> --!>
