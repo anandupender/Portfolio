@@ -1,0 +1,25 @@
+#swup-background{
+    position: fixed;
+    top: 0%;
+    left:0;
+    background-color: #fa7268;
+    z-index: 1000;
+    height:100vh;
+    width: 100vw;
+    transition:transform .7s ease;
+    transform: translateX(-100%);
+}
+
+/* Come from left and go back to left */
+html.is-animating #swup-background{
+  transform: translateX(0%);
+}
+
+.transition-fade {
+    transition: .75s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
