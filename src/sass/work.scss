@@ -1,0 +1,85 @@
+#all-project-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  z-index: 1;
+  width:84vw;
+
+  .project-card {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    pointer-events: none;
+
+    .index-project-image {
+          background-color: transparent;
+          -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1);
+          object-fit: cover;
+          width: 50%;
+          margin-right: 80px;
+        }
+  }
+}
+.project-card:hover{
+    color: black;
+}
+
+.extended {
+  bottom: -3.5em;
+}
+
+@media screen and (max-width: 900px) {
+  #all-project-cards {
+    margin-top: 80px;
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .index-project-image{
+            width:100%;
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+      }
+  }
+  .project-background {
+    width: 100%;
+    height: 115%;
+    margin-left: 20%;
+  }
+  .project-image-container {
+    height: 100% !important;
+    margin-left: 25%;
+  }
+
+  .profile-image {
+    /* show image when in mobile because no pendulum */
+    /* display: block !important; */
+    position: relative;
+    max-width: 100%;
+    left: -40px !important;
+  }
+  .full-width-image {
+    width: 100vw;
+    max-width: initial;
+  }
+  .project-title-container {
+    margin-top: -18%;
+  }
+
+  .extended {
+    bottom: -3.7em;
+  }
+}

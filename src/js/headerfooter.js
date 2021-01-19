@@ -42,7 +42,10 @@ headContent.innerHTML += `
   <meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
-  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Space+Mono|Lexend+Deca|Montserrat:thin,regular,bold,extra-bold" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Montserrat:thin,regular,bold,extra-bold" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,600;1,800&Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 `;
 
 var nav = document.getElementById("nav");
@@ -54,20 +57,10 @@ nav.innerHTML += `
   <nav class="navigation">
     <ul id="menu">
       <li><a href="/index.html#scrollTo" class="menu-buttons animated fadeInDown" id="work" title="Anand's Work"> Work </a></li>
-      <li><a href="/food.html" class="menu-buttons only-mobile animated fadeInDown" style="padding-top:0px;" title="Anand's Food Research">Food</a></li>
-      <li><a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons only-mobile animated fadeInDown" title="Anand's Mobility Research">Mobility</a></li>
-      <li><a href="/place.html" class="menu-buttons only-mobile animated fadeInDown" title="Anand's Spaces Research">Spaces</a></li>
-      <li><div class="dropdown">
-        <a href="/food.html" class="menu-buttons animated fadeInDown" id="research" title="Anand's Research">Research &#x25be;</a>
-        <div class="dropdown-content">
-          <a href="/food.html" class="menu-buttons" style="padding-top:0px;" title="Anand's Food Research">Food</a>
-          <a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons" title="Anand's Mobility Research">Mobility</a>
-          <a href="/place.html" class="menu-buttons" title="Anand's Spaces Research">Spaces</a>
-          <!-- a href="#" class="menu-buttons">Web</a>
-          <a href="http://erinmacd.stanford.edu/?page_id=352" target="_blank" class="menu-buttons" title="Anand's Metaphor Research">Research Metaphors</a> --!>
-        </div>
-      </div></li>
-      <li><a href="/about.html" class="menu-buttons animated fadeInDown no-margin-right" id="about" title="About Anand">About</a></li>
+      <li><a href="/food.html" class="menu-buttons animated fadeInDown" id="food" title="Anand's Food"> Food Design </a></li>
+      <li><a href="https://anandu.substack.com/welcome" target="_blank" class="menu-buttons animated fadeInDown" id="writing" title="Cool Sh*t"> Cool Sh*t </a></li>
+      <li><a href="/about.html" class="menu-buttons animated fadeInDown" id="about" title="About Anand">About</a></li>
+      <li><a href="https://www.instagram.com/pixels_and_plates/" target="_blank" class="menu-buttons animated fadeInDown no-margin-right" id="instagram" title="instagram"><img id="insta" src="/images/insta.png"></a></li>
     </div>
   </nav>
   <a href="javascript:void(0);" class="icon animated fadeInDown" onclick="responsiveMenu()" title="hamburger menu for mobile">
@@ -90,5 +83,5 @@ footer.innerHTML += `
   <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1MZqF19jbrnSfgC-fTu9E4IYMhKm9M0fJ/view?usp=sharing"><div class="animated fadeInUp">Resume</div></a>
   <div id="bottom-middle-button" class="bottom-button bottom-button-large animated fadeInUp"><a target="_blank" href="https://github.com/anandupender/Portfolio">Coded from scratch with&nbsp;<span class="heart">&#9829;</span></a></div>
   <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender"><div class="animated fadeInUp">Github</div></a>
-  <a class="bottom-button no-margin-right" target="_blank" href="https://www.instagram.com/pixels_and_plates/"><div class="animated fadeInUp" id="insta-button">Instagram</div></a>
+  <a class="bottom-button no-margin-right" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="animated fadeInUp">LinkedIn</div></a>
 `;

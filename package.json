@@ -17,7 +17,7 @@
       "dest": "./dist/data"
     },
     "styles": {
-      "src": "./src/css/*.css",
+      "src": "./src/sass/*.scss",
       "dest": "./dist/css"
     },
     "scripts": {
@@ -74,7 +74,9 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-image-resize": "^0.13.1",
     "gulp-rename": "^1.4.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0"
   },
   "dependencies": {
     "gulp-concat": "^2.6.1",

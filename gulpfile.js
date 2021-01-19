@@ -12,8 +12,8 @@ const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 
 // Styles
-// const sass = require("gulp-sass");
-// sass.compiler = require("node-sass");
+const sass = require("gulp-sass");
+sass.compiler = require("node-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 var concat = require("gulp-concat");
@@ -46,10 +46,11 @@ const markup = () =>
 // Styles
 // minify and place in ./dist/css
 const styles = () =>
-  src(paths.styles.src) //.pipe(sass().on("error", sass.logError))
-    .pipe(autoprefixer()) //.pipe(dest(paths.styles.dest))
+  src(paths.styles.src)
+    .pipe(sass().on("error", sass.logError))
+    .pipe(autoprefixer())
     .pipe(cleanCSS())
-    .pipe(concat("main.min.css")) //.pipe(rename({ extname: ".min.css" }))
+    .pipe(concat("main.min.css"))
     .pipe(dest(paths.styles.dest))
     .pipe(browserSync.stream());
 
