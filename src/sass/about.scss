@@ -1,0 +1,30 @@
+.container{
+    margin: 10vw 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        max-width: 500px;
+        width:40vw;
+    }
+    img{
+        margin-bottom: 50px;
+        padding:15px 70px 15px 15px;
+    }
+    .text{
+        width:40vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        img{
+            margin-top: 60px;
+            width:calc(80vw - 15px - 75px);
+        }
+        .text{
+            width:80vw;
+        }
+    }
+}

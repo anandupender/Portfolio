@@ -21,63 +21,21 @@
     <div id="swup-background"></div>
     <main id="swup" class="transition-fade">
 
-        <div class="index-container" style="flex-direction: column;">
-        <div class="profile-image-container animated fadeIn">
-            <div class="profile-image-wrapper" id="profile-box">
-            <img
-                class="a-profile-image-letter"
-                src="images/a.svg"
-                data-depth="0.2"
-            />
-            <img
-                class="a-profile-image-letter object"
-                id="o1"
-                data-depth="0.9"
-                src="images/a-color.png"
-            />
-            <img
-                class="a-profile-image-letter object"
-                id="o2"
-                data-depth="0.9"
-                style="opacity: 0;"
-                src="images/a-beet.png"
-            />
-            <img
-                class="a-profile-image-letter object"
-                id="o3"
-                data-depth="0.9"
-                style="opacity: 0;"
-                src="images/a-trumpet.png"
-            />
-            <img
-                class="a-profile-image-letter object"
-                id="o4"
-                data-depth="0.9"
-                style="opacity: 0;"
-                src="images/a-heart.png"
-            />
-            <img
-                class="a-profile-image-letter object"
-                id="o5"
-                data-depth="0.9"
-                style="opacity: 0;"
-                src="images/a-me.png"
-            />
-            <img
-                class="a-profile-image-letter"
-                src="images/a-triangle.svg"
-                data-depth="0.2"
-            />
+        <div class="index-container" id="home-index">
+        
+            <div>
+                <h2>
+                    Hi, I'm Anand. Nice to see you!
+                </h2>
+                <h2 style="font-weight: 300;">
+                    I'm a designer, coder, and researcher who builds research-validated experiences for global communities.
+                </h2>
+                <h2 style="font-weight: 300;">
+                    I use user research as a compass and javascript as a paintbrush. Also, I cook a lot. <a style="text-decoration: underline; color: #3e3eff;" id="start-magnets">And I love magnets.</a>
+                </h2>
             </div>
+           
         </div>
-        <h1 class="h1-large only-mobile" style="margin-bottom: 0px;">
-            Hi! I'm Anand.
-        </h1>
-        <h4 class="only-mobile" style="text-align: center;">
-            Currently the Design Lead of the Healthy Internet Project at TED.
-            Interested in the design of Spaces, Web Experiences, Foods, and
-            Communities.
-        </h4>
 
         <div id="scrollTo" class="work-bar animated fadeIn delay-1s">
             <h2 class="animated bounce delay-1s">
@@ -89,21 +47,20 @@
             </button>
             </h2>
         </div>
-        </div>
-
+<!-- 
         <div id="banner" class="animated fadeIn delay-1s">
-        <div id="banner-content">
-            <span>
-            👈🏾Hi! I'm Anand. I'm currently leading design at the Healthy Internet
-            Project, incubated at
-            <span style="font-weight: bold; color: #e62b1e;">TED</span>. I've been
-            humbled to work with some lovely folks at Facebook, IDEO CoLab,
-            Urgent.Agency and Cinder (YC'15). I'm fascinated by intentionally
-            designed Web Experiences, Emotional Spaces, Foods, Stories, and
-            Communities.
-            </span>
-        </div>
-        </div>
+            <div id="banner-content">
+                <span>
+                👈🏾Hi! I'm Anand. I'm currently leading design at the Healthy Internet
+                Project, incubated at
+                <span style="font-weight: bold; color: #e62b1e;">TED</span>. I've been
+                humbled to work with some lovely folks at Facebook, IDEO CoLab,
+                Urgent.Agency and Cinder (YC'15). I'm fascinated by intentionally
+                designed Web Experiences, Emotional Spaces, Foods, Stories, and
+                Communities.
+                </span>
+            </div>
+        </div> -->
 
         <a name="projects"></a>
 
@@ -208,9 +165,12 @@
 
     <div id="footer"></div>
 
-    <script type="text/javascript" src="js/headerfooter.min.js"></script>
-    <script type="text/javascript" src="js/tilt.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/headerfooter.min.js"></script>
+    <script src="js/tilt.min.js"></script>
+    <script src="js/addFace.min.js"></script>
+    <script src="js/p5.min.js"></script>
+    <script src="js/magnet.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/swup.min.js"></script>
     <script src="js/swup-controller.js"></script>
@@ -222,40 +182,22 @@
                 duration: 800
             });
 
-            //BANNER
-            var banner = document.querySelector("#banner-content");
-            window.addEventListener("scroll", function () {
-                if (!banner.classList.contains("animate") && window.scrollY > 100) {
-                banner.classList.add("animate");
-                }
-            });
+            //eyes
+            document.querySelector(".index-container#home-index").appendChild(addFace({
+                x:window.innerWidth/3*2,
+                y:window.innerHeight/2 - 40,
+                size:150,
+                eyebrow:true,
+                mouth:true,
+                stare:false
+            }));
 
-            //PARALLAX
-            var thing = document.getElementById("profile-box");
-            var parallaxInstance = new Parallax(thing);
-
-            //ROTATING IMAGES
-            var objects = document.getElementsByClassName("object");
-            var globalCounter = 0;
-
-            setInterval(function () {
-                for (var i = 0; i < objects.length; i++) {
-                if (globalCounter != i) {
-                    objects[i].style.opacity = 0;
-                } else {
-                    objects[i].style.opacity = 1;
-                }
-                }
-                globalCounter++;
-                if (globalCounter >= objects.length) {
-                globalCounter = 0;
-                }
-            }, 1200);
+            document.querySelector("#start-magnets").addEventListener("click", startMagnets)
         }
         window.addEventListener('load', init);
 
-        swup.on('contentReplaced', init);
     </script>
+    
 
     <!-- fun code I wrote to add a finger that follows your cursor! -->
     <!-- <script src="js/addFinger.js"></script>

@@ -1847,3 +1847,7 @@ exports.default = Scrl;
 /***/ })
 /******/ ]);
 });
+
+// Anand Added Swup SCRIPTs Plugin Right Here!
+
+

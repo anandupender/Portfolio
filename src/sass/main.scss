@@ -1,5 +1,5 @@
 :root {
-  --accent_color: #fa7268;
+  --accent_color: #3e3eff;
 }
 
 html,
@@ -29,24 +29,14 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-a,
-button {
-  text-decoration: none;
-  color: black;
-  pointer-events: auto !important;
-  cursor: pointer !important;
-}
-
-a:hover {
-  color: var(--accent_color);
+    z-index: 1;
 }
 
 canvas {
   position: absolute;
   top: 0px;
-  z-index: -1;
+  z-index: 0;
+  opacity: 1;
 }
 
 .add-shadow {
@@ -75,7 +65,7 @@ button {
 }
 #scrollTo {
   z-index: 1;
-  margin-top: 70px;
+  margin-top: -100px;
 }
 
 .button:hover {
@@ -133,7 +123,7 @@ button:focus {
 #nav {
   width: 100%;
   max-width: 100vw;
-  background-color: #ffffffcc;
+  background-color: #ffffffaa;
   box-sizing: border-box;
   position: fixed;
   padding-left: 7.5%;
@@ -150,72 +140,64 @@ button:focus {
   backdrop-filter: blur(7px);
 }
 
-#banner {
-  height: 35px;
-  width: 100vw;
-  /* position: absolute;
-  top: 100vh; */
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  padding: 3px;
-  display: flex;
-  align-items: center;
-}
+// #banner {
+//   height: 35px;
+//   width: 100vw;
+//   /* position: absolute;
+//   top: 100vh; */
+//   border-top: 3px solid black;
+//   border-bottom: 3px solid black;
+//   padding: 3px;
+//   display: flex;
+//   align-items: center;
+// }
 
-#banner-content a {
-  color: black;
-  padding-left: 20px;
-}
+// #banner-content a {
+//   color: black;
+//   padding-left: 20px;
+// }
 
-#banner-content {
-  white-space: nowrap;
-  position: absolute;
-  will-change: transform;
-  font-weight: bold;
-  transform: translateX(10%);
-  transition: transform 40s linear;
-}
+// #banner-content {
+//   white-space: nowrap;
+//   position: absolute;
+//   will-change: transform;
+//   font-weight: bold;
+//   transform: translateX(10%);
+//   transition: transform 40s linear;
+// }
 
-#banner:hover {
-  cursor: wait;
-}
+// #banner:hover {
+//   cursor: wait;
+// }
 
-#banner:hover #banner-content {
-  transform: translateX(-100%);
-  /* animation: move 30s infinite linear; */
-}
+// #banner:hover #banner-content {
+//   transform: translateX(-100%);
+//   /* animation: move 30s infinite linear; */
+// }
 
-@keyframes move {
-  0% {
-    transform: translateX(100vw);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
+// @keyframes move {
+//   0% {
+//     transform: translateX(100vw);
+//   }
+//   100% {
+//     transform: translateX(-100%);
+//   }
+// }
 
-@media screen and (max-width: 640px) {
-  #banner {
-    display: none;
-  }
-  @keyframes move {
-    0% {
-      /* //hard coded from text width */
-      right: -1530px;
-    }
-    100% {
-      right: 100%;
-    }
-  }
-}
-
-#particles-js {
-  position: absolute;
-  width: 100vw;
-  height: 90vh;
-  top: 0px;
-  z-index: 100;
-}
+// @media screen and (max-width: 640px) {
+//   #banner {
+//     display: none;
+//   }
+//   @keyframes move {
+//     0% {
+//       /* //hard coded from text width */
+//       right: -1530px;
+//     }
+//     100% {
+//       right: 100%;
+//     }
+//   }
+// }
 
 #logo {
   display: flex;
@@ -373,8 +355,12 @@ button:focus {
   flex-direction: row;
   width: 84vw;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100vh;
+  div{
+      flex:2;
+      max-width: 50%;
+  }
 }
 
 .index-image-container {
@@ -423,6 +409,9 @@ button:focus {
     flex-direction: column;
     justify-content: flex-start;
     height: auto;
+    div{
+        width: 100%;
+    }
   }
   .main-hello {
     margin-top: 0;
