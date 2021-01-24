@@ -3,7 +3,7 @@ let muSFriction = .15;
 let muKFriction = .01;
 let g = -9.8;
 let movers = [];
-let totalMovers = 20;
+let totalMovers = 3;
 let magnet;
 let magnetQ = 30000;
 let magnetPosition;
@@ -181,6 +181,7 @@ Mover.prototype.update = function(pos) {
     for (let j = 0; j < movers.length; j++) {
         if(j != pos && p5.Vector.dist(futurePosition,movers[j].position) < movers[j].radius + this.radius){
             this.adjust(movers[j].position,movers[j].radius*2);
+            console.log("anan");
         }
     }
 

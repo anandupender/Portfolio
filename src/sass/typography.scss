@@ -1,5 +1,6 @@
 :root {
   --accent_color: #3e3eff;
+  --black: #111;
   --header_font:'Fraunces', serif;
   --body_font:'Roboto',sans-serif;
 }
@@ -21,16 +22,23 @@ body{
     background-color:  rgba(0, 0, 255, 1);
 }
 
-a,
-button {
-  text-decoration: none;
-  color: black;
-  pointer-events: auto !important;
-  cursor: pointer !important;
+a, a:visited{
+    text-decoration: none;
+    color: var(--black);
 }
 
-a:hover {
+a.highlight, a.highlight:visited,
+button.highlight {
   color: var(--accent_color);
+//   pointer-events: auto !important;
+  cursor: pointer !important;
+  text-decoration: underline;
+}
+
+a.highlight:hover {
+    transform: rotate(3deg);
+    background-color: var(--accent_color);
+    color:white;
 }
 
 /* MAIN FONT TYPES */
@@ -143,7 +151,7 @@ p {
   font-size: 22px;
 }
 
-.menu-buttons {
+.menu-buttons, .menu-buttons:visited {
     font-family: var(--header_font);
   display: inline-block;
   margin: 10px;
@@ -152,6 +160,8 @@ p {
   font-size: 16px;
   font-weight: 700;
   transition: letter-spacing 300ms ease;
+  text-decoration: none;
+  color: var(--black);
 }
 
 
@@ -160,7 +170,7 @@ p {
   font-family: var(--header_font);
 }
 
-.bottom-button {
+a.bottom-button {
     font-family: var(--header_font);
   display: inline-block;
   text-align: center;
@@ -170,14 +180,18 @@ p {
   margin-bottom: 16px;
   margin-top: 16px;
   transition: letter-spacing 300ms ease;
+  text-decoration: none;
+  color: var(--black);
 }
 
-.menu-buttons:hover, .bottom-button:hover{
+a.menu-buttons:hover, a.bottom-button:hover{
     letter-spacing: 3px;
+    font-family: var(--header_font);
+    color: var(--accent_color);
 }
 
-.name {
-  color: var(--accent_color);
+a.name, a.name:visited {
+  color: var(--accent_color) !important;
   top: 0px;
   font-size: 24px;
   margin: 0px;
