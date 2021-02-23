@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 120px;
+  margin-top: 50px;
   margin-bottom: 40px;
   z-index: 1;
   width:84vw;
@@ -64,13 +64,6 @@
     margin-left: 25%;
   }
 
-  .profile-image {
-    /* show image when in mobile because no pendulum */
-    /* display: block !important; */
-    position: relative;
-    max-width: 100%;
-    left: -40px !important;
-  }
   .full-width-image {
     width: 100vw;
     max-width: initial;

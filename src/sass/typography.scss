@@ -1,5 +1,5 @@
 :root {
-  --accent_color: #3e3eff;
+  --accent_color: #14489E;
   --black: #111;
   --header_font:'Fraunces', serif;
   --body_font:'Roboto',sans-serif;
@@ -19,7 +19,7 @@ body{
 
 ::selection{
     color: white;
-    background-color:  rgba(0, 0, 255, 1);
+    background-color: var(--accent_color);
 }
 
 a, a:visited{
@@ -145,11 +145,6 @@ p {
 
 /* SPECIAL FONT TYPES */
 
-.manifesto {
-  flex: 1;
-  margin-top: 10px;
-  font-size: 22px;
-}
 
 .menu-buttons, .menu-buttons:visited {
     font-family: var(--header_font);

@@ -245,7 +245,7 @@ function addInitialStyling(){
         }
         .eyebrow{
             position: absolute;
-            height:1%;
+            height:5%;
             background-size: contain;
             background-repeat: no-repeat;
             transition: transform 300ms ease;

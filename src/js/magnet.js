@@ -3,7 +3,7 @@ let muSFriction = .15;
 let muKFriction = .01;
 let g = -9.8;
 let movers = [];
-let totalMovers = 3;
+let totalMovers = 23;
 let magnet;
 let magnetQ = 30000;
 let magnetPosition;
