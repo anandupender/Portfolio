@@ -28,13 +28,14 @@ function startMagnets(){
 function draw(){
     if(started){
 
-        if(pressed){
-            // background(0);
-            background(255);
-        }
-        else{
-            background(255);
-        }
+        // if(pressed){
+        //     // background(0);
+        //     background(255,255,255);
+        // }
+        // else{
+        //     background('#EAE4D7');
+        // }
+        background('#EAE4D7');
 
         //set magnet position
         magnetPosition = createVector(mouseX,mouseY);
@@ -205,10 +206,10 @@ Mover.prototype.adjust = function(comparedPosition, comparedDiameter) {
 Mover.prototype.display = function() {
     noStroke();
     if(pressed){
-        fill(color(240,0,0));
+        fill(color("#E94F37"));
     }
       else{
-        fill(color(62,62,255));
+        fill(color("#195CC8"));
     }
     circle(this.position.x, this.position.y, this.radius*2);
 };
