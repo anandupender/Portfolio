@@ -51,6 +51,7 @@ nav.innerHTML += `
   </div>
   <nav class="navigation">
     <ul id="menu">
+      <li><a href="/archive.html" class="menu-buttons animated fadeInDown" id="archive" title="Archive">Archive</a></li>
       <li><a href="/food.html" class="menu-buttons animated fadeInDown" id="food" title="Anand's Food"> Food Design </a></li>
       <li><a href="https://anandu.substack.com/welcome" target="_blank" class="menu-buttons animated fadeInDown" id="writing" title="Cool Sh*t"> Cool Sh*t </a></li>
       <li><a href="/about.html" class="menu-buttons animated fadeInDown" id="about" title="About Anand">About</a></li>
