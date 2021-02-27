@@ -470,10 +470,9 @@ section.header{
 }
 
 @media screen and (max-width: 640px) {
-  .diagonal-container {
-    -webkit-clip-path: polygon(20% 0%, 70% 0, 43% 100%, -5% 100%);
-    clip-path: polygon(20% 0%, 70% 0, 43% 100%, -5% 100%);
-  }
+    #start-magnets{
+        display: none;
+    }
   .index-container {
     margin-top: 80px;
     width:94vw;
