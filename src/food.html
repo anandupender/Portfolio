@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anand Upender</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/main.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
@@ -16,23 +16,28 @@
     <div id="swup-background"></div>
     <main id="swup" class="transition-fade">
         <div class="index-container">
-            <div class="main-hello">
-                <div class="rotate-container">
-                <h1 class="h1-large animated fadeInDown delay-1s">Food Design</h1>
-                </div>
-                <h1 class="animated fadeInDown delay-1s h1-subtitle">A journey through food as a storytelling medium, a research topic, and a source for creative inspiration.</h1>
-                <h4 class="animated fadeInDown delay-1s">Highlights include pop-up-dinners, a stint at an Italian bakery, and Stanford Food Design research<br/><br/></h4>
-
+            <div>
+                <h2>
+                    Food Design
+                </h2>
+                <h2 style="font-weight: 300;">
+                    A journey through food as a storytelling medium, a research topic, and a source for creative inspiration.
+                </h2>
+                <h2 style="font-weight: 300;">
+                    Highlights include pop-up-dinners, a stint at an Italian bakery, and Stanford Food Design research
+                </h2>
             </div>
 
-            <div class="index-image-container animated fadeIn delay-1s" id="diagonal-box">
-                <div class="diagonal-container" id="diagonal" data-depth="0.6">
-                    <img data-depth="0.3" class="index-image" src="images/food/action.jpg"/>
-                </div>
+            <div id="scrollTo" class="work-bar animated fadeIn delay-1s">
+                <h2 class="animated bounce delay-1s">
+                <button
+                    onclick="window.scrollBy({top: 500, left: 0, behavior: 'smooth' });console.log('test');"
+                    class="no-style-button" style="font-size: 36px;">
+                    👇🏾
+                </button>
+                </h2>
             </div>
         </div>
-
-        <div class="work-bar animated fadeIn delay-2s"><h2 class="animated bounce delay-2s"><button onclick="window.scrollBy({top: 500, left: 0, behavior: 'smooth' });" class="no-style-button">Journey On </br>👇🏾</button><h2/></div>
 
         <div class="definition">
         <h1>Food Design &nbsp;&nbsp;<span style="font-size:18px;color:grey;">| fo͞od dəˈzīn |</span></h1>
@@ -116,7 +121,7 @@
         <h1>FoodInno</h1>
         <p class="cooking-bio-text-small">In 2019, I was able to direct the fourth annual Food Innovation summit at Stanford. <span style="text-decoration: underline">Click the image to read the case!</span></p>
         <div class="project-image-container" style="max-width: 80%; margin-bottom:30px;">
-            <a href="foodinno.html"><img src="images/foodinno/hero.jpeg" class="project-image add-shadow" /></a>
+            <img src="images/foodinno/hero.jpeg" class="project-image add-shadow" />
         </div>
         </div>
 
@@ -136,7 +141,7 @@
 
     </main>
 
-    <div id="footer" style="position:absolute;"></div>
+    <div id="footer"></div>
 
     <script src="js/addFace.min.js"></script>
     <script type="text/javascript" src="js/headerfooter.min.js"></script>

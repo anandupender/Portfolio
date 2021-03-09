@@ -8,23 +8,7 @@
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 30px;
-  animation-name: fade;
-  animation-duration: 7000ms;
-  animation-iteration-count: infinite;
   z-index: 4;
-  background-color: white;
-}
-
-@keyframes fade {
-  0% {
-    border-color: #ddd;
-  }
-  50% {
-    border-color: #fa7268;
-  }
-  100% {
-    border-color: #ddd;
-  }
 }
 
 .food-project {

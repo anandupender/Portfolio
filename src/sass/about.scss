@@ -28,3 +28,44 @@
         }
     }
 }
+
+// animation thingy
+
+.name-container{
+    display:flex; 
+    flex-direction: 
+    column;align-items: center;
+    margin-top:10vh;
+    margin-bottom:80px;
+    div{
+        display: inline-block;
+    }
+}
+#name{
+    margin: 0px 40px 20px 40px;
+    text-align: center;
+    font-size:41px;
+    font-family: var(--header_font);
+    font-weight: 700;
+}
+#first, #third{
+    text-decoration: underline;
+    text-decoration-color: var(--accent_color);
+    transition: text-decoration-color ease 400ms 300ms;
+}
+#second, #fourth{
+    white-space: nowrap;
+    width:0px;
+    opacity: 0;
+    transition: width ease 500ms, opacity ease 300ms;
+    text-align: center;
+    color: var(--accent_color);
+    font-weight: 400;
+}
+#name:hover #second, #name:hover #fourth{
+    // transition: width ease 500ms, opacity ease 300ms 250ms;
+}
+#pronounce{
+    opacity: 1;
+    font-family: var(--body_font);
+}

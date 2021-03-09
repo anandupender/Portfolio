@@ -21,5 +21,5 @@
 .mouth{
     position: absolute;
     height:30px;                     /*  CHANGE */
-    transition: transform ease 500ms;
+    transition: opacity ease 300ms, transform ease 300ms;
 }

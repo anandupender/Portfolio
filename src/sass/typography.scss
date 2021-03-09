@@ -10,6 +10,10 @@ body{
     font-weight: 700 !important;
 }
 
+.white{
+    color:white !important;
+}
+
 ::selection{
     color: white;
     background-color: var(--accent_color);
@@ -26,6 +30,7 @@ button.highlight {
 //   pointer-events: auto !important;
   cursor: pointer !important;
   text-decoration: underline;
+  font-weight: 700;
 }
 
 a.highlight:hover {
@@ -228,7 +233,7 @@ a.name, a.name:visited {
   top: -70px;
   font-weight: bold;
   margin-bottom: 0px;
-  line-height: 95%;
+  line-height: 105%;
 }
 .index-info {
   transition: 300ms ease;

@@ -37,16 +37,16 @@ function movePupils(){
 }
 
 function handleMouth(){
-    var mouths = document.getElementsByClassName("mouth");
-    for(var i = 0; i < mouths.length; i++){
-        var mouth = mouths[i];
-        var dist = Math.hypot(mouse[0]-mouth.dataset.x, mouse[1]-mouth.dataset.y);
-        if(dist>300){
-            mouth.style.transform = "rotate(180deg)";
-        }else{
-            mouth.style.transform = "none";
-        }
+    var mouth = document.getElementsByClassName("mouth")[0];
+    var dist = Math.hypot(mouse[0]-mouth.dataset.x, mouse[1]-mouth.dataset.y);
+    if(dist < 50){
+        mouth.style.opacity = 1;
+        mouth.style.transform = "translateY(0px)";
+    }else{
+        mouth.style.opacity = 0;
+        mouth.style.transform = "translateY(5px)";
     }
+
 }
 
 function stare(){
@@ -67,7 +67,7 @@ function handleMouseMove(e){
     mouse[1] = e.clientY;
 
     movePupils();
-    // handleMouth();
+    handleMouth();
 }
 
 function populateFace(face){
