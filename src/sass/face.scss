@@ -19,6 +19,7 @@
 }
 
 .mouth{
+    opacity: 0;
     position: absolute;
     height:30px;                     /*  CHANGE */
     transition: opacity ease 300ms, transform ease 300ms;

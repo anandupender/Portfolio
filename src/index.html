@@ -111,7 +111,7 @@
 
         <div id="all-project-cards">
             <a class="project-card" href="/hip.html" data-aos="fade-up">
-                <img data-tilt data-tilt-scale="1.05" data-tilt-max="4" class="index-project-image" src="images/hip/cover.jpg" alt="" />
+                <img class="index-project-image tilt" src="images/hip/cover.jpg" alt="" />
                 <div>
                     <div class="index-tag">Case study</div>
                     <div class="index-title">
@@ -123,7 +123,7 @@
             </a>
 
             <a class="project-card" href="/circles.html" data-aos="fade-up">
-                <img data-tilt data-tilt-scale="1.05" data-tilt-max="4"  class="index-project-image" src="images/circles/cover.jpg" alt="" />
+                <img  class="index-project-image tilt" src="images/circles/cover.jpg" alt="" />
 
                 <div>
                     <div class="index-tag red">Project summary</div>
@@ -136,7 +136,7 @@
             </a>
             
             <a class="project-card" href="/" data-aos="fade-up">
-                <img data-tilt data-tilt-scale="1.05" data-tilt-max="4"  class="index-project-image" src="images/hipbrand/cover.jpg" alt="" />
+                <img  class="index-project-image tilt" src="images/hipbrand/cover.jpg" alt="" />
 
                 <div>
                     <div class="index-tag">Case study</div>
@@ -149,7 +149,7 @@
             </a>
 
             <a class="project-card" href="/urgent.html" data-aos="fade-up">
-                <img data-tilt data-tilt-scale="1.05" data-tilt-max="4"  class="index-project-image" src="images/urgent/logo.gif" alt="" />
+                <img  class="index-project-image tilt" src="images/urgent/logo.gif" alt="" />
 
                 <div>
                     <div class="index-tag red">Project summary</div>
@@ -167,33 +167,15 @@
     <div id="footer"></div>
 
     <script src="js/addFace.min.js"></script>
+    <script src="js/aboutAnimation.js"></script>
     <script src="js/headerfooter.min.js"></script>
     <script src="js/tilt.min.js"></script>
     <script src="js/p5.min.js"></script>
     <script src="js/magnet.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="js/swup.min.js"></script>
-    <script src="js/swup-controller.js"></script> -->
-
-    <script>
-        function init(){
-            //AOS
-            AOS.init({
-                duration: 800
-            });
-
-            document.querySelector("#start-magnets").addEventListener("click", function(){
-                document.querySelector("#home-index").classList.add("disable-select");
-                document.querySelector("#start-magnets").style.animation = "none";
-                document.querySelector("#magnet-show-text").style.opacity = 1;
-                startMagnets();
-                document.getElementsByTagName("canvas")[0].style.opacity = 1;
-            });
-        }
-        window.addEventListener('load', init);
-
-    </script>
+    <script src="js/swup.min.js"></script>
+    <script src="js/swup-controller.js"></script>
+    <script src="js/tilt.min.js"></script>
     
 
     <!-- fun code I wrote to add a finger that follows your cursor! -->

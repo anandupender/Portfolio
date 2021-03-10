@@ -150,33 +150,6 @@ ul.no-bullets{
     }
 }
 
-#nav {
-  width: 100%;
-  max-width: 100vw;
-  box-sizing: border-box;
-  position: fixed;
-  padding-left: 8%;
-  padding-right: 8%;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  vertical-align: middle;
-  z-index: 102;
-  background-color: #EAE4D7;
-//   backdrop-filter: blur(7px);
-}
-
-// @-moz-document url-prefix() {
-//     #nav {
-//         background-color: #EAE4D7;
-//         backdrop-filter: none;
-//     }
-// }
-
 #banner {
     margin-top: 30px;
   height: 40px;
@@ -238,11 +211,7 @@ ul.no-bullets{
 #logo {
   display: flex;
   flex-direction: column;
-}
-
-#logo-subtitle {
-  margin-right: 30px;
-  font-size: 16px;
+  max-width: 35%;
 }
 
 .no-margin-left {
@@ -265,6 +234,9 @@ ul.no-bullets{
   }
   #top-rectangle {
     height: 100px;
+  }
+  #logo {
+    max-width: 85%;
   }
 }
 
@@ -616,16 +588,144 @@ section.header{
 .topNav .icon {
   display: none;
   z-index: 2;
+  margin: 0;
 }
 
-#menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.bottom-button-large {
+  font-size: 16px !important;
+  font-family: var(--header_font);
 }
 
-ul#menu {
-  list-style-type: none;
+a.bottom-button {
+    font-family: var(--header_font);
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  transition: letter-spacing 300ms ease;
+  text-decoration: none;
+  color: var(--accent_color);
+}
+
+a.menu-buttons:hover, a.bottom-button:hover{
+    letter-spacing: 3px;
+    font-family: var(--header_font);
+    color: var(--accent_color);
+}
+
+// new stuff
+
+#nav {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    position: fixed;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 30px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    vertical-align: middle;
+    z-index: 102;
+    background-color: #EAE4D7;
+    transition: padding 500ms ease;
+  //   backdrop-filter: blur(7px);
+  }
+
+
+a.name {
+  color: var(--accent_color) !important;
+  top: 0px;
+  font-size: 32px;
+  margin: 0px;
+  font-weight: 800;
+  transition: font-size 500ms ease;
+}
+
+#name-subtitle {
+    margin-top: 8px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: var(--header_font);
+    font-weight: 500;
+    transform:translateY(0px);
+    transition: opacity 500ms ease, transform 500ms ease;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+  
+  ul#menu {
+    list-style-type: none;
+  }
+  
+  .menu-buttons, .menu-buttons:visited {
+      font-family: var(--header_font);
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--accent_color);
+    transition: font-size 500ms ease, letter-spacing 300ms ease, margin-right 500ms ease;
+  }
+
+#nav.scroll{
+    padding-left: 4%;
+    padding-right: 4%;
+    a.name{
+        font-size: 24px;
+    }
+    #name-subtitle{
+        opacity: 0;
+        transform:translateY(-10px);
+    }
+    .navigation#menu li{
+        font-size: 14px;
+    }
+    .menu-buttons, .menu-buttons:visited {
+        font-size: 16px;
+        margin-right: 18px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+  .name {
+    margin-top: 0px;
+    font-size: 22px !important;
+  }
+  #name-subtitle{
+      display: none;
+  }
+  .bottom-button {
+    font-size: 12px !important;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .bottom-button-large {
+    font-size: 12px !important;
+  }
+  .manifesto {
+    margin-top: 10px;
+    margin-bottom: 75px;
+  }
+  .menu-buttons {
+    font-size: 18px;
+    margin-left: 10px;
+  }
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -669,7 +769,12 @@ ul#menu {
     display: flex !important;
     text-align: left;
     background-color: var(--white);
+    align-items: flex-start;
+    margin-right: 40px;
   }
+  .topNav.responsive #menu li{
+    margin-bottom: 8px;
+ }
 
   .profile-image-wrapper {
     width: 280px;
