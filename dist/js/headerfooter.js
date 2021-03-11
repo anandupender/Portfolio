@@ -57,7 +57,6 @@ nav.innerHTML += `
       <a href="/index.html#projects" class="menu-buttons" id="Work" title="Work">Work</a></li>
       <li><a href="/food.html" class="menu-buttons" id="food" title="Anand's Food"> Food Design </a></li>
       <li><a href="/about.html" class="menu-buttons" id="about" title="About Anand">About</a></li>
-      <li><a href="/archive.html" class="menu-buttons" id="archive" title="Archive">Archive</a></li>
       <li><a href="https://www.instagram.com/pixels_and_plates/" target="_blank" class="menu-buttons no-margin-right" id="instagram" title="instagram">
       <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M19.8333 2.33337H8.16665C4.94499 2.33337 2.33331 4.94505 2.33331 8.16671V19.8334C2.33331 23.055 4.94499 25.6667 8.16665 25.6667H19.8333C23.055 25.6667 25.6666 23.055 25.6666 19.8334V8.16671C25.6666 4.94505 23.055 2.33337 19.8333 2.33337Z" stroke="#195CC8" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>

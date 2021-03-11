@@ -12,6 +12,9 @@ const swup = new Swup({
 
 function init(){
     // start
+    AOS.init({
+        duration: 800
+    });
     if (document.querySelector('#start-magnets')) {
         document.querySelector("#start-magnets").addEventListener("click", function(){
             document.querySelector("#home-index").classList.add("disable-select");
@@ -32,9 +35,6 @@ function init(){
             scale:1.05
         });
     }
-    AOS.init({
-        duration: 800
-    });
 }
 
 init();
