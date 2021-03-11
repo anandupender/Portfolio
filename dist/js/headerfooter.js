@@ -45,7 +45,7 @@ headContent.innerHTML += `
 
 var nav = document.getElementById("nav");
 nav.classList.add("animate__animated");
-nav.classList.add("animate__fadeInDown");
+nav.classList.add("animate__slideInDown");
 nav.innerHTML += `
   <div id="logo">
     <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo"> Anand Upender</a>
@@ -143,8 +143,6 @@ document.addEventListener('scroll', function(e) {
 // FOOTER
 
 var footer = document.getElementById("footer");
-footer.classList.add("animate__animated");
-footer.classList.add("animate__fadeInUp");
 footer.innerHTML += `
   <a class="bottom-button no-margin-left" target="_blank" href="mailto:anandx@stanford.edu"><div class="">Email</div></a>
   <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1MZqF19jbrnSfgC-fTu9E4IYMhKm9M0fJ/view?usp=sharing"><div class="">Resume</div></a>

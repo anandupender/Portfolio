@@ -27,6 +27,7 @@ p{
     max-width:1000px;
     margin-top: 50px;
     margin-bottom: 20px;
+    overflow: hidden;
     }
 
     .project-section__opening {
@@ -115,8 +116,13 @@ p{
         margin-top: -5px;
         background-color: var(--accent_color);
         div{
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
+    }
+
+    .project-info-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -153,6 +159,9 @@ p{
         padding-left: 10vw !important;
         padding-right: 10vw !important;
     }
+    .project-info-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .project-main-container {
         margin-top: 90px;
     }
@@ -161,6 +170,7 @@ p{
         .project-image,img{
             max-width: 100%;
             margin-bottom: 20px;
+            margin: 0;
         }
     }
 }

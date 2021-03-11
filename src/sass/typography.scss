@@ -112,7 +112,7 @@ p {
 
 .subheader {
   font-family: var(--header_font);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: var(--accent_color);
   text-transform: uppercase;
   font-weight: 900;
@@ -214,11 +214,6 @@ p {
 }
 
 @media screen and (max-width: 640px) {
-  .project-title {
-    font-size: 38px;
-    margin-left: -15%;
-    transform: rotate(0deg);
-  }
   .project-question {
     font-size: 20px;
     width: 100%;
