@@ -61,7 +61,8 @@ canvas {
 // BUTTONS
 
 .button,
-button {
+button, .button:visited,button:visited
+{
   background-color: var(--accent_color);
   border: none;
   color: white;
@@ -626,6 +627,7 @@ a.menu-buttons:hover, a.bottom-button:hover{
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 30px;
+    padding-bottom: 12px;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -647,7 +649,7 @@ a.name {
   font-size: 32px;
   margin: 0px;
   font-weight: 800;
-  transition: font-size 500ms ease;
+  transition: font-size 500ms ease, letter-spacing 300ms ease;
 }
 
 #name-subtitle {
@@ -686,6 +688,7 @@ a.name {
 #nav.scroll{
     padding-left: 4%;
     padding-right: 4%;
+    padding-bottom: 0px;
     a.name{
         font-size: 24px;
     }
@@ -742,6 +745,10 @@ a.name {
   .topNav a.icon {
     float: right;
     display: block;
+  }
+  #nav.scroll{
+    padding-left: 7.5%;
+    padding-right: 7.5%;
   }
 }
 

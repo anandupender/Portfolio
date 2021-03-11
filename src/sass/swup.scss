@@ -8,6 +8,14 @@
     width: 100vw;
     transition:transform .7s ease;
     transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        color:var(--white);
+        font-size: 24px;
+    }
 }
 
 /* Come from left and go back to left */

@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
@@ -52,9 +53,9 @@
             </div>
         </div>
 
-        <div class="project-section">
+        <div class="project-section" data-aos="fade-up">
             <h1>
-                Taking an iterative approach to designing and launching tools for TED's global Circles community of over 10,000 participants.
+                Designing and developing a tool to allow TED's global Circles community of over 10,000 participants to create and share event invitations
             </h1>
         </div>
 
@@ -63,12 +64,113 @@
             <h3 class="image-caption">The key user delight comes at seeing a "tangible", digital invitation being created as they enter event information into a more traditional form.</h3>
         </div>
 
-        <div class="project-section">
+        <div class="project-section" data-aos="fade-up">
             <h2>The Challenge</h2>
             <p>
-                <!-- Not many people know that TED has created and supported communities of thousands of global volunteers to help in this mission of spreading ideas. From TED Translators to TED Fellows, this scale of human energy and motivation has allowed us to try a relatively unexplored angle at solving internet health issues: crowdsourcing. Over the past year, we built a browser extension that allows people to actively flag harmful content they come across, as well as surface the helpful, hidden gems on the web. -->
+                TED Circles is a new but growing global community of learners who get together in small pods to gain new perspectives. In essence, they are book clubs around TED talks. Similar to TEDx, TED Circles has a simple "licensing" model where TED provides its brand to facilitate the creativity of local "Hosts". Given this flexible structure, Hosts will sometimes operate outside of TED's awareness, creating events opaque to us. The Circles team came to me with a need to incentivize Hosts to schedule their events through TED, allowing us to have a better sense of the success of the group, connect Circles in the same country, and provide customer support.
             </p>
         </div>
+
+        <div class="project-section" data-aos="fade-up">
+            <h2>The Approach</h2>
+            <p>
+                The existing solution was a Google Form that Hosts filled out before each event. It functioned well, but didn't provide any clear value to the Hosts, so was often unused. Early on, I had a design principle of creating win-win scenarios in which Hosts AND TED benefit from creating events in our ecosystem. Tactically, this meant: <span class="bold">Any time you ask someone to take the time to fill in some information, make sure they're getting something in return.</span>
+            </p>
+        </div>
+
+        <div class="project-image-container">
+            <img src="images/circles/principles.jpg" class="project-image add-shadow" />
+            <h3 class="image-caption">Key principles for the tool</h3>
+        </div>
+
+        <div class="project-section" data-aos="fade-up">
+            <h2>Take One...</h2>
+            <p>
+                In order to achieve some of the goals above, I worked with the Circles team to brainstorm ways to support the hosts. We landed on the creation of an invitation – something visually appealing that they could send to their friends. It'd make them look good
+            </p>
+        </div>
+
+        <div class="project-image-container full">
+            <img src="images/circles/first.jpg" class="project-image add-shadow" />
+            <h3 class="image-caption">Early mock to convey how form inputs map to stylized text on an invitation using a two-panel layout.</h3>
+        </div>
+
+        <div class="project-section" data-aos="fade-up">
+            <h2>Tech Stack ft. Airtable</h2>
+            <p>
+                Since TED Circles was a new and small team, their internal processes were lean and hands-on. Their desire to iterate the tool and community quickly led to a technological decision to create a new stack outside of the normal, heavy TED.com infra. Instead of involving 2-3 engineers to create custom APIs and a database admin panel, I adapted a tool they were already using, Airtable, into our stack. Although unconventional, we use Airtable as the sole database for Circles events. This allowed them to create email automations and other fancy interactions without touching a messy backend. So, the tool uses the Airtable JS API along with Netlify Functions to hide the API keys. Netlify also hosts our static site. 
+            </p>
+        </div>
+
+        <div class="project-image-container">
+            <img src="images/circles/system.jpg" class="project-image add-shadow" />
+        </div>
+
+        <div class="project-section" data-aos="fade-up">
+            <h2>Key features</h2>
+            <p>
+                Here are a few features that were built over 1-2 months of in-the-wild testing.
+            </p>
+
+            <div class="project-two-col">
+                <img class="project-image add-shadow" src="images/circles/cal.jpg" alt="">
+                <div>
+                    <h2>Auto-populated calendar invites</h2>
+                    <p>
+                        Create and populate calendar invites for Hosts.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-two-col">
+                <div>
+                    <h2>Unique invite urls</h2>
+                    <p>
+                        Create a unique invitation URL for Hosts to share as well as sample "share text"
+                    </p>
+                </div>
+                <img class="project-image add-shadow" src="images/circles/url.jpg" alt="">
+            </div>
+
+            <div class="project-two-col">
+                <img class="project-image add-shadow" src="images/circles/invitation.jpg" alt="">
+                <div>
+                    <h2>Invitation page</h2>
+                    <p>
+                        Invitation page that updates as a Host updates event info
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-two-col">
+                <div>
+                    <h2>Date & time pickers</h2>
+                    <p>
+                        Many browsers do not have native date and time pickers. So, I had to use external libraries to catch and test the many edge cases of these inputs.
+                    </p>
+                </div>
+                <img class="project-image add-shadow" src="images/circles/cal2.jpg" alt="">
+            </div>
+
+            <div class="project-two-col">
+                <img class="project-image add-shadow" src="images/circles/tilt.gif" alt="">
+                <div>
+                    <h2>Tangible invitations, digitally</h2>
+                    <p>
+                        Using tilt.js, I tried to give the invitations a sense of physicallity.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section" data-aos="fade-up">
+            <h2>Wrapping up</h2>
+            <p>
+                The TED Circles community is an iterative experiment that'll grow over time - and such, that has been my development approach. The Event Generator site was announced at the 1-year-anniversary celebration of the community. Metrics aside, people expressed deep gratitude in having such thought and care taken to something that they used often. <span class="bold">Over 2000 event invitations were created in the few months after launch.</span>  Early success led to a large round of QA testing and bug fixes. Up next, we're working on creating a dashboard for Hosts to view and manage all their events in one place.
+            </p>
+        </div>
+
+        <a href="https://events.tedcircles.com/" target="_blank" class="button">View the live site</a>
 
 
     </main>
@@ -77,6 +179,7 @@
     
     <script src="js/addFace.min.js"></script>
     <script type="text/javascript" src="js/headerfooter.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/swup.min.js"></script>
     <script src="js/swup-controller.js"></script>

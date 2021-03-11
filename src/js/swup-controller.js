@@ -20,10 +20,6 @@ function init(){
             startMagnets();
             document.getElementsByTagName("canvas")[0].style.opacity = 1;
         });  
-        
-        AOS.init({
-            duration: 800
-        });
     }
     if(document.querySelector("#more")){
         function openMore(){
@@ -31,11 +27,14 @@ function init(){
         }
     }
     if(document.querySelector(".tilt")){
-        VanillaTilt.init(document.querySelector(".tilt"), {
+        VanillaTilt.init(document.querySelectorAll(".tilt"), {
             max: 5,
             scale:1.05
         });
     }
+    AOS.init({
+        duration: 800
+    });
 }
 
 init();

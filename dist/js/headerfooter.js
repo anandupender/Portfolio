@@ -108,11 +108,12 @@ if(getWidth() >= 1080){
 }
 
 let lastKnownScrollPosition = 0;
+let scrolled = false;
 let ticking = false;
+let cutoff = 50;
 
-function headerScroll(window_top) {  
-    if (window_top > 50) {  
-        console.log("Anand");
+function headerScroll() {  
+    if (scrolled) {  
         document.querySelector("#nav").classList.add("scroll");
     } else {  
         document.querySelector("#nav").classList.remove("scroll");
@@ -120,11 +121,18 @@ function headerScroll(window_top) {
 }  
 
 document.addEventListener('scroll', function(e) {
-    lastKnownScrollPosition = window.scrollY;
 
     if (!ticking) {
         window.requestAnimationFrame(function() {
-            headerScroll(lastKnownScrollPosition);
+            if(lastKnownScrollPosition < cutoff && window.scrollY >= cutoff){
+                scrolled = true;
+                headerScroll();
+            }else if(lastKnownScrollPosition >= cutoff && window.scrollY < cutoff){
+                scrolled = false;
+                headerScroll();
+            }
+        
+            lastKnownScrollPosition = window.scrollY;
             ticking = false;
         });
 
