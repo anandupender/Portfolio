@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>Anand Upender</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   <body style="height: auto; overflow-y: scroll;">
@@ -15,6 +16,10 @@
     <div id="swup-background"></div>
     <main id="swup" class="transition-fade">
         <div class="index-container">
+            <video id="video" width="700" autoplay muted loop class="window">
+                <source src="/data/onion.mov" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
             <div>
                 <h2>
                     Food Design
@@ -144,6 +149,7 @@
 
     <script src="js/addFace.min.js"></script>
     <script type="text/javascript" src="js/headerfooter.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/swup.min.js"></script>
     <script src="js/swup-controller.js"></script>

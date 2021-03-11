@@ -39,8 +39,19 @@
   width: 35%;
 }
 
+.window{
+    clip-path: inset(0% 30% 0% 30% round 25vw 25vw 0vw 0vw);
+    margin:15px -8% 0px -12%;
+    filter: hue-rotate(10deg);
+}
+
 @media screen and (max-width: 640px) {
   .extra-images {
     width: 100%;
+  }
+
+  .window{
+      margin:10px 0px 20px 0px;
+      clip-path: inset(0% 30% 0% 30% round 35vw 35vw 0vw 0vw);
   }
 }
