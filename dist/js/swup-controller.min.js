@@ -15,6 +15,15 @@ function init(){
     AOS.init({
         duration: 800
     });
+
+    //eyebrow animations!
+    var links = document.getElementsByTagName("a");
+
+    for(var i = 0; i < links.length; i++){
+        links[i].onmouseover = raiseEyebrows;
+        links[i].onmouseout = lowerEyebrows;
+    }
+    
     if (document.querySelector('#start-magnets')) {
         document.querySelector("#start-magnets").addEventListener("click", function(){
             document.querySelector("#home-index").classList.add("disable-select");

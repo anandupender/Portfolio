@@ -168,14 +168,6 @@ function populateFace(face){
         face.appendChild(pupil);
     }
 
-    //eyebrow animations!
-    var links = document.getElementsByTagName("a");
-
-    for(var i = 0; i < links.length; i++){
-        links[i].onmouseover = raiseEyebrows;
-        links[i].onmouseout = lowerEyebrows;
-    }
-
     return face;
 }
 
