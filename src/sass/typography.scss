@@ -63,7 +63,6 @@ h1 {
 
 h2 {
     font-family: var(--header_font);
-  margin: 7px;
   font-weight: 900;
   font-size: 32px;
   margin: 15px;
@@ -71,7 +70,7 @@ h2 {
 }
 
 h3{
-    font-size: 22px;
+    font-size: 24px;
     line-height: 125%;
     margin:8px 0px;
 
@@ -92,10 +91,11 @@ li {
 }
 
 p {
-  font-size: 16px;
-  margin: 10px 0 14px 0;
+  font-size: 18px;
+  margin: 4px 0 12px 0;
   line-height: 1.6em;
   font-weight: 400;
+  color: var(--black);
 }
 
 .image-caption {

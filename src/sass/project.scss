@@ -7,12 +7,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 130px;
   margin-bottom: 200px;
 }
-p{
-    max-width:700px;
-  }
 
   .project-title {
       color:var(--white);
@@ -72,7 +69,7 @@ p{
         .project-hero-image {
             width: 100%;
             height: auto;
-            max-height: 65vh;
+            max-height: 75vh;
             object-fit: cover;
         }
     }
@@ -86,7 +83,7 @@ p{
         flex-direction: column;
     }
     .project-image-container.full{
-        max-width: 70%;
+        max-width: 100%;
     }
     .project-image {
         max-width: 100%;
