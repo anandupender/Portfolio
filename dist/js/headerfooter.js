@@ -132,7 +132,7 @@ document.addEventListener('scroll', function(e) {
 var footer = document.getElementById("footer");
 footer.innerHTML += `
   <a class="bottom-button no-margin-left" target="_blank" href="mailto:anandx@stanford.edu"><div class="">Email</div></a>
-  <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1MZqF19jbrnSfgC-fTu9E4IYMhKm9M0fJ/view?usp=sharing"><div class="">Resume</div></a>
+  <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1Odp9OogIOBw8TSN6mrJcw8ezWSm7nhAZ/view?usp=sharing"><div class="">Resume</div></a>
   <div id="bottom-middle-button" class="bottom-button bottom-button-large"><a class="bottom-button" target="_blank" href="https://github.com/anandupender/Portfolio">Coded from scratch with&nbsp;<span class="heart">&#9829;</span></a></div>
   <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender"><div class="">Github</div></a>
   <a class="bottom-button no-margin-right" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="">LinkedIn</div></a>
