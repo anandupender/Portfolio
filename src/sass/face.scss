@@ -1,0 +1,26 @@
+.face{
+    position:initial;    
+}
+.eyeball{
+    position: absolute;   
+    border-radius: 50%;
+    border: 3px solid var(--accent_color);
+}
+.pupil{
+    position: absolute;      
+    background-color: var(--accent_color);
+    border-radius: 50%;
+}
+.eyebrow{
+    position: absolute;
+    height:5%;
+    transition: all 300ms ease;
+    opacity:0;
+}
+
+.mouth{
+    opacity: 0;
+    position: absolute;
+    height:30px;                     /*  CHANGE */
+    transition: opacity ease 300ms, transform ease 300ms;
+}

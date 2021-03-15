@@ -37,59 +37,125 @@ headContent.innerHTML += `
   <link rel="icon" type="image/png" href="images/favicons/favicon-128.png" sizes="128x128" />
   <meta name="application-name" content="&nbsp;"/>
   <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="images/favicons/mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
-  <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
-  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Space+Mono|Lexend+Deca|Montserrat:thin,regular,bold,extra-bold" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Montserrat:thin,regular,bold,extra-bold" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,600;1,800&Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 `;
 
 var nav = document.getElementById("nav");
+nav.classList.add("animate__animated");
+nav.classList.add("animate__slideInDown");
 nav.innerHTML += `
   <div id="logo">
-    <a class="name menu-buttons animated fadeInDown delay-1s" href="index.html" title="Anand Upender Logo"> Anand Upender</a>
-
+    <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo"> Anand Upender</a>
+    <div id="name-subtitle">UX Engineer currently at TED Conferences,<br/> based in NYC</div>
   </div>
   <nav class="navigation">
     <ul id="menu">
-      <li><a href="index.html#scrollTo" class="menu-buttons animated fadeInDown delay-1s" id="work" title="Anand's Work"> Work </a></li>
-      <li><a href="food.html" class="menu-buttons only-mobile animated fadeInDown delay-1s" style="padding-top:0px;" title="Anand's Food Research">Food</a></li>
-      <li><a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons only-mobile animated fadeInDown delay-1s" title="Anand's Mobility Research">Mobility</a></li>
-      <li><a href="place.html" class="menu-buttons only-mobile animated fadeInDown delay-1s" title="Anand's Spaces Research">Spaces</a></li>
-      <li><div class="dropdown">
-        <a href="food.html" class="menu-buttons animated fadeInDown delay-1s" id="research" title="Anand's Research">Research &#x25be;</a>
-        <div class="dropdown-content">
-          <a href="food.html" class="menu-buttons" style="padding-top:0px;" title="Anand's Food Research">Food</a>
-          <a href="https://stanfordmobility.com" target="_blank" rel="noopener noreferrer" class="menu-buttons" title="Anand's Mobility Research">Mobility</a>
-          <a href="place.html" class="menu-buttons" title="Anand's Spaces Research">Spaces</a>
-          <!-- a href="#" class="menu-buttons">Web</a>
-          <a href="http://erinmacd.stanford.edu/?page_id=352" target="_blank" class="menu-buttons" title="Anand's Metaphor Research">Research Metaphors</a> --!>
-        </div>
-      </div></li>
-      <li><a href="experiments.html" class="menu-buttons animated fadeInDown delay-1s" id="tinkering" title="Anand's Experiments"> Tinkering </a></li>
-      <li><a href="about.html" class="menu-buttons animated fadeInDown delay-1s no-margin-right" id="about" title="About Anand">About</a></li>
+    <li>
+      <a href="/index.html#projects" class="menu-buttons" id="Work" title="Work">Work</a></li>
+      <li><a href="/food.html" class="menu-buttons" id="food" title="Anand's Food"> Food Design </a></li>
+      <li><a href="/about.html" class="menu-buttons" id="about" title="About Anand">About</a></li>
+      <li><a href="https://www.instagram.com/pixels_and_plates/" target="_blank" class="menu-buttons no-margin-right" id="instagram" title="instagram">
+      <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.8333 2.33337H8.16665C4.94499 2.33337 2.33331 4.94505 2.33331 8.16671V19.8334C2.33331 23.055 4.94499 25.6667 8.16665 25.6667H19.8333C23.055 25.6667 25.6666 23.055 25.6666 19.8334V8.16671C25.6666 4.94505 23.055 2.33337 19.8333 2.33337Z" stroke="#195CC8" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18.6667 13.265C18.8106 14.2359 18.6448 15.2276 18.1927 16.0988C17.7406 16.9701 17.0253 17.6766 16.1485 18.1179C15.2718 18.5592 14.2782 18.7128 13.3091 18.5569C12.34 18.401 11.4447 17.9434 10.7506 17.2493C10.0566 16.5553 9.599 15.66 9.44306 14.6909C9.28712 13.7218 9.44073 12.7282 9.88203 11.8514C10.3233 10.9746 11.0299 10.2593 11.9011 9.80727C12.7724 9.35518 13.764 9.18934 14.735 9.33332C15.7254 9.48018 16.6423 9.94169 17.3503 10.6497C18.0583 11.3577 18.5198 12.2746 18.6667 13.265Z" stroke="#195CC8" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20.4167 7.58337H20.4284" stroke="#195CC8" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+      </a></li>
     </div>
   </nav>
-  <a href="javascript:void(0);" class="icon animated fadeInDown delay-1s" onclick="responsiveMenu()" title="hamburger menu for mobile">
+  <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()" title="hamburger menu for mobile">
     <img src="images/hamburger.svg" style="background-color:transparent"/>
   </a>
 `;
 
 function responsiveMenu() {
   var x = document.getElementById("nav");
-  if (x.className === "topNav") {
-    x.className += " responsive";
+  if (x.classList.contains("responsive")) {
+    x.classList.remove("responsive");
   } else {
-    x.className = "topNav";
+    x.classList.add("responsive");
   }
 }
 
+//eyes
+function getWidth() {
+    if (self.innerWidth) {
+      return self.innerWidth;
+    }
+    if (document.documentElement && document.documentElement.clientWidth) {
+      return document.documentElement.clientWidth;
+    }
+    if (document.body) {
+      return document.body.clientWidth;
+    }
+  }
+
+let lastKnownScrollPosition = 0;
+let scrolled = false;
+let ticking = false;
+let cutoff = 50;
+
+function headerScroll() {  
+    if (scrolled) {  
+        document.querySelector("#nav").classList.add("scroll");
+    } else {  
+        document.querySelector("#nav").classList.remove("scroll");
+    }  
+}  
+
+document.addEventListener('scroll', function(e) {
+
+    if (!ticking) {
+        window.requestAnimationFrame(function() {
+            if(lastKnownScrollPosition < cutoff && window.scrollY >= cutoff){
+                scrolled = true;
+                headerScroll();
+            }else if(lastKnownScrollPosition >= cutoff && window.scrollY < cutoff){
+                scrolled = false;
+                headerScroll();
+            }
+        
+            lastKnownScrollPosition = window.scrollY;
+            ticking = false;
+        });
+
+        ticking = true;
+    }
+});
+
+// FOOTER
+
 var footer = document.getElementById("footer");
 footer.innerHTML += `
-  <a class="bottom-button no-margin-left" target="_blank" href="mailto:anandx@stanford.edu"><div class="animated fadeInUp delay-1s">Email</div></a>
-  <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1MZqF19jbrnSfgC-fTu9E4IYMhKm9M0fJ/view?usp=sharing"><div class="animated fadeInUp delay-1s">Resume</div></a>
-  <div id="bottom-middle-button" class="bottom-button bottom-button-large animated fadeInUp delay-1s"><a target="_blank" href="https://github.com/anandupender/Portfolio">Coded from scratch with&nbsp;<span class="heart">&#9829;</span></a></div>
-  <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender"><div class="animated fadeInUp delay-1s">Github</div></a>
-  <a class="bottom-button no-margin-right" target="_blank" href="https://www.instagram.com/pixels_and_plates/"><div class="animated fadeInUp delay-1s" id="insta-button">Instagram</div></a>
-`;
+  <a class="bottom-button no-margin-left" target="_blank" href="mailto:anandx@stanford.edu"><div class="">Email</div></a>
+  <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1Odp9OogIOBw8TSN6mrJcw8ezWSm7nhAZ/view?usp=sharing"><div class="">Resume</div></a>
+  <div id="bottom-middle-button" class="bottom-button bottom-button-large"><a class="bottom-button" target="_blank" href="https://github.com/anandupender/Portfolio">Coded from scratch with&nbsp;<span class="heart">&#9829;</span></a></div>
+  <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender"><div class="">Github</div></a>
+  <a class="bottom-button no-margin-right" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="">LinkedIn</div></a>
+  `;
+
+  if(getWidth() >= 1080){
+    // add face
+    document.querySelector("#nav").insertBefore(addFace({
+        x:window.innerWidth/2 -50,
+        y:26,
+        size:54,
+        eyebrow:true,
+        mouth:true,
+        stare:false
+    }), 
+    document.querySelector("#nav").children[1]);
+
+    // add finger
+    if(document.querySelector("#finger") !== null){
+        document.querySelector("#finger").onclick = function(){
+            document.onmousemove = handleMouseMoveFinger;
+            document.querySelector("#finger").classList.remove("transition");
+            document.querySelector("#finger").classList.add("clicked");
+        };
+    }
+}
