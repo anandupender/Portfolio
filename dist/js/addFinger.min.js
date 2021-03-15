@@ -1,6 +1,5 @@
-var finger;
-var centerX;
-var centerY;
+let centerX = window.innerWidth/2;
+let centerY = window.innerHeight/2;
 var prevAngle = 0;
 var prevX = 0;
 var prevY = 0;
@@ -22,51 +21,18 @@ function lerp(value1, value2, amount) {
     return value1 + (value2 - value1) * amount;
 };
 
-function handleMouseMove(e){
+function handleMouseMoveFinger(e){
     var newX = lerp(prevX,e.clientX,lerpyBoiPos);
     var newY = lerp(prevY,e.clientY,lerpyBoiPos)
-    finger.style.left = newX + "px";
-    finger.style.top = newY - fingerOffset + "px";
+    document.querySelector("#finger").style.left = newX + "px";
+    document.querySelector("#finger").style.top = newY - fingerOffset + "px";
     prevX = newX;
     prevY = newY;
+    console.log(centerY);
 
     var angle = Math.degrees(Math.atan2((e.clientY - centerY),(e.clientX - centerX)));
     var lerped = lerp(prevAngle,angle,lerpyBoiAngle);
-    finger.style.transform = "rotate("+angle+"deg)";
+    document.querySelector("#finger").style.transform = "rotate("+angle+"deg)";
     prevAngle = lerped;
-    console.log(angle);
+    // console.log(angle);
 }
-
-window.onload = function(){
-    if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        finger = new Image();
-        finger.src = "images/Finger.svg";
-        finger.classList.add("finger");
-        document.body.appendChild(finger);
-    
-        centerX = window.innerWidth/2;
-        centerY = window.innerHeight/2;
-    
-        document.onmousemove = handleMouseMove;
-    
-        addButtonInteractions();
-    }
-}
-
-     
-function addButtonInteractions(){
-    var links = document.getElementsByTagName("a");
-
-    for(var i = 0; i < links.length;i++){
-        links[i].addEventListener("mouseenter", function( event ) {   
-            document.querySelector(".finger").style.height = "90px";
-            document.querySelector(".finger").style.opacity = .2;
-        });
-
-        links[i].addEventListener("mouseleave", function( event ) {   
-            document.querySelector(".finger").style.height = "80px";
-            document.querySelector(".finger").style.opacity = 1;
-        });
-    }
-}
-

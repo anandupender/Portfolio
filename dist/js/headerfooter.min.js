@@ -93,18 +93,6 @@ function getWidth() {
       return document.body.clientWidth;
     }
   }
-  
-if(getWidth() >= 1080){
-    document.querySelector("#nav").insertBefore(addFace({
-        x:window.innerWidth/2 -50,
-        y:26,
-        size:54,
-        eyebrow:true,
-        mouth:true,
-        stare:false
-    }), 
-    document.querySelector("#nav").children[1]);
-}
 
 let lastKnownScrollPosition = 0;
 let scrolled = false;
@@ -148,4 +136,25 @@ footer.innerHTML += `
   <div id="bottom-middle-button" class="bottom-button bottom-button-large"><a class="bottom-button" target="_blank" href="https://github.com/anandupender/Portfolio">Coded from scratch with&nbsp;<span class="heart">&#9829;</span></a></div>
   <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender"><div class="">Github</div></a>
   <a class="bottom-button no-margin-right" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="">LinkedIn</div></a>
-`;
+  `;
+
+  if(getWidth() >= 1080){
+    // add face
+    document.querySelector("#nav").insertBefore(addFace({
+        x:window.innerWidth/2 -50,
+        y:26,
+        size:54,
+        eyebrow:true,
+        mouth:true,
+        stare:false
+    }), 
+    document.querySelector("#nav").children[1]);
+
+    // add finger
+    document.querySelector("#finger").onclick = function(){
+        document.onmousemove = handleMouseMoveFinger;
+        document.querySelector("#finger").classList.remove("transition");
+        document.querySelector("#finger").classList.add("clicked");
+    };
+
+}
