@@ -1,0 +1,256 @@
+body{
+    font-family: var(--body_font);
+}
+
+.accent-text {
+  color: var(--accent_color);
+}
+
+.bold{
+    font-weight: 700 !important;
+}
+
+.white{
+    color:white !important;
+}
+
+::selection{
+    color: white;
+    background-color: var(--accent_color);
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: var(--black);
+}
+
+a.highlight, a.highlight:visited,
+button.highlight {
+  color: var(--accent_color);
+//   pointer-events: auto !important;
+  cursor: pointer !important;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+a.highlight:hover {
+    transform: rotate(3deg);
+    background-color: var(--accent_color);
+    color:white;
+}
+
+/* MAIN FONT TYPES */
+
+.h1-large {
+font-family: var(--header_font);
+  font-size: 64px;
+  text-decoration: underline;
+  text-decoration-color: var(--accent_color);
+  font-weight: 900;
+  margin: 10px 0 30px 0;
+}
+
+.h1-subtitle {
+  font-weight: 400;
+  font-size: 28px;
+  margin: 6px 0 6px 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: var(--header_font);
+}
+
+h2 {
+    font-family: var(--header_font);
+  font-weight: 900;
+  font-size: 32px;
+  margin: 15px;
+  margin-left: 0px;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 125%;
+    margin:8px 0px;
+
+}
+
+h4 {
+  margin: 3px;
+  font-size: 16px;
+  font-weight: 400;
+}
+h4.white {
+  color: white;
+  font-weight: 400;
+}
+li {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+p {
+  font-size: 18px;
+  margin: 4px 0 12px 0;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.image-caption {
+  color: #888;
+  margin-top: 6px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+.small-header {
+  text-transform: uppercase;
+  color: grey;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.subheader {
+  font-family: var(--header_font);
+  margin-bottom: 10px;
+  color: var(--accent_color);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1100px) {
+  .h1-large {
+    font-size: 56px;
+    margin: 30px 0 15px 0;
+  }
+  .h1-subtitle {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .h1-large {
+    font-size: 42px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+    }
+  h4 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+    margin: 6px 0 8px 0;
+  }
+}
+
+/* WORK FONT TYPES */
+
+.index-title {
+    color:var(--accent_color);
+  transition: 300ms ease;
+  transform-origin: 0 0;
+  z-index: 10;
+  font-size: 52px;
+  font-family: var(--header_font);
+  text-align: left;
+  top: -70px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  line-height: 105%;
+}
+.index-info {
+  transition: 300ms ease;
+  text-align: left;
+  width: fit-content;
+  font-weight: 400;
+  line-height: 125%;
+}
+.index-tag{
+    background-color: var(--accent_color);
+    width: fit-content;
+    color:white;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.index-tag.red{
+    background-color: var(--accent_color_2);
+}
+
+.project-question {
+  position: absolute;
+  bottom: -2.5em;
+  margin-top: 78%;
+  font-size: 24px;
+  text-align: right;
+  width: 80%;
+}
+
+.project-info {
+  position: absolute;
+  margin-top: 60%;
+  margin-left: 60%;
+  width: 60%;
+  background-color: white;
+  padding: 25px;
+  padding-top: 10px;
+  box-shadow: 2px 2px 10px #66666644;
+  word-wrap: break-word;
+  z-index: 3;
+}
+
+.project-button {
+  position: absolute;
+  transform: rotateZ(90deg) !important;
+  font-size: 24px;
+  text-align: center;
+  right: -115px;
+  transition: 0.25s ease;
+}
+
+@media screen and (max-width: 640px) {
+  .project-question {
+    font-size: 20px;
+    width: 100%;
+  }
+  .project-button {
+    font-size: 20px;
+    right: -95px;
+  }
+  .index-title {
+    font-size: 32px;
+    top: -45px;
+    opacity: 0.9;
+  }
+  .index-info {
+    font-size: 14px;
+    color: #000000ff;
+    font-weight: 400;
+  }
+  .project-info {
+    margin-top: 110%;
+    margin-left: 10%;
+    font-size: 12px;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    padding-top: 5px;
+    box-shadow: 2px 2px 10px #66666644;
+  }
+}
+
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}

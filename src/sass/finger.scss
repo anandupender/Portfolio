@@ -1,0 +1,27 @@
+#finger{
+    position: absolute;
+    left:calc(100% - 120px);
+    bottom:70px;
+    width:auto;
+    height:60px;
+    transform-origin: left center;
+    z-index: 1000000;
+    cursor: pointer;
+    opacity:.6;
+}
+
+#finger.transition{
+    transition: transform 300ms ease, opacity 300ms ease;
+}
+
+#finger.clicked{
+    position: fixed;
+    left:calc(100% - 180px);
+    pointer-events: none;
+    opacity:1;
+}
+
+#finger:hover{
+    transform:translateX(-70px);
+    opacity:1;
+}

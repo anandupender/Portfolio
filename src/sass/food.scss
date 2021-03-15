@@ -1,0 +1,56 @@
+.definition {
+  border: 2px black solid;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 60%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 30px;
+  z-index: 4;
+}
+
+.food-project {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  margin-top: 40px;
+  z-index: 1;
+  border-top: 2px black solid;
+}
+
+.cooking-bio-text-small {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.extra-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.extra-images {
+  width: 35%;
+}
+
+.window{
+    clip-path: inset(0% 30% 0% 30% round 25vw 25vw 0vw 0vw);
+    margin:15px -8% 0px -12%;
+}
+
+@media screen and (max-width: 640px) {
+  .extra-images {
+    width: 100%;
+  }
+
+  .window{
+      margin:10px 0px 20px 0px;
+      clip-path: inset(0% 30% 0% 30% round 35vw 35vw 0vw 0vw);
+  }
+}
