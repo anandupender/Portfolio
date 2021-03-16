@@ -70,6 +70,12 @@ button, .button:visited,button:visited
   text-align: center;
   font-size: 16px;
   z-index: 9999999;
+  border-radius: 6px;
+  transition: padding ease 300ms;
+}
+
+.button:hover {
+    padding: 15px 42px 15px 42px;
 }
 
 .no-style-button {
@@ -79,10 +85,6 @@ button, .button:visited,button:visited
   padding: 0px;
   font-family: "Montserrat", sans-serif;
   filter: hue-rotate(195deg) saturate(1.6);
-}
-
-.button:hover {
-  box-shadow: 2px 2px black;
 }
 
 .home-buttons {
@@ -153,7 +155,6 @@ ul.no-bullets{
 
 #banner {
     margin-top: 30px;
-  height: 40px;
   width: 100vw;
 //   border-top: 3px solid black;
 //   border-bottom: 3px solid black;
@@ -165,7 +166,6 @@ ul.no-bullets{
 #banner-content {
     width: 90%;
     white-space: nowrap;
-    position: absolute;
     will-change: transform;
     font-weight: bold;
     // animation: move 20s infinite linear; too much?
@@ -195,9 +195,17 @@ ul.no-bullets{
 }
 
 @media screen and (max-width: 640px) {
-  #banner {
-    display: none;
-  }
+    #banner{
+        #banner-content {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            img{
+                height:20px;
+                margin: 0px 6px 18px 6px
+            }
+          }
+    } 
+  
   @keyframes move {
     0% {
       /* //hard coded from text width */
@@ -311,7 +319,9 @@ section.header{
     }
 }
 @media screen and (max-width: 640px) {
-    margin-top: 60px;
+    .image-grid-container {
+        width: 100%;
+      }
 }
 
 /* Create three equal columns that sits next to each other */

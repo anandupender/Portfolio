@@ -19,6 +19,8 @@ function init(){
     //eyebrow animations!
     var links = document.getElementsByTagName("a");
 
+    document.querySelector('#nav').classList.remove("responsive");
+
     for(var i = 0; i < links.length; i++){
         links[i].onmouseover = raiseEyebrows;
         links[i].onmouseout = lowerEyebrows;

@@ -207,23 +207,10 @@ p {
   z-index: 3;
 }
 
-.project-button {
-  position: absolute;
-  transform: rotateZ(90deg) !important;
-  font-size: 24px;
-  text-align: center;
-  right: -115px;
-  transition: 0.25s ease;
-}
-
 @media screen and (max-width: 640px) {
   .project-question {
     font-size: 20px;
     width: 100%;
-  }
-  .project-button {
-    font-size: 20px;
-    right: -95px;
   }
   .index-title {
     font-size: 32px;

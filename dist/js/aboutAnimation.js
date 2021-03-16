@@ -1,6 +1,8 @@
 var fontSize = 42;
 window.onload = function(){
-    document.getElementById("name").style.fontSize = fontSize + "px";
+    if(document.getElementById("name") !== null){
+        document.getElementById("name").style.fontSize = fontSize + "px";
+    }
 }
 
 function measureText(pText, pStyle) {

@@ -59,7 +59,7 @@ function stare(){
     }
 }
 
-function handleMouseMove(e){
+function handleMouseMoveFace(e){
     //clearTimeout(mainTimer);
     //clearTimeout(stareTimer);
     //mainTimer = window.setTimeout(function(){stareTimer = window.setInterval(stare,myFrameRate);}, delayTime);
@@ -216,8 +216,6 @@ function addFace(init){
 window.onload = function(){
     //mainTimer = window.setTimeout(function(){stareTimer = window.setInterval(stare,myFrameRate);}, delayTime);
 };
-
-document.onmousemove = handleMouseMove;
 
 function raiseEyebrows(){
     document.querySelector(".eyebrow.left").style.transform = "translateY(-5px)";

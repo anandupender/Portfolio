@@ -149,11 +149,16 @@ footer.innerHTML += `
         stare:false
     }), 
     document.querySelector("#nav").children[1]);
+    
+    document.onmousemove = handleMouseMoveFace;
 
     // add finger
     if(document.querySelector("#finger") !== null){
         document.querySelector("#finger").onclick = function(){
-            document.onmousemove = handleMouseMoveFinger;
+            document.onmousemove = function(e){
+                handleMouseMoveFace(e);
+                handleMouseMoveFinger(e);
+            } 
             document.querySelector("#finger").classList.remove("transition");
             document.querySelector("#finger").classList.add("clicked");
         };

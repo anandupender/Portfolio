@@ -93,7 +93,7 @@ body {
     }
 
     .project-two-col {
-        margin: 80px 0px;
+        margin: 30px 0px 80px 0px;
         display: flex;
         align-items:flex-start;
         justify-content: space-between;
@@ -104,6 +104,9 @@ body {
             object-fit: cover;
             margin: 0px 40px;
         }
+    }
+    .project-two-col div:first-child, .project-two-col img:first-child, .project-two-col p:first-child{
+        margin-bottom: 25px;
     }
 
     .project-info-container {
@@ -149,6 +152,12 @@ body {
     }
     .project-section__overview {
         flex-direction: column;
+    }
+    .project-section__overviewProject {
+        margin-right: 0;
+    }
+    .project-section__overviewImage {
+        width: 100%;
     }
     .project-info-container {
         padding-top: 40px !important;
