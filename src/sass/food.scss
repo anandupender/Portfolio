@@ -15,12 +15,13 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin-bottom: 70px;
   margin-top: 40px;
   z-index: 1;
   border-top: 2px black solid;
+  padding-top: 50px;
 }
 
 .cooking-bio-text-small {
