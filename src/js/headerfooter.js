@@ -1,13 +1,13 @@
 var headContent = document.getElementsByTagName("head")[0];
 
 var googleAnalyticsFirst =
-  "https://www.googletagmanager.com/gtag/js?id=UA-130786913-1";
+  "https://www.googletagmanager.com/gtag/js?id=G-9NN7C6HK3L";
 
 var googleAnalyticsInner = `
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'UA-130786913-1');
+  gtag('config', 'G-9NN7C6HK3L');
 `;
 var gFirst = document.createElement("script");
 
