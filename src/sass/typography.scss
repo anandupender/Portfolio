@@ -15,7 +15,7 @@ body{
 }
 
 ::selection{
-    color: white;
+    color: var(--white);
     background-color: var(--accent_color);
 }
 
@@ -26,16 +26,19 @@ a, a:visited{
 
 a.highlight, a.highlight:visited,
 button.highlight {
+    text-decoration: underline;
   color: var(--accent_color);
 //   pointer-events: auto !important;
   cursor: pointer !important;
-  text-decoration: underline;
+  transition: all ease 300ms;
 }
 
 a.highlight:hover {
-    transform: rotate(3deg);
     background-color: var(--accent_color);
+    padding: 2px 4px;
+    text-decoration: none;
     color:white;
+    border-radius: 4px;
 }
 
 /* MAIN FONT TYPES */
