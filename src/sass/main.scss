@@ -606,7 +606,7 @@ section.header{
   font-family: var(--header_font);
 }
 
-a.bottom-button {
+a.bottom-button,a.bottom-button:visited {
     font-family: var(--header_font);
   display: inline-block;
   text-align: center;
@@ -647,8 +647,8 @@ a.menu-buttons:hover, a.bottom-button:hover{
     vertical-align: middle;
     z-index: 102;
     background-color: #EAE4D7;
-    transition: padding 500ms ease;
-  //   backdrop-filter: blur(7px);
+    border-bottom: 2px solid transparent;
+    transition: padding 500ms ease, border-bottom 300ms ease 0ms;
   }
 
 
@@ -692,18 +692,22 @@ a.name {
     text-decoration: none;
     color: var(--accent_color);
     transition: font-size 500ms ease, letter-spacing 300ms ease, margin-right 500ms ease;
+    transition-delay: 50ms;
   }
 
 #nav.scroll{
     padding-left: 4%;
     padding-right: 4%;
-    padding-bottom: 0px;
+    padding-bottom: -20px;
+    border-bottom: 2px solid var(--accent_color);
+    transition: border-bottom 300ms ease 500ms;
     a.name{
         font-size: 24px;
     }
     #name-subtitle{
         opacity: 0;
         transform:translateY(-10px);
+        height: 0px;
     }
     .navigation#menu li{
         font-size: 14px;
