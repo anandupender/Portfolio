@@ -48,8 +48,7 @@ canvas {
   top: 0px;
   z-index: 0;
   opacity: 0;
-  transition:opacity 1s ease;
-  transition-delay: 1800ms;
+  transition:opacity 1s ease 1800ms;
 }
 
 .add-shadow {

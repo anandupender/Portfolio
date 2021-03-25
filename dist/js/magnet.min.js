@@ -25,6 +25,11 @@ function startMagnets(){
     loop();
  }
 
+ function endMagnets(){
+     started = false;
+     noLoop();
+ }
+
 function draw(){
     if(started){
 
@@ -182,7 +187,6 @@ Mover.prototype.update = function(pos) {
     for (let j = 0; j < movers.length; j++) {
         if(j != pos && p5.Vector.dist(futurePosition,movers[j].position) < movers[j].radius + this.radius){
             this.adjust(movers[j].position,movers[j].radius*2);
-            console.log("anan");
         }
     }
 

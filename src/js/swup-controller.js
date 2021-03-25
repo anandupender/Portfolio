@@ -49,6 +49,7 @@ const swup = new Swup({
 
 function init(){
     // start
+    console.log("anand");
     AOS.init({
         duration: 800
     });
@@ -68,9 +69,18 @@ function init(){
             document.querySelector("#start-magnets").style.animation = "none";
             document.querySelector("#magnet-show-text").style.opacity = 1;
             startMagnets();
+            document.getElementsByTagName("canvas")[0].style.display = "block";
             document.getElementsByTagName("canvas")[0].style.opacity = 1;
         });  
+    }else{
+        //turn off and remove magnets
+        if(document.getElementsByTagName("canvas")[0] !== null && document.getElementsByTagName("canvas")[0] !== undefined){
+            document.getElementsByTagName("canvas")[0].style.opacity = 0;
+            document.getElementsByTagName("canvas")[0].style.display = "none";
+            endMagnets();
+        }
     }
+
     if(document.querySelector("#more") !== null){
         document.querySelector("#read-more").addEventListener("click", function(){
             document.querySelector("#more").style.display = "block";
