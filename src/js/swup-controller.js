@@ -118,29 +118,23 @@ function initialAnimation(){
 
     window.setTimeout(function(){
         eyeballTimer = window.setInterval(() => {movePupilsIntro("left")},8);
-    }
-    ,450);
+    },450);
 
     window.setTimeout(function(){
         clearInterval(eyeballTimer);
         eyeballTimer = window.setInterval(() => {movePupilsIntro("right")},18);
-    }
-    ,700);
+    },700);
 
     window.setTimeout(function(){
         clearInterval(eyeballTimer);
         eyeballTimer = window.setInterval(() => {movePupilsIntro("down")},20);
-    }
-    ,1400);
+    },1400);
 
     window.setTimeout(raiseEyebrows,1600);
 
     window.setTimeout(function(){
         clearInterval(eyeballTimer);
-    }
-    ,1700);
-
-    
+    },1700);
 
     window.setTimeout(() => {
         document.querySelector("#swup-background").classList.remove("initial");
