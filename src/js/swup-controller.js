@@ -49,7 +49,6 @@ const swup = new Swup({
 
 function init(){
     // start
-    console.log("anand");
     AOS.init({
         duration: 800
     });
@@ -96,6 +95,82 @@ function init(){
 }
 
 init();
+
+initialAnimation();
+
+function initialAnimation(){
+    // add first face
+    window.setTimeout(function(){
+        let size = 250;
+        document.querySelector("#swup-background").appendChild(addFace({
+            x:window.innerWidth/2 - size/2 - 5,
+            y:window.innerHeight/2 - window.innerHeight/16,
+            size:size,
+            eyebrow:true,
+            mouth:true,
+            stare:false,
+            class:"white"
+        }));
+    }
+    ,100);
+
+    var eyeballTimer;
+
+    window.setTimeout(function(){
+        eyeballTimer = window.setInterval(() => {movePupilsIntro("left")},8);
+    }
+    ,450);
+
+    window.setTimeout(function(){
+        clearInterval(eyeballTimer);
+        eyeballTimer = window.setInterval(() => {movePupilsIntro("right")},18);
+    }
+    ,700);
+
+    window.setTimeout(function(){
+        clearInterval(eyeballTimer);
+        eyeballTimer = window.setInterval(() => {movePupilsIntro("down")},20);
+    }
+    ,1400);
+
+    window.setTimeout(raiseEyebrows,1600);
+
+    window.setTimeout(function(){
+        clearInterval(eyeballTimer);
+    }
+    ,1700);
+
+    
+
+    window.setTimeout(() => {
+        document.querySelector("#swup-background").classList.remove("initial");
+        document.querySelector("#swup-background").classList.add("second");
+        lowerEyebrows();
+        window.setTimeout(() => {
+            document.querySelector("#swup-background").classList.add("third");
+            document.querySelector("#swup-background").classList.remove("second");
+            window.setTimeout(() => {
+                document.querySelector("#swup-background").classList.remove("third");
+            },100);
+        },750);
+
+        // add nav face to desktop
+        if(getWidth() >= 1080){
+            document.querySelector("#nav").insertBefore(addFace({
+                x:window.innerWidth/2 - 50,
+                y:26,
+                size:54,
+                eyebrow:true,
+                mouth:true,
+                stare:false
+            }), 
+            document.querySelector("#nav").children[1]);
+            
+            document.onmousemove = handleMouseMoveFace;
+        }
+    },2400);
+
+}
 
 // fun console log
 console.log(face);

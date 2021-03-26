@@ -46,6 +46,7 @@ headContent.innerHTML += `
 var nav = document.getElementById("nav");
 nav.classList.add("animate__animated");
 nav.classList.add("animate__slideInDown");
+nav.classList.add("animate__delay-3s");
 nav.innerHTML += `
   <div id="logo">
     <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo"> Anand Upender</a>
@@ -139,18 +140,6 @@ footer.innerHTML += `
   `;
 
   if(getWidth() >= 1080){
-    // add face
-    document.querySelector("#nav").insertBefore(addFace({
-        x:window.innerWidth/2 -50,
-        y:26,
-        size:54,
-        eyebrow:true,
-        mouth:true,
-        stare:false
-    }), 
-    document.querySelector("#nav").children[1]);
-    
-    document.onmousemove = handleMouseMoveFace;
 
     // add finger
     if(document.querySelector("#finger") !== null){

@@ -24,3 +24,13 @@
     height:30px;                     /*  CHANGE */
     transition: opacity ease 300ms, transform ease 300ms;
 }
+
+.face.white{
+    .eyeball{
+        border: 3px solid var(--white);
+    }
+    .pupil{
+        background-color: var(--white);
+    }
+
+}

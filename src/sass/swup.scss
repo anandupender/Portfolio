@@ -7,7 +7,7 @@
     height:100vh;
     width: 100vw;
     transition:transform .7s ease;
-    transform: translateX(-100%);
+    transform: translateX(-100%) translateY(0%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,13 +18,27 @@
     }
 }
 
+#swup-background.initial{
+    transform: none;
+}
+
+#swup-background.second{
+    transform: translateY(-100%);
+}
+
+#swup-background.third{
+    transform: translateX(-100%) translateY(0%);
+    transition: none;
+}
+
+
 /* Come from left and go back to left */
 html.is-animating #swup-background{
   transform: translateX(0%);
 }
 
 .transition-fade {
-    transition: .75s;
+    transition: 1.25s;
     opacity: 1;
   }
   
