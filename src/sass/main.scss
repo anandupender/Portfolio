@@ -274,21 +274,6 @@ ul.no-bullets{
   }
 }
 
-#footer {
-  width: 100%;
-  max-width: 100vw;
-  box-sizing: border-box;
-  padding-left: 7.5%;
-  padding-right: 7.5%;
-  display: block;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 10;
-  backdrop-filter: blur(7px);
-}
-
 .image-grid-container {
   width: 80%;
   display: flex;
@@ -600,31 +585,6 @@ section.header{
   margin: 0;
 }
 
-.bottom-button-large {
-  font-size: 16px !important;
-  font-family: var(--header_font);
-}
-
-a.bottom-button,a.bottom-button:visited {
-    font-family: var(--header_font);
-  display: inline-block;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 10px;
-  margin-bottom: 16px;
-  margin-top: 16px;
-  transition: letter-spacing 300ms ease;
-  text-decoration: none;
-  color: var(--accent_color);
-}
-
-a.menu-buttons:hover, a.bottom-button:hover{
-    letter-spacing: 3px;
-    font-family: var(--header_font);
-    color: var(--accent_color);
-}
-
 // new stuff
 
 #nav {
@@ -724,14 +684,6 @@ a.name {
   }
   #name-subtitle{
       display: none;
-  }
-  .bottom-button {
-    font-size: 12px !important;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .bottom-button-large {
-    font-size: 12px !important;
   }
   .manifesto {
     margin-top: 10px;

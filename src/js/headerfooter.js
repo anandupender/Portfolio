@@ -132,11 +132,27 @@ document.addEventListener('scroll', function(e) {
 
 var footer = document.getElementById("footer");
 footer.innerHTML += `
-  <a class="bottom-button no-margin-left" target="_blank" href="mailto:anandx@stanford.edu"><div class="">Email</div></a>
-  <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1Odp9OogIOBw8TSN6mrJcw8ezWSm7nhAZ/view?usp=sharing"><div class="">Resume</div></a>
-  <div id="bottom-middle-button" class="bottom-button bottom-button-large"><a class="bottom-button" target="_blank" href="https://github.com/anandupender/Portfolio">Coded from scratch with&nbsp;<span class="heart">&#9829;</span></a></div>
-  <a class="bottom-button no-mobile" target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender"><div class="">Github</div></a>
-  <a class="bottom-button no-margin-right" target="_blank" href="https://www.linkedin.com/in/anandupender/"><div class="">LinkedIn</div></a>
+<div class="content">
+        <div>
+            <p>Curious?</p>
+            <a class="h1-large" href="mailto:anand.upender@gmail.com"></a>
+        </div>
+        <div>
+            <p>This site is my ongoing digital playground to experiment with storytelling, emotional design, and micro-interactions. I use it both as a tool to learn, and to express.<br/>
+            <a href="https://github.com/anandupender/Portfolio">View the code here.</a>                
+            </p>
+        </div>
+        <div class="links">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/anandupender/">LinkedIn</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1Odp9OogIOBw8TSN6mrJcw8ezWSm7nhAZ/view?usp=sharing">Resume</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender">Github</a>
+            <a target="_blank" rel="noopener noreferrer" href="http://instagram.com/pixels_and_plates">Instagram</a>
+        </div>
+        <span class="small">
+            If you’re reading this you should take a break from the <i>screens</i> and go smell the roses.
+        </span>
+    </div>
+    <div class="footer-eyeball" data-aos="fade-left"></div>
   `;
 
   if(getWidth() >= 1080){

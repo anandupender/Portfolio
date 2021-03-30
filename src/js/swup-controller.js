@@ -128,13 +128,13 @@ function initialAnimation(){
     window.setTimeout(function(){
         clearInterval(eyeballTimer);
         eyeballTimer = window.setInterval(() => {movePupilsIntro("down")},20);
-    },1400);
+    },1200);
 
-    window.setTimeout(raiseEyebrows,1600);
+    window.setTimeout(raiseEyebrows,1650);
 
     window.setTimeout(function(){
         clearInterval(eyeballTimer);
-    },1700);
+    },1900);
 
     window.setTimeout(() => {
         document.querySelector("#swup-background").classList.remove("initial");
@@ -162,7 +162,7 @@ function initialAnimation(){
             
             document.onmousemove = handleMouseMoveFace;
         }
-    },2400);
+    },2200);
 
 }
 

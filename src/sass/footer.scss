@@ -1,0 +1,81 @@
+#footer {
+    background-color: var(--accent_color);
+    color: var(--white);
+    width: 100%;
+    max-width: 100vw;
+    height: 550px;
+    box-sizing: border-box;
+    padding: 40px 7.5% 50px 7.5%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    position: relative;
+
+    p, a, a:visited{
+        color: var(--white);
+        font-family: var(--header_font);
+        font-size: 18px;
+        margin: 0;
+    }
+    a, a:visited{
+        text-decoration: underline;
+    }
+
+    .h1-large, .subheader{
+        margin: 0px;
+        font-size: 72px;
+        text-decoration: none;
+    }
+
+    .h1-large::after{
+        content: "Let's chat!";
+    }
+
+    .h1-large:hover::after{
+        content: "anand.upender@gmail.com";
+        font-size: 48px;
+        text-decoration: underline;
+    }
+
+    .content{
+        max-width: 560px;
+
+        div{
+            margin: 40px 0;
+        }
+
+        .links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .small{
+            font-size: 8px;
+        }
+    }
+  }
+
+  .footer-eyeball{
+      position: absolute;
+      top: 0;
+      right: -275px;
+      height:550px;
+      width: 550px;
+      background-image: url(/images/eye.svg);
+      background-size: cover;
+  }
+
+  @media screen and (max-width: 850px) {
+      #footer{
+          height: auto;
+          .h1-large{
+            font-size: 56px;
+            }
+      }
+    .footer-eyeball{
+        display: none;
+    }
+}
