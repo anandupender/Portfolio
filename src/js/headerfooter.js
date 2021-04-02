@@ -144,7 +144,7 @@ footer.innerHTML += `
         </div>
         <div class="links">
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/anandupender/">LinkedIn</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.anandupender.com/data/resume.pdf">Resume</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.anandupender.com/resume.pdf">Resume</a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/anandupender">Github</a>
             <a target="_blank" rel="noopener noreferrer" href="http://instagram.com/pixels_and_plates">Instagram</a>
         </div>
