@@ -18,7 +18,7 @@ function myLerp(value1, value2, amount) {
 
 //HELPER
 function magnitude(v){
-    let newV = v;
+    var newV = v;
     return Math.sqrt((newV[0]*newV[0]) + (newV[1]*newV[1]));
 }
 

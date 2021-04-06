@@ -34,12 +34,7 @@ function measureText(pText, pStyle) {
 
 var counter = 0;
 var colorCounter = 0;
-var content = 
-[{"f":"experience designer","l":"amateur chef"}, 
-{"f":"artist","l":"milkshake lover"}, 
-{"f":"engineer","l":"first-born"}, 
-{"f":"Indian American","l":"dog-lover"}, 
-{"f":"introvert","l":"trumpeter"}];
+var content = [{"f":"experience designer","l":"amateur chef"}, {"f":"artist","l":"milkshake lover"}, {"f":"engineer","l":"first-born"}, {"f":"Indian American","l":"dog-lover"}, {"f":"introvert","l":"trumpeter"}];
 
 // var colors = ["#E3C354","#6E54E3", "#5DFBD0","#fa7268"];
 
@@ -51,7 +46,7 @@ var curr2;
 // document.getElementById("name").onmouseleave = close;
 
 // OPTION 2: Timer
-let timer = window.setTimeout(open, 1400);
+var timer = window.setTimeout(open, 1400);
 
 function open(){
     curr1 = "&nbsp;" + content[counter].f + "&nbsp;";

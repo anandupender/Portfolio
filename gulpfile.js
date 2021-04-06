@@ -19,7 +19,7 @@ const cleanCSS = require("gulp-clean-css");
 var concat = require("gulp-concat");
 
 // Scripts
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 
 // Images
 var imageResize = require("gulp-image-resize");
@@ -58,7 +58,7 @@ const styles = () =>
 // Minify scripts and place in ./dist/js
 const scripts = () =>
   src(paths.scripts.src)
-    .pipe(dest(paths.scripts.dest)) //.pipe(uglify()) cant do this yet because of multiline text
+    .pipe(dest(paths.scripts.dest)).pipe(uglify()) //cant do this yet because of multiline text
     .pipe(rename({ extname: ".min.js" }))
     .pipe(dest(paths.scripts.dest));
 

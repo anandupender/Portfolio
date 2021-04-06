@@ -65,12 +65,12 @@
   },
   "homepage": "https://github.com/anandupender/Portfolio#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.14",
     "concurrent-transform": "^1.0.0",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.0",
-    "gulp-clean-css": "^4.2.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-image-resize": "^0.13.1",
     "gulp-rename": "^1.4.0",
@@ -81,7 +81,8 @@
   "dependencies": {
     "@swup/scripts-plugin": "^1.1.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^6.1.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-uglify-es": "^2.0.0",
     "os": "^0.1.1"
   }
 }
