@@ -155,17 +155,17 @@ footer.innerHTML += `
     <div class="footer-eyeball" data-aos="fade-left"></div>
   `;
 
-  if(getWidth() >= 1080){
 
-    // add finger
-    if(document.querySelector("#finger") !== null){
-        document.querySelector("#finger").onclick = function(){
-            document.onmousemove = function(e){
+  // add finger
+  if(document.querySelector("#finger") !== null){
+    document.querySelector("#finger").onclick = function(){
+        document.onmousemove = function(e){
+            if(getWidth() >= 1080){
                 handleMouseMoveFace(e);
-                handleMouseMoveFinger(e);
-            } 
-            document.querySelector("#finger").classList.remove("transition");
-            document.querySelector("#finger").classList.add("clicked");
-        };
-    }
+            }
+            handleMouseMoveFinger(e);
+        } 
+        document.querySelector("#finger").classList.remove("transition");
+        document.querySelector("#finger").classList.add("clicked");
+    };
 }
