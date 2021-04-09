@@ -654,6 +654,10 @@ a.name {
     transition-delay: 50ms;
   }
 
+  a.menu-buttons:hover, a.bottom-button:hover{
+    letter-spacing: 3px;
+}
+
 #nav.scroll{
     padding-left: 4%;
     padding-right: 4%;
