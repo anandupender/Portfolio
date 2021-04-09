@@ -163,7 +163,7 @@ function Mover(x, y,r,c) {
     this.color = c;
   }
 
-  // Newton's 2nd law: F = M * A
+// Newton's 2nd law: F = M * A
 // or A = F / M
 Mover.prototype.applyForce = function(force) {
     let f = p5.Vector.div(force, this.mass);
