@@ -138,7 +138,7 @@ footer.innerHTML += `
             <a class="h1-large" href="mailto:anand.upender@gmail.com"></a>
         </div>
         <div>
-            <p>This site is my ongoing digital playground to experiment with storytelling, emotional design, and micro-interactions. I use it both as a tool to learn, and to express.<br/>
+            <p>Built from scratch, this site is my ongoing digital playground to experiment with storytelling, emotional design, and micro-interactions. I use it both as a tool to learn, and to express.<br/>
             <a href="https://github.com/anandupender/Portfolio">View the code here.</a>                
             </p>
         </div>
