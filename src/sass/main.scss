@@ -607,6 +607,13 @@ section.header{
     background-color: #EAE4D7;
     border-bottom: 2px solid transparent;
     transition: padding 500ms ease, border-bottom 300ms ease 0ms;
+
+    svg{
+        transition: transform 300ms ease;
+    }
+    svg:hover{
+        transform: scaleX(1.2);
+    }
   }
 
 
@@ -644,7 +651,7 @@ a.name {
       font-family: var(--header_font);
     display: inline-block;
     margin-left: 0px;
-    margin-right: 30px;
+    margin-right: 32px;
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
@@ -656,6 +663,7 @@ a.name {
   a.menu-buttons:hover, a.bottom-button:hover{
     letter-spacing: 3px;
 }
+
 
 #nav.scroll{
     padding-left: 4%;
@@ -676,7 +684,7 @@ a.name {
     }
     .menu-buttons, .menu-buttons:visited {
         font-size: 16px;
-        margin-right: 18px;
+        margin-right: 24px;
     }
 }
 
