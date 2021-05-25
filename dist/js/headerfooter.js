@@ -46,10 +46,10 @@ nav.classList.add("animate__animated");
 nav.classList.add("animate__slideInDown");
 nav.classList.add("animate__delay-3s");
 nav.innerHTML += `
-  <div id="logo">
-    <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo"> Anand Upender</a>
+  <h1 id="logo">
+    <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo">Anand Upender</a>
     <div id="name-subtitle">UX Engineer currently at TED Conferences,<br/> based in NYC</div>
-  </div>
+  </h1>
   <nav class="navigation">
     <ul id="menu">
     <li>
