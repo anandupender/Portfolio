@@ -3,7 +3,7 @@ let muSFriction = .15;
 let muKFriction = .01;
 let g = -9.8;
 let movers = [];
-let totalMovers = 23;
+let totalMovers = 25;
 let magnet;
 let magnetQ = 30000;
 let magnetPosition;
@@ -33,13 +33,6 @@ function startMagnets(){
 function draw(){
     if(started){
 
-        // if(pressed){
-        //     // background(0);
-        //     background(255,255,255);
-        // }
-        // else{
-        //     background('#EAE4D7');
-        // }
         background('#EAE4D7');
 
         //set magnet position
@@ -85,7 +78,7 @@ function draw(){
                         movers[i].applyForce(magnetForce);
                         movers[i].update(i);
                     }else if (distance < movers[i].radius + magnetDiameter/2){
-                        movers[i].adjust(magnetPosition,magnetDiameter);
+                        movers[i].adjust(magnetPosition,magnetDiameter, true);
                     }else{
                         movers[i].stop();
                     }
@@ -100,7 +93,7 @@ function draw(){
 
                         
                     }else if (distance < movers[i].radius + magnetDiameter/2){
-                        movers[i].adjust(magnetPosition,magnetDiameter);
+                        movers[i].adjust(magnetPosition,magnetDiameter, true);
                     }else{
                         movers[i].stop();
                         
@@ -118,19 +111,12 @@ function draw(){
             }
             movers[i].display();
         }
-
         //draw magnet
-        if(pressed){
-            // stroke(245);
-            stroke(0);
-        }
-        else{
-            stroke(0);
-        }
+        stroke(0);
+
         noFill();
         strokeWeight(4);
         circle(magnetPosition.x,magnetPosition.y,magnetDiameter);
-
 
         pop();
     }
@@ -143,12 +129,11 @@ function mousePressed(){
 function mouseReleased() {
     pressed = false;
   }
-  
 
 // Restart all the Mover objects randomly
 function reset() {
     for (let i = 0; i < totalMovers; i++) {
-      movers[i] = new Mover(random(0, width),random(0, height),random(15,25),color(random(0,255),random(0,255),random(0,255)));
+      movers[i] = new Mover(random(0, width),random(0, height),random(18,25),color(random(0,255),random(0,255),random(0,255)));
     }
   }
 
@@ -178,7 +163,7 @@ Mover.prototype.update = function(pos) {
     // position changes by velocity - BUT check to make sure the future circle position and the magnet position don't overlap
     let futurePosition = p5.Vector.add(this.position, this.velocity);
     if(p5.Vector.dist(futurePosition,magnetPosition) < magnetDiameter/2 + this.radius){
-        this.adjust(magnetPosition,magnetDiameter);
+        this.adjust(magnetPosition,magnetDiameter, false);
     }else{
         this.position.add(this.velocity);
     }
@@ -186,7 +171,7 @@ Mover.prototype.update = function(pos) {
     //check for collisions - yay! it works!
     for (let j = 0; j < movers.length; j++) {
         if(j != pos && p5.Vector.dist(futurePosition,movers[j].position) < movers[j].radius + this.radius){
-            this.adjust(movers[j].position,movers[j].radius*2);
+            this.adjust(movers[j].position,movers[j].radius*2, false);
         }
     }
 
@@ -199,12 +184,20 @@ Mover.prototype.stop = function() {
     this.velocity = createVector(0, 0);
 };
 
-Mover.prototype.adjust = function(comparedPosition, comparedDiameter) {
+Mover.prototype.adjust = function(comparedPosition, comparedDiameter, checkForCollisions) {
     //unit vector direction between magnet and point
     let unit = p5.Vector.sub(this.position,comparedPosition).normalize();
     unit.mult(comparedDiameter/2 + this.radius);
     this.position = p5.Vector.add(comparedPosition, unit);
     this.velocity = createVector(0, 0);
+
+    if(checkForCollisions){
+        for (let j = 0; j < movers.length; j++) {
+            if(p5.Vector.dist(this.position,movers[j].position) < movers[j].radius + this.radius){
+                this.adjust(movers[j].position,movers[j].radius*2, false);
+            }
+        }
+    }
 };
 
 Mover.prototype.display = function() {

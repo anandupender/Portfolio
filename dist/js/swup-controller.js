@@ -99,6 +99,9 @@ init();
 initialAnimation();
 
 function initialAnimation(){
+
+    document.body.style.overflowY = "hidden";
+
     // add first face
     window.setTimeout(function(){
         let size = 250;
@@ -147,6 +150,9 @@ function initialAnimation(){
                 document.querySelector("#swup-background").classList.remove("third");
             },100);
         },750);
+
+        // make scrollable
+        document.body.style.overflowY = "scroll";
 
         // add nav face to desktop
         if(getWidth() >= 1080){
