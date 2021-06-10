@@ -1,28 +1,52 @@
 let mu = 35;
-let muSFriction = .15;
-let muKFriction = .01;
+var muSFriction = .15;
+var muSFrictionMin = .05;
+var muSFrictionMax = .99;
+var muSFrictionStep = .01;
+var muKFriction = .01;
+var muKFrictionMin = 0;
+var muKFrictionMax = .99;
+var muKFrictionStep = .005;
 let g = -9.8;
 let movers = [];
-let totalMovers = 25;
 let magnet;
-let magnetQ = 30000;
+var magnetQ = 30000;
+var magnetQMin = 1000;
+var magnetQMax = 50000;
+var magnetQStep = 1000;
 let magnetPosition;
 let magnetDiameter = 100;
+var totalMovers = 25;
+var totalMoversMin = 0;
+var totalMoversMax = 1000;
+var totalMoversStep = 1;
+var prevTotalMovers = 25;
+var myColor;
+var backgroundColor;
 
 let pressed = false;
 var started = false;
+
+var gui;
 
 function setup(){
     cnv = createCanvas(window.innerWidth,window.innerHeight);
     reset();
     noLoop();
-
-    // frameRate(100);
+    myColor = [25, 92, 200];
+    backgroundColor = [234, 228, 215];
 }
 
-function startMagnets(){
+function startMagnets(init){
+    if(init.gui){
+        gui = createGui('Magnet Variables');
+        gui.addGlobals('myColor','backgroundColor','muSFriction','muKFriction','magnetQ','totalMovers');
+    }
     started = true;
     loop();
+
+    totalMovers = init.num;
+    reset();
  }
 
  function endMagnets(){
@@ -31,9 +55,13 @@ function startMagnets(){
  }
 
 function draw(){
-    if(started){
+    if(totalMovers !== prevTotalMovers){
+        prevTotalMovers = totalMovers;
+        reset();
+    }
 
-        background('#EAE4D7');
+    if(started){
+        background(backgroundColor);
 
         //set magnet position
         magnetPosition = createVector(mouseX,mouseY);
@@ -105,7 +133,6 @@ function draw(){
                         
                     }else{
                         movers[i].stop();
-
                     }
                 }
             }
@@ -113,8 +140,7 @@ function draw(){
         }
         //draw magnet
         stroke(0);
-
-        noFill();
+        fill(backgroundColor);
         strokeWeight(4);
         circle(magnetPosition.x,magnetPosition.y,magnetDiameter);
 
@@ -132,6 +158,7 @@ function mouseReleased() {
 
 // Restart all the Mover objects randomly
 function reset() {
+    movers = [];
     for (let i = 0; i < totalMovers; i++) {
       movers[i] = new Mover(random(0, width),random(0, height),random(18,25),color(random(0,255),random(0,255),random(0,255)));
     }
@@ -145,7 +172,7 @@ function Mover(x, y,r,c) {
     this.velocity = createVector(0, 0);
     this.prevVelocity = createVector(0, 0);
     this.acceleration = createVector(0, 0);
-    this.color = c;
+    this.color = myColor;
   }
 
 // Newton's 2nd law: F = M * A
@@ -163,7 +190,7 @@ Mover.prototype.update = function(pos) {
     // position changes by velocity - BUT check to make sure the future circle position and the magnet position don't overlap
     let futurePosition = p5.Vector.add(this.position, this.velocity);
     if(p5.Vector.dist(futurePosition,magnetPosition) < magnetDiameter/2 + this.radius){
-        this.adjust(magnetPosition,magnetDiameter, false);
+        this.adjust(magnetPosition,magnetDiameter, true);
     }else{
         this.position.add(this.velocity);
     }
@@ -171,7 +198,7 @@ Mover.prototype.update = function(pos) {
     //check for collisions - yay! it works!
     for (let j = 0; j < movers.length; j++) {
         if(j != pos && p5.Vector.dist(futurePosition,movers[j].position) < movers[j].radius + this.radius){
-            this.adjust(movers[j].position,movers[j].radius*2, false);
+            this.adjust(movers[j].position,movers[j].radius*2, true);
         }
     }
 
@@ -205,8 +232,10 @@ Mover.prototype.display = function() {
     if(pressed){
         fill(color("#E94F37"));
     }
-      else{
-        fill(color("#195CC8"));
+    else{
+        if(myColor !== undefined){
+            fill(myColor);
+        }
     }
     circle(this.position.x, this.position.y, this.radius*2);
 };
