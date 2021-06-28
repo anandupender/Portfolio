@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/gui.min.css" />
 </head>
 <body>
 
-    <script src="js/p5.min.js"></script>
-    <script src="js/p5.gui.min.js"></script>
-    <script src="js/quicksettings.min.js"></script>
-    <script src="js/magnet.js"></script>
+    <script src="../js/p5.min.js"></script>
+    <script src="../js/p5.gui.min.js"></script>
+    <script src="../js/quicksettings.min.js"></script>
+    <script src="../js/magnet.js"></script>
     <script>
         window.setTimeout(function(){
             startMagnets({gui:true, num:10});
@@ -24,6 +25,15 @@
     body{
         overflow: hidden;
         margin: 0;
+    }
+    .qs_main{
+        background-color: white !important;
+        border-radius: 4px !important;
+        overflow: hidden;
+    }
+    .qs_title_bar{
+        font-size: 18px;
+        padding:8px !important;
     }
 </style>
 </html>

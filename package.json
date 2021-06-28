@@ -16,6 +16,10 @@
       "src": "./src/data/*.*",
       "dest": "./dist/data"
     },
+    "projects": {
+      "src": "./src/projects/**",
+      "dest": "./dist/projects"
+    },
     "styles": {
       "src": "./src/sass/*.scss",
       "dest": "./dist/css"

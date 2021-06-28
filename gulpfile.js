@@ -66,6 +66,10 @@ const scripts = () =>
 // Copy assets to ./dist/
 const copyFiles = () => src(paths.files.src).pipe(dest(paths.files.dest));
 
+// Projects
+// Copy assets to ./dist/
+const copyProjects = () => src(paths.projects.src).pipe(dest(paths.projects.dest));
+
 // Assets
 // Copy assets to ./dist/
 const copyImages = () =>
@@ -135,7 +139,7 @@ exports.image = series(
 );
 
 // Build
-const build = parallel(markup, styles, scripts, copyFiles, copyImages);
+const build = parallel(markup, styles, scripts, copyFiles, copyProjects, copyImages);
 exports.build = series(clean, build);
 exports.build.description = "Clean, build ";
 

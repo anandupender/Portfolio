@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#canvas{
+    display: flex;
+    width: 100vw;
+    height:100vh;
+    flex-wrap: wrap;
+    margin: 0;
+    align-content: flex-start;
+}
+
+.pixel{
+    background-color: white;
+    /* transition: background-color 1s ease; */
+}
