@@ -48,13 +48,12 @@ nav.classList.add("animate__delay-3s");
 nav.innerHTML += `
   <h1 id="logo">
     <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo">Anand Upender</a>
-    <div id="name-subtitle">UX Engineer currently at TED Conferences,<br/> based in NYC</div>
+    <div id="name-subtitle">Food Creative & Freelance UX Engineer,<br/> based in San Francisco</div>
   </h1>
   <nav class="navigation">
     <ul id="menu">
-    <li>
-      <a href="/index.html#projects" class="menu-buttons" id="Work" title="Work">Work</a></li>
-      <li><a href="/food.html" class="menu-buttons" id="food" title="Anand's Food"> Food & Design </a></li>
+      <li><a href="/food.html" class="menu-buttons" id="food" title="Anand's Food"> Food </a></li>
+      <li><a href="/design.html" class="menu-buttons" id="Design" title="Design">Design</a></li>
       <li><a href="/about.html" class="menu-buttons" id="about" title="About Anand">About</a></li>
       <li><a href="mailto:anand.upender@gmail.com" class="menu-buttons" id="email" title="email">
       <svg width="25" height="22" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:3px">

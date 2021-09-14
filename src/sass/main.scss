@@ -73,6 +73,14 @@ button, .button:visited,button:visited
   transition: padding ease 300ms;
 }
 
+.button.secondary{
+    font-family: var(--header_font);
+    border: var(--accent_color) 2px solid;
+    background-color: transparent;
+    color:var(--accent_color);
+    padding: 10px 18px;
+}
+
 .button:hover {
     padding: 15px 42px 15px 42px;
 }
@@ -373,7 +381,7 @@ section.header{
   width: 84vw;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
+  height: 96vh;
   position: relative;
   div{
       flex:2;
@@ -409,12 +417,18 @@ section.header{
     .index-image {
       max-width: 80%;
     }
-    .diagonal-container {
-        -webkit-clip-path: polygon(25% 0%, 64% 0, 38% 100%, 0% 100%);
-        clip-path: polygon(25% 0%, 64% 0, 38% 100%, 0% 100%);
-        left: auto !important;
-      }
   }
+}
+
+.blob-image-container{
+    flex: 1;
+    margin-left: 48px;
+    max-width: 24vw;
+    .blob-image{
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+    }
 }
 
 @keyframes rotate{
@@ -431,7 +445,6 @@ section.header{
   margin-left: 25%;
 }
 
-
 .work-bar {
   margin-top: 15px;
   height: 75px;
@@ -446,7 +459,7 @@ section.header{
   .index-container {
     margin-top: 80px;
     width:94vw;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: flex-start;
     height: auto;
     div{
@@ -471,6 +484,18 @@ section.header{
 
     .face{
         display: none;
+    }
+    .blob-image-container{
+        margin: 0;
+        margin-top: 18px;
+        margin-bottom: 12px;
+        max-width: unset;
+        width: calc(100vw - 8% - 8%);
+        .blob-image{
+            box-shadow: unset;
+            height: 30vh;
+            object-fit: cover;
+        }
     }
   }
   
@@ -627,6 +652,13 @@ a.name {
   transition: font-size 500ms ease, letter-spacing 300ms ease;
 }
 
+.hero-subtitle{
+    font-family: var(--header_font);
+    font-size: 16px;
+    font-style: italic;
+    max-width: 75%;
+}
+
 #name-subtitle {
     margin-top: 8px;
     font-size: 16px;
@@ -704,6 +736,9 @@ a.name {
   .menu-buttons {
     font-size: 18px;
     margin-left: 10px;
+  }
+  .hero-subtitle{
+    max-width: 100%;
   }
 }
 
