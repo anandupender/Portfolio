@@ -21,6 +21,7 @@
     }
     a, a:visited{
         text-decoration: underline;
+        margin-bottom: 8px;
     }
 
     .h1-large, .subheader{
@@ -40,6 +41,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .small{
