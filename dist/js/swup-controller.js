@@ -66,7 +66,7 @@ function init(){
         document.querySelector("#start-magnets").addEventListener("click", function(){
             document.querySelector("#home-index").classList.add("disable-select");
             document.querySelector("#start-magnets").style.animation = "none";
-            document.querySelector("#magnet-show-text").style.opacity = 1;
+            // document.querySelector("#magnet-show-text").style.opacity = 1;
             startMagnets({gui:false, num:25});
             document.getElementsByTagName("canvas")[0].style.display = "block";
             document.getElementsByTagName("canvas")[0].style.opacity = 1;
