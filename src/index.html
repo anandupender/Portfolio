@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/main.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preload" as="image" href="/images/food/action.jpg">
+    <link rel="preload" as="image" href="/images/food/action2.jpg">
     <link rel="preload" as="image" href="/images/food/15.jpg">
   </head>
 
@@ -41,7 +41,7 @@
             </div>
 
             <span class="blob-image-container">
-                <img class="blob-image add-shadow" src="images/food/action.jpg">
+                <img class="blob-image add-shadow" src="images/food/action2.jpg">
             </span>
            
         </div>
@@ -68,7 +68,7 @@
 
     <script>
         var myImage = document.querySelector(".blob-image");
-        var imageNames = ["action","15","11","6","3","1","7","13","2"];
+        var imageNames = ["action2","15","11","6","3","1","7","13","2"];
         var counter = 0;
 
         function swapImage(){
@@ -78,10 +78,12 @@
                 counter = 0;
             }
         }
+
         // Wait for animation to finish
         window.setTimeout(function(){
-            window.setInterval(swapImage,900);
-        },1400);
+            window.setInterval(swapImage,1600);
+
+        },1500);
     </script>
 
   </body>

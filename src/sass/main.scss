@@ -487,13 +487,13 @@ section.header{
     }
     .blob-image-container{
         margin: 0;
-        margin-top: 18px;
+        margin-top: 0px;
         margin-bottom: 12px;
         max-width: unset;
         width: calc(100vw - 8% - 8%);
         .blob-image{
             box-shadow: unset;
-            height: 30vh;
+            height: 40vh;
             object-fit: cover;
         }
     }
@@ -594,8 +594,8 @@ section.header{
   margin: 20px;
   margin-right: 0px;
   padding: 5px;
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
 }
 
 /* Change the color of links on hover */
