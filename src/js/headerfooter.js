@@ -48,7 +48,7 @@ nav.classList.add("animate__delay-3s");
 nav.innerHTML += `
   <h1 id="logo">
     <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo">Anand Upender</a>
-    <div id="name-subtitle">Food Creative & Freelance UX Engineer,<br/> based in San Francisco</div>
+    <div id="name-subtitle">Food Strategist & UX Engineer,<br/> based in San Francisco</div>
   </h1>
   <nav class="navigation">
     <ul id="menu">
