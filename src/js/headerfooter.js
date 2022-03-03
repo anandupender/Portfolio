@@ -20,8 +20,24 @@ s.parentNode.insertBefore(gFirst, s);
 s.parentNode.insertBefore(gInner, s);
 
 headContent.innerHTML += `
+  <meta name="title" content="Anand Upender">
   <meta name="description" content="Anand is a creative strategist and digital prototyper with a knack for moving teams forward through humble and thoughtful design directions." />
-  <meta name="keywords" content="stanford, anand upender, web design, digital design, designer, community creator" />
+  <meta name="keywords" content="stanford, anand upender, anand, upender, web design, digital design, designer, community creator" />
+
+  <!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.anandupender.com/">
+<meta property="og:title" content="Anand Upender">
+<meta property="og:description" content="Anand is a creative strategist and digital prototyper with a knack for moving teams forward through humble and thoughtful design directions.">
+<meta property="og:image" content="images/favicons/social-share.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.anandupender.com/">
+<meta property="twitter:title" content="Anand Upender">
+<meta property="twitter:description" content="Anand is a creative strategist and digital prototyper with a knack for moving teams forward through humble and thoughtful design directions.">
+<meta property="twitter:image" content="images/favicons/social-share.png">
+
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png" />
