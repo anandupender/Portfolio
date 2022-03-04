@@ -70,6 +70,7 @@ nav.innerHTML += `
     <ul id="menu">
       <li><a href="/food.html" class="menu-buttons" id="food" title="Anand's Food"> Food </a></li>
       <li><a href="/design.html" class="menu-buttons" id="Design" title="Design">Design</a></li>
+      <li><a href="/sandbox.html" class="menu-buttons" id="about" title="Sandbox">Sandbox</a></li>
       <li><a href="/about.html" class="menu-buttons" id="about" title="About Anand">About</a></li>
       <li><a href="mailto:anand.upender@gmail.com" class="menu-buttons" id="email" title="email">
       <svg width="25" height="22" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:3px">

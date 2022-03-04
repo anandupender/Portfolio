@@ -20,8 +20,24 @@ s.parentNode.insertBefore(gFirst, s);
 s.parentNode.insertBefore(gInner, s);
 
 headContent.innerHTML += `
+  <meta name="title" content="Anand Upender">
   <meta name="description" content="Anand is a creative strategist and digital prototyper with a knack for moving teams forward through humble and thoughtful design directions." />
-  <meta name="keywords" content="stanford, anand upender, web design, digital design, designer, community creator" />
+  <meta name="keywords" content="stanford, anand upender, anand, upender, web design, digital design, designer, community creator" />
+
+  <!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.anandupender.com/">
+<meta property="og:title" content="Anand Upender">
+<meta property="og:description" content="Anand is a creative strategist and digital prototyper with a knack for moving teams forward through humble and thoughtful design directions.">
+<meta property="og:image" content="images/favicons/social-share.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.anandupender.com/">
+<meta property="twitter:title" content="Anand Upender">
+<meta property="twitter:description" content="Anand is a creative strategist and digital prototyper with a knack for moving teams forward through humble and thoughtful design directions.">
+<meta property="twitter:image" content="images/favicons/social-share.png">
+
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png" />
@@ -48,12 +64,13 @@ nav.classList.add("animate__delay-3s");
 nav.innerHTML += `
   <h1 id="logo">
     <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo">Anand Upender</a>
-    <div id="name-subtitle">Food Creative & UX Engineer,<br/> based in San Francisco</div>
+    <div id="name-subtitle">Food Strategist & UX Engineer,<br/> based in San Francisco</div>
   </h1>
   <nav class="navigation">
     <ul id="menu">
       <li><a href="/food.html" class="menu-buttons" id="food" title="Anand's Food"> Food </a></li>
       <li><a href="/design.html" class="menu-buttons" id="Design" title="Design">Design</a></li>
+      <li><a href="/sandbox.html" class="menu-buttons" id="about" title="Sandbox">Sandbox</a></li>
       <li><a href="/about.html" class="menu-buttons" id="about" title="About Anand">About</a></li>
       <li><a href="mailto:anand.upender@gmail.com" class="menu-buttons" id="email" title="email">
       <svg width="25" height="22" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:3px">

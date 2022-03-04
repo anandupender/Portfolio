@@ -18,7 +18,7 @@ let magnetPosition;
 let magnetDiameter = 100;
 var totalMovers = 25;
 var totalMoversMin = 0;
-var totalMoversMax = 1000;
+var totalMoversMax = 300;
 var totalMoversStep = 1;
 var prevTotalMovers = 25;
 var myColor;

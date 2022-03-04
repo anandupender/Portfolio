@@ -92,6 +92,21 @@ function init(){
         });
     }
 
+    if(document.querySelector("#art") !== null){
+        function deferIframe() {
+            var iframeElem = document.getElementsByTagName('iframe');
+            for ( var i = 0; i < iframeElem.length; i++ ) {
+                if(iframeElem[i].getAttribute('data-src')) {
+                    iframeElem[i].setAttribute('src',iframeElem[i].getAttribute('data-src'));
+                } 
+            } 
+        }
+        window.onload = window.setTimeout(deferIframe,10);
+    }
+}
+
+function reloadFrame(id){
+    document.getElementById(id).contentWindow.location.reload();
 }
 
 init();
