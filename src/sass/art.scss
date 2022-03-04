@@ -13,6 +13,9 @@
             animation: fillColor 2s ease infinite alternate;
         }
     }
+    h3{
+        font-weight: 400;
+    }
 }
 
 @for $i from 1 through 10 {
