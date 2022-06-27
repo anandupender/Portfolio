@@ -64,7 +64,7 @@ nav.classList.add("animate__delay-3s");
 nav.innerHTML += `
   <h1 id="logo">
     <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo">Anand Upender</a>
-    <div id="name-subtitle">Food Strategist & UX Engineer,<br/> based in San Francisco</div>
+    <div id="name-subtitle">Food Strategist & Creative Coder,<br/> based in San Francisco</div>
   </h1>
   <nav class="navigation">
     <ul id="menu">
@@ -164,8 +164,7 @@ footer.innerHTML += `
             </p>
         </div>
         <div class="links">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.anandupender.com/data/resume.pdf">Design Resume</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.anandupender.com/data/resume-food.pdf">Food Resume</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.anandupender.com/data/resume.pdf">Resume</a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/anandupender/">LinkedIn</a>
             <a target="_blank" rel="noopener noreferrer" href="http://instagram.com/pixels_and_plates">Instagram</a>
         </div>
