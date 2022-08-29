@@ -41,8 +41,12 @@
 }
 
 .window{
+    width: 110vh;
+    height: 70vh;
+    object-fit: contain;
     clip-path: inset(0% 30% 0% 30% round 25vw 25vw 0vw 0vw);
     margin:15px -8% 0px -12%;
+    margin-top: 15svh;
 }
 
 @media screen and (max-width: 640px) {
