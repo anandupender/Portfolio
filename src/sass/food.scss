@@ -40,13 +40,10 @@
   width: 35%;
 }
 
-.window{
-    width: 110vh;
-    height: 70vh;
-    object-fit: contain;
-    clip-path: inset(0% 30% 0% 30% round 25vw 25vw 0vw 0vw);
-    margin:15px -8% 0px -12%;
-    margin-top: 15svh;
+.cover-image{
+    width: 100vw;
+    object-fit: cover;
+    margin-top: -5vh;
 }
 
 @media screen and (max-width: 640px) {
@@ -54,8 +51,7 @@
     width: 100%;
   }
 
-  .window{
-      margin:10px 0px 20px 0px;
-      clip-path: inset(0% 30% 0% 30% round 35vw 35vw 0vw 0vw);
-  }
+  .cover-image{
+    margin-top: 10vh;
+    }
 }
