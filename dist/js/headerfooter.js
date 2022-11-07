@@ -80,7 +80,7 @@ nav.innerHTML += `
         <path d="M22.5416 11.1054L21.0662 12.5808L30.1548 21.6694L31.6302 20.194L22.5416 11.1054Z" fill="#195CC8"/>
         </svg>
       </a></li>
-      <li><a href="https://www.instagram.com/pixels_and_plates/" target="_blank" class="menu-buttons no-margin-right" id="instagram" title="instagram">
+      <li><a href="https://www.instagram.com/anandupender" target="_blank" class="menu-buttons no-margin-right" id="instagram" title="instagram">
       <svg width="22" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M19.8333 2.33337H8.16665C4.94499 2.33337 2.33331 4.94505 2.33331 8.16671V19.8334C2.33331 23.055 4.94499 25.6667 8.16665 25.6667H19.8333C23.055 25.6667 25.6666 23.055 25.6666 19.8334V8.16671C25.6666 4.94505 23.055 2.33337 19.8333 2.33337Z" stroke="#195CC8" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M18.6667 13.265C18.8106 14.2359 18.6448 15.2276 18.1927 16.0988C17.7406 16.9701 17.0253 17.6766 16.1485 18.1179C15.2718 18.5592 14.2782 18.7128 13.3091 18.5569C12.34 18.401 11.4447 17.9434 10.7506 17.2493C10.0566 16.5553 9.599 15.66 9.44306 14.6909C9.28712 13.7218 9.44073 12.7282 9.88203 11.8514C10.3233 10.9746 11.0299 10.2593 11.9011 9.80727C12.7724 9.35518 13.764 9.18934 14.735 9.33332C15.7254 9.48018 16.6423 9.94169 17.3503 10.6497C18.0583 11.3577 18.5198 12.2746 18.6667 13.265Z" stroke="#195CC8" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
@@ -166,7 +166,7 @@ footer.innerHTML += `
         <div class="links">
             <a target="_blank" rel="noopener noreferrer" href="https://www.anandupender.com/data/resume.pdf">Resume</a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/anandupender/">LinkedIn</a>
-            <a target="_blank" rel="noopener noreferrer" href="http://instagram.com/pixels_and_plates">Instagram</a>
+            <a target="_blank" rel="noopener noreferrer" href="http://instagram.com/anandupender">Instagram</a>
         </div>
         <span class="small">
             If you’re reading this you should take a break from the <i>screens</i> and go smell the roses.
