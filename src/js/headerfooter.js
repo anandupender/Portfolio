@@ -64,14 +64,13 @@ nav.classList.add("animate__delay-3s");
 nav.innerHTML += `
   <h1 id="logo">
     <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo">Anand Upender</a>
-    <div id="name-subtitle">Food Strategist & Creative Coder,<br/> based in San Francisco</div>
+    <div id="name-subtitle">Food Strategist & Web Designer,<br/> based in San Francisco</div>
   </h1>
   <nav class="navigation">
     <ul id="menu">
       <li><a href="/food.html" class="menu-buttons" id="food" title="Anand's Food"> Food </a></li>
       <li><a href="/design.html" class="menu-buttons" id="Design" title="Design">Design</a></li>
       <li class="no-mobile"><a href="/sandbox.html" class="menu-buttons" id="about" title="Sandbox">Sandbox</a></li>
-      <li><a href="/about.html" class="menu-buttons" id="about" title="About Anand">About</a></li>
       <li><a href="mailto:anand.upender@gmail.com" class="menu-buttons" id="email" title="email">
       <svg width="25" height="22" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:3px">
         <path d="M29.1746 23.4761H4.13591C3.12136 23.4761 2.14836 23.0731 1.43097 22.3557C0.713575 21.6383 0.310547 20.6653 0.310547 19.6507L0.310547 4.34929C0.310547 3.33474 0.713575 2.36174 1.43097 1.64435C2.14836 0.926954 3.12136 0.523926 4.13591 0.523926L29.1746 0.523926C30.1892 0.523926 31.1622 0.926954 31.8796 1.64435C32.597 2.36174 33 3.33474 33 4.34929V19.6507C33 20.6653 32.597 21.6383 31.8796 22.3557C31.1622 23.0731 30.1892 23.4761 29.1746 23.4761ZM4.13591 2.61049C3.67475 2.61049 3.23248 2.79368 2.90639 3.11977C2.5803 3.44586 2.39711 3.88813 2.39711 4.34929V19.6507C2.39711 20.1119 2.5803 20.5542 2.90639 20.8803C3.23248 21.2063 3.67475 21.3895 4.13591 21.3895H29.1746C29.6358 21.3895 30.0781 21.2063 30.4042 20.8803C30.7302 20.5542 30.9134 20.1119 30.9134 19.6507V4.34929C30.9134 3.88813 30.7302 3.44586 30.4042 3.11977C30.0781 2.79368 29.6358 2.61049 29.1746 2.61049H4.13591Z" fill="#195CC8"/>

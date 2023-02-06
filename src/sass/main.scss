@@ -654,9 +654,12 @@ a.name {
 
 .hero-subtitle{
     font-family: var(--header_font);
-    font-size: 16px;
+    font-size: 20px;
+    max-width: 85%;
+}
+
+.italic{
     font-style: italic;
-    max-width: 75%;
 }
 
 #name-subtitle {
