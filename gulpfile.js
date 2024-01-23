@@ -12,8 +12,9 @@ const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 
 // Styles
-const sass = require("gulp-sass");
-sass.compiler = require("node-sass");
+const sass = require('gulp-sass')(require('sass'));
+// const sass = require('gulp-sass')
+// sass.compiler = require('sass')
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 var concat = require("gulp-concat");
