@@ -18,10 +18,13 @@
   align-items: flex-start;
   justify-content: center;
   margin-bottom: 70px;
-  margin-top: 40px;
+  margin-top: 180px;
   z-index: 1;
-  border-top: 2px black solid;
   padding-top: 50px;
+}
+.food-paragraph{
+  font-weight: 400;
+  max-width: 80%;
 }
 
 .cooking-bio-text-small {
@@ -53,5 +56,14 @@
 
   .cover-image{
     margin-top: 10vh;
+    }
+    .food-project {
+      width: 85%;
+      margin-top: 100px;
+      z-index: 1;
+      padding-top: 0px;
+    }
+    .food-paragraph{
+      max-width: 100%;
     }
 }
