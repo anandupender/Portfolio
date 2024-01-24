@@ -44,10 +44,11 @@ a.highlight:hover {
 /* MAIN FONT TYPES */
 
 .h1-large {
-font-family: var(--header_font);
+  font-family: var(--header_font);
   font-size: 64px;
-  text-decoration: underline;
-  text-decoration-color: var(--accent_color);
+  color:var(--accent_color);
+  // text-decoration: underline;
+  // text-decoration-color: var(--accent_color);
   font-weight: 900;
   margin: 10px 0 30px 0;
 }
@@ -72,7 +73,8 @@ h2 {
 }
 
 h3{
-    font-size: 22px;
+  font-family: var(--header_font);
+    font-size: 24px;
     line-height: 125%;
     margin:8px 0px;
 

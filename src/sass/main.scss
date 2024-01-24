@@ -2,7 +2,7 @@
     --accent_color: #195CC8;
     --accent_color_2: #E94F37;
     --accent_color_3:#26A671;
-    --white:#EAE4D7;
+    --white:#FAFAFA;
     --black: #141414;
     --header_font:'Fraunces', serif;
     --body_font:'Roboto',sans-serif;
@@ -30,10 +30,10 @@ body {
 main{
     width: 100%;
     max-width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
     z-index: 1;
 }
 
@@ -55,6 +55,12 @@ canvas {
   -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.15);
+}
+
+// CONTENT BLOCK
+div.content{
+  margin: 0px 36px;
+  max-width: 720px;
 }
 
 // BUTTONS
@@ -241,6 +247,7 @@ ul.no-bullets{
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-size: 22px;
 }
 
 .no-margin-left {
@@ -310,6 +317,8 @@ ul.no-bullets{
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 section.header{
@@ -318,7 +327,7 @@ section.header{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width:84vw;
+    padding: 0 36px;
     h3{
         font-weight: normal;
         font-style: italic;
@@ -392,14 +401,14 @@ section.header{
 .index-container {
   display: flex;
   flex-direction: row;
-  width: 84vw;
+  padding-left: 36px;
+  padding-right: 36px;
   align-items: center;
   justify-content: space-between;
   height: 96vh;
   position: relative;
   div{
       flex:2;
-      max-width: 70%;
   }
   #magnet-show-text{
     opacity: 0; 
@@ -434,19 +443,55 @@ section.header{
   }
 }
 
-.blob-image-container{
-    flex: 1;
-    margin-left: 48px;
-    max-width: 20vw;
-    .blob-image{
-        width: 100%;
-        height: 60vh;
-        object-fit: cover;
-        border-radius: 16px;
-        border: 8px solid var(--black);
-        margin-top: 8px;
-    }
+#home-index{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  text-align: center;
+  margin-top: 140px;
+  .h1-large{
+    text-align: center;
+    line-height: 95%;
+    font-weight: 400;
+  }
 }
+#design-index{
+}
+
+.blob-image-container{
+  position: absolute;
+    transform:translate(-50%,-50%);
+    margin-left: 120px;
+    margin-top: -56px;
+    width: 180px;
+    height:300px;
+    mix-blend-mode: color-burn;
+      top: 300px;
+
+
+  .blob-image{
+    left: 0;
+    width: 180px;
+      height:300px;
+    position: absolute;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+
+  }
+  .blob-background{
+    left: 0;
+    background-color: #195CC8;
+    opacity: .6;
+    width: 180px;
+      height:300px;
+    position: absolute;
+  }
+}
+
 
 @keyframes rotate{
     0%{
@@ -481,7 +526,7 @@ section.header{
     height: auto;
     div{
         width: 100%;
-        max-width: 90%;
+        // max-width: 90%;
     }
     .main-hello {
         margin-top: 0;
@@ -503,15 +548,20 @@ section.header{
         display: none;
     }
     .blob-image-container{
-        margin: 0;
-        margin-top: 0px;
-        margin-bottom: 12px;
-        max-width: unset;
-        width: calc(70vw - 8% - 8%);
+        width: 140px;
+        height:200px;
+        mix-blend-mode: color-burn;
+        top: 10px;
+        right:0;
+        transform: none;
+    
         .blob-image{
-            box-shadow: unset;
-            height: 44vh;
-            object-fit: cover;
+          width: 140px;
+          height:200px;
+        }
+        .blob-background{
+          width: 140px;
+          height:200px;
         }
     }
   }
@@ -647,7 +697,7 @@ section.header{
     align-items: flex-start;
     vertical-align: middle;
     z-index: 102;
-    background-color: #EAE4D7;
+    background-color: var(--white);
     border-bottom: 2px solid transparent;
     transition: padding 500ms ease, border-bottom 300ms ease 0ms;
 
@@ -663,7 +713,7 @@ section.header{
 a.name {
   color: var(--accent_color) !important;
   top: 0px;
-  font-size: 36px;
+  font-size: 28px;
   margin: 0px;
   font-weight: 800;
   transition: font-size 500ms ease, letter-spacing 300ms ease;
@@ -719,8 +769,8 @@ a.name {
 
 
 #nav.scroll{
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 36px;
+    padding-right: 36px;
     padding-bottom: -20px;
     border-bottom: 2px solid var(--accent_color);
     transition: border-bottom 300ms ease 500ms, padding 500ms ease 0ms;

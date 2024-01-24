@@ -103,6 +103,18 @@ function init(){
         }
         window.onload = window.setTimeout(deferIframe,10);
     }
+    if(document.querySelector("#home-index") !== null){
+        document.querySelector("#home-index").insertBefore(addFace({
+            x:window.innerWidth/2 - 180/2,
+            y:0,
+            size:180,
+            eyebrow:true,
+            mouth:false,
+            stare:false,
+            class:"home-eyes"
+        }), 
+        document.querySelector("#home-index").children[0]);
+    }
 }
 
 function reloadFrame(id){
@@ -177,7 +189,8 @@ function initialAnimation(){
                 size:54,
                 eyebrow:true,
                 mouth:true,
-                stare:false
+                stare:false,
+                class:"face-nav"
             }), 
             document.querySelector("#nav").children[1]);
             

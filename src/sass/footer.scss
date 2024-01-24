@@ -5,7 +5,7 @@
     max-width: 100vw;
     height: 550px;
     box-sizing: border-box;
-    padding: 40px 7.5% 50px 7.5%;
+    padding: 40px 36px 50px 36px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -32,6 +32,7 @@
 
     .content{
         max-width: 560px;
+        margin: 0;
 
         div{
             margin: 40px 0;

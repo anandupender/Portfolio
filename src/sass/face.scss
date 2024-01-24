@@ -1,15 +1,32 @@
 .face{
-    position:initial;    
+    z-index: 1000;
+    height: 40px;
+    width:200px;
+    max-width: unset !important; 
+    flex: unset !important;
 }
+.home-eyes{
+    height:100px;
+}
+.face-nav{
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+.face-nav.scroll{
+    opacity: 1;
+}
+
 .eyeball{
     position: absolute;   
     border-radius: 50%;
     border: 3px solid var(--accent_color);
+    background-color: var(--white);
 }
 .pupil{
     position: absolute;      
     background-color: var(--accent_color);
     border-radius: 50%;
+    z-index: 1000;
 }
 .eyebrow{
     position: absolute;
@@ -28,6 +45,7 @@
 .face.white{
     .eyeball{
         border: 3px solid var(--white);
+        background-color: var(--accent_color);
     }
     .pupil{
         background-color: var(--white);

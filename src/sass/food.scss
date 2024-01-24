@@ -12,7 +12,6 @@
 }
 
 .food-project {
-  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -21,10 +20,11 @@
   margin-top: 180px;
   z-index: 1;
   padding-top: 50px;
+  padding-left: 36px;
 }
 .food-paragraph{
   font-weight: 400;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .cooking-bio-text-small {

@@ -5,7 +5,7 @@
   margin-top: 50px;
   margin-bottom: 40px;
   z-index: 1;
-  width:84vw;
+  padding: 0 36px;
 
   .project-card {
     display: inline-block;
@@ -25,7 +25,7 @@
           box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.1);
           object-fit: cover;
           width: 50%;
-          margin-right: 80px;
+          margin-right: 48px;
           border-radius: 10px;
         }
   }

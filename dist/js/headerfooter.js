@@ -123,8 +123,10 @@ let cutoff = 50;
 function headerScroll() {  
     if (scrolled) {  
         document.querySelector("#nav").classList.add("scroll");
+        document.querySelector(".face-nav").classList.add("scroll");
     } else {  
         document.querySelector("#nav").classList.remove("scroll");
+        document.querySelector(".face-nav").classList.remove("scroll");
     }  
 }  
 

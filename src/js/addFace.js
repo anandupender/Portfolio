@@ -8,6 +8,7 @@ var stareTimer;
 var lerpyBoiStare = 0.008;
 var delayTime = 110;
 var myFrameRate = 1;
+let homePageOffset = 150;
 
 // HELPER
 function myLerp(value1, value2, amount) {
@@ -44,7 +45,12 @@ function movePupils(){
     var pupils = document.getElementsByClassName("pupil");
     for(var i = 0; i < pupils.length; i++){
         var pupil = pupils[i];
-        var v = [(mouse[0] - pupil.dataset.x),(mouse[1] - pupil.dataset.y)];  //vector
+        var v;
+        if(pupil.dataset.class == "home-eyes"){
+            v = [(mouse[0] - pupil.dataset.x),(mouse[1] - pupil.dataset.y - homePageOffset)];  //vector
+        }else{
+            v = [(mouse[0] - pupil.dataset.x),(mouse[1] - pupil.dataset.y)];  //vector
+        }
         var u = [(v[0]/magnitude(v)), (v[1]/magnitude(v))];   //normalize
 
         var newPoint = [(parseFloat(pupil.dataset.x) + pupil.dataset.distance*(u[0])),(parseFloat(pupil.dataset.y) + pupil.dataset.distance*(u[1]))];
@@ -81,6 +87,8 @@ function handleMouseMoveFace(e){
     //clearTimeout(mainTimer);
     //clearTimeout(stareTimer);
     //mainTimer = window.setTimeout(function(){stareTimer = window.setInterval(stare,myFrameRate);}, delayTime);
+    // mouse[0] = e.clientX - userPref.eyeballSize;
+    console.log(userPref.size);
     mouse[0] = e.clientX;
     mouse[1] = e.clientY;
 
@@ -107,6 +115,7 @@ function populateFace(face){
         pupil.style.width = face.dataset.pupilSize+"px";
         pupil.style.height = face.dataset.pupilSize+"px";
         pupil.dataset.distance = face.dataset.distance;
+        pupil.dataset.class = face.dataset.class;
 
         if(face.dataset.eyebrow === "true"){
             var eyebrow = document.createElement("div");
@@ -221,12 +230,15 @@ function createFace(face){
     face.dataset.eyebrow = userPref.eyebrow;
     face.dataset.eyebrowOffset = eyeballSize/2;
     face.dataset.stare = userPref.stare;
-    console.log(face.dataset.stare);
+    face.dataset.class = userPref.class;
 
     var border;
     if(userPref.class === "white"){
         border = 6;
-    }else{
+    }else if(userPref.class === "home-eyes"){
+        border = 4;
+    }
+    else{
         border = 2;
     }
 
