@@ -87,8 +87,6 @@ function handleMouseMoveFace(e){
     //clearTimeout(mainTimer);
     //clearTimeout(stareTimer);
     //mainTimer = window.setTimeout(function(){stareTimer = window.setInterval(stare,myFrameRate);}, delayTime);
-    // mouse[0] = e.clientX - userPref.eyeballSize;
-    console.log(userPref.size);
     mouse[0] = e.clientX;
     mouse[1] = e.clientY;
 

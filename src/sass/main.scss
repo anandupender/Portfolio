@@ -85,6 +85,7 @@ button, .button:visited,button:visited
     background-color: transparent;
     color:var(--accent_color);
     padding: 10px 18px;
+    border-radius: 80px;
 }
 .button.large{
   font-family: var(--header_font);
@@ -460,20 +461,75 @@ section.header{
     font-weight: 400;
   }
 }
+
+.scrolling-text.short{
+  padding: 0;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: -8px;
+  width:160px;
+  height:28px;
+  span{
+    animation: scrollingTextVertical 6s linear infinite;
+    padding: 0;
+    .word{
+      width:160px;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+}
+.scrolling-text.short:hover{
+  padding: 0;
+}
+
+.scrolling-text {
+  display: inline-block;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  width:160px;
+  
+  span{
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollingText 50s linear infinite;
+  }
+}
+@keyframes scrollingText {
+  0% {
+    transform: translate(-64px, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes scrollingTextVertical {
+  0% {
+    transform: translate(0, 8%);
+  }
+  100% {
+    transform: translate(0, -94%); 
+  }
+}
+
 #design-index{
+  .left-section{
+    max-width: 700px;
+  }
 }
 
 .blob-image-container{
   position: absolute;
     transform:translate(-50%,-50%);
-    margin-left: 120px;
+    margin-left: 180px;
     margin-top: -56px;
     width: 180px;
     height:300px;
     mix-blend-mode: color-burn;
-      top: 300px;
-      border-radius: 8px;
-      overflow: hidden;
+    top: 240px;
+    border-radius: 8px;
+    overflow: hidden;
 
 
   .blob-image{
@@ -524,6 +580,9 @@ section.header{
     #home-index{
       padding-left: 12px;
       padding-right: 12px;
+    }
+    .scrolling-text {
+      width:calc(100vw - 36px - 36px);
     }
   .index-container {
     margin-top: 80px;

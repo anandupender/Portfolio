@@ -63,14 +63,15 @@ function init(){
         links[i].onmouseout = lowerEyebrows;
     }
     if (document.querySelector('#start-magnets') !== null) {
-        document.querySelector("#start-magnets").addEventListener("click", function(){
-            document.querySelector("#home-index").classList.add("disable-select");
-            document.querySelector("#start-magnets").style.animation = "none";
-            // document.querySelector("#magnet-show-text").style.opacity = 1;
-            startMagnets({gui:false, num:25});
-            document.getElementsByTagName("canvas")[0].style.display = "block";
-            document.getElementsByTagName("canvas")[0].style.opacity = 1;
-        });  
+        // document.querySelector("#start-magnets").addEventListener("click", function(){
+            window.setTimeout(function(){
+                document.querySelector("#design-index").classList.add("disable-select");
+                document.querySelector("#start-magnets").style.animation = "none";
+                startMagnets({gui:false, num:25});
+                document.getElementsByTagName("canvas")[0].style.display = "block";
+                document.getElementsByTagName("canvas")[0].style.opacity = 1;
+            },2000);
+        // });  
     }else{
         //turn off and remove magnets
         if(document.getElementsByTagName("canvas")[0] !== null && document.getElementsByTagName("canvas")[0] !== undefined){

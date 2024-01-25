@@ -34,7 +34,7 @@ function setup(){
     reset();
     noLoop();
     myColor = [25, 92, 200];
-    backgroundColor = [234, 228, 215];
+    backgroundColor = [250, 250, 250];
 }
 
 function startMagnets(init){
