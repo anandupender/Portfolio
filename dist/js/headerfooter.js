@@ -68,7 +68,7 @@ nav.innerHTML += `
   </h1>
   <nav class="navigation">
     <ul id="menu">
-      <li><a href="/food.html" class="menu-buttons" id="food" title="Anand's Food"> Food </a></li>
+      <li><a href="/food.html" class="menu-buttons" id="food" title="Anand's Food"> Food & Bev </a></li>
       <li><a href="/design.html" class="menu-buttons" id="Design" title="Design">Design</a></li>
       <li class="no-mobile"><a href="/sandbox.html" class="menu-buttons" id="about" title="Sandbox">Sandbox</a></li>
       <li><a href="mailto:anand.upender@gmail.com" class="menu-buttons" id="email" title="email">

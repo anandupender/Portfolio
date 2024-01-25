@@ -1,7 +1,7 @@
 #all-archive{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 60px 80px; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 36px 36px; 
     margin-top: 50px;
     margin-bottom: 180px;
     z-index: 1;
@@ -44,6 +44,14 @@
             border-bottom: 2px solid var(--accent_color);
             filter: grayscale(0);
         }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #all-archive{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px 30px; 
+        margin-bottom: 100px;
     }
 }
 

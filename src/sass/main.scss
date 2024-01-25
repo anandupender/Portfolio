@@ -319,6 +319,7 @@ ul.no-bullets{
   padding: 0 4px;
   justify-content: center;
   align-items: center;
+  column-gap: 24px;
 }
 
 section.header{
@@ -471,6 +472,8 @@ section.header{
     height:300px;
     mix-blend-mode: color-burn;
       top: 300px;
+      border-radius: 8px;
+      overflow: hidden;
 
 
   .blob-image{
@@ -518,6 +521,10 @@ section.header{
     #start-magnets{
         display: none;
     }
+    #home-index{
+      padding-left: 12px;
+      padding-right: 12px;
+    }
   .index-container {
     margin-top: 80px;
     width:94vw;
@@ -563,6 +570,10 @@ section.header{
           width: 140px;
           height:200px;
         }
+    }
+    .row{
+      flex-direction: column;
+      row-gap: 12px;
     }
   }
   

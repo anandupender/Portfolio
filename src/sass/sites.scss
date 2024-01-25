@@ -1,7 +1,7 @@
 #all-sites{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px 80px; 
+    grid-gap: 80px 36px; 
     margin-top: 50px;
     margin-bottom: 100px;
     z-index: 1;
@@ -50,7 +50,8 @@
         }
         h3{
             font-weight: 400;
-            margin:12px 0px;
+            margin-top:12px;
+            margin-bottom:0;
         }
         h3.bold{
             font-family: var(--header_font);
