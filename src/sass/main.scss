@@ -266,7 +266,7 @@ ul.no-bullets{
   }
   #nav {
     height: 75px;
-    align-items: center;
+    align-items: center !important;
     padding-top: 0px;
   }
   #top-rectangle {
@@ -522,20 +522,19 @@ section.header{
 .blob-image-container{
   position: absolute;
     transform:translate(-50%,-50%);
-    margin-left: 180px;
+    margin-left: 120px;
     margin-top: -56px;
     width: 180px;
     height:300px;
     mix-blend-mode: color-burn;
-    top: 240px;
+    top: 200px;
     border-radius: 8px;
     overflow: hidden;
-
 
   .blob-image{
     left: 0;
     width: 180px;
-      height:300px;
+    height:300px;
     position: absolute;
     object-fit: cover;
     mix-blend-mode: lighten;
@@ -620,6 +619,7 @@ section.header{
         top: 10px;
         right:0;
         transform: none;
+        margin-left: -40px;
     
         .blob-image{
           width: 140px;
@@ -730,9 +730,13 @@ section.header{
   font-size: 28px;
   margin: 20px;
   margin-right: 0px;
-  padding: 5px;
-  height: 20px;
-  width: 20px;
+  padding: 4px;
+  height: 24px;
+  width: 24px;
+  img{
+    height: 24px;
+    width: 24px;
+  }
 }
 
 /* Change the color of links on hover */
@@ -814,6 +818,7 @@ a.name {
     flex-direction: row;
     align-items: center;
     margin: 0;
+    background-color: var(--accent_color);
   }
   
   ul#menu {
@@ -928,7 +933,7 @@ a.name {
     text-align: left;
     background-color: var(--white);
     align-items: flex-start;
-    margin-right: 40px;
+    padding-top: 80px;
   }
   .topNav.responsive #menu li{
     margin-bottom: 8px;
