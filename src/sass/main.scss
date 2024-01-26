@@ -758,8 +758,8 @@ section.header{
     max-width: 100vw;
     box-sizing: border-box;
     position: fixed;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 36px;
+    padding-right: 36px;
     padding-top: 30px;
     padding-bottom: 12px;
     top: 0px;
@@ -846,6 +846,7 @@ a.name {
     padding-left: 36px;
     padding-right: 36px;
     padding-bottom: -20px;
+    padding-top: 20px;
     border-bottom: 2px solid var(--accent_color);
     transition: border-bottom 300ms ease 500ms, padding 500ms ease 0ms;
     a.name{
