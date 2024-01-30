@@ -620,6 +620,7 @@ section.header{
         right:0;
         transform: none;
         margin-left: -40px;
+        transition: left ease 850ms;
     
         .blob-image{
           width: 140px;
