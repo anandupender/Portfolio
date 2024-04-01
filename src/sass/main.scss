@@ -35,6 +35,7 @@ main{
     // align-items: center;
     // flex-direction: column;
     z-index: 1;
+    overflow-x: hidden;
 }
 
 hr{
@@ -577,15 +578,14 @@ section.header{
         display: none;
     }
     #home-index{
-      padding-left: 12px;
-      padding-right: 12px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
     .scrolling-text {
       width:calc(100vw - 36px - 36px);
     }
   .index-container {
     margin-top: 80px;
-    width:94vw;
     flex-direction: column-reverse;
     justify-content: flex-start;
     height: auto;
