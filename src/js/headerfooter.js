@@ -29,7 +29,7 @@ headContent.innerHTML += `
 <meta property="og:url" content="https://www.anandupender.com/">
 <meta property="og:title" content="Anand Upender">
 <meta property="og:description" content="Anand is a creative strategist and digital prototyper with a knack for moving teams forward through humble and thoughtful design directions.">
-<meta property="og:image" content="images/favicons/social-share.png">
+<meta property="og:image" content="https://www.anandupender.com/images/favicons/social-share.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
