@@ -64,12 +64,12 @@ nav.classList.add("animate__delay-3s");
 nav.innerHTML += `
   <h1 id="logo">
     <a class="name menu-buttons" href="/index.html" title="Anand Upender Logo">Anand Upender</a>
-    <div id="name-subtitle">Food Strategist & Web Designer,<br/> based in San Francisco</div>
+    <div id="name-subtitle">Creative Strategist, Events Producer & Web Developer,<br/> based in San Francisco</div>
   </h1>
   <nav class="navigation">
     <ul id="menu">
       <li><a href="/food.html" class="menu-buttons" id="food" title="Anand's Food"> Food & Bev </a></li>
-      <li><a href="/design.html" class="menu-buttons" id="Design" title="Design">Design</a></li>
+      <li><a href="http://tycadesign.webflow.io/" class="menu-buttons" id="Design" title="Design">Design</a></li>
       <li class="no-mobile"><a href="/sandbox.html" class="menu-buttons" id="about" title="Sandbox">Sandbox</a></li>
       <li><a href="mailto:anand.upender@gmail.com" class="menu-buttons" id="email" title="email">
       <svg width="25" height="22" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:3px">
